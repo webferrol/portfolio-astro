@@ -1,43 +1,48 @@
 ---
-import { SocialLink, TheCard, TheHeader } from '../components'
-import LinkedIn from '../icons/LinkedIn.astro'
-import Layout from '../layouts/Layout.astro'
+import { SocialLink, TheCard, TheHeader } from "../components";
+import LinkedIn from "../icons/LinkedIn.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Xurxo web developer">
-  <TheHeader />
-  <main class="flex flex-col sm:flex-row gap-4 p-4 max-w-6xl m-auto">
-    <aside class="flex justify-center items-center">
-      <img
-        class="rounded-full"
-        src="/avatar.jfif"
-        alt="Xurxo González Tenreiro"
-      />
-    </aside>
-    <section class="w-full">
-      <h2 class="title">Hola, mi nombre es Xurxo González</h2>
-	  <div class="content">
-
-		  <TheCard>
-			<header>
-				<h2 class="text-balance text-lg pb-2">Programador y diseñador web.</h2>
-				<p class="text-pretty">
-					<strong class="text-yellow-400/70">Informático</strong> y <strong class="text-yellow-400/70">programador</strong> y entusiasta de la divulgación, educación y formación en el desarrollo de <strong class="text-yellow-400/70">aplicaciones web</strong>.
-				</p>
-			</header>
-			<nav>
-				<ul>
-					<li>
-						<SocialLink href='https://www.linkedin.com/in/webferrol/'>
-							<LinkedIn class="w-6 h-6 text-[#0A66C2] hover:text-current" />
-						</SocialLink>
-					</li>
-				</ul>
-			</nav>
-		  </TheCard>
-	  </div>
-    </section>
-  </main>
+<Layout title="WebFerrol: programación y diseño web" description="Educador vocacional que le encanta la programación y diseño web">
+	<TheHeader />
+	<main class="flex flex-col sm:flex-row gap-4 p-4 max-w-6xl m-auto">
+		<aside class="flex flex-col justify-center items-center gap-4 sm:w-2/4 w-auto">
+			<img
+				class="rounded-full"
+				src="/avatar.jfif"
+				alt="Xurxo González Tenreiro"
+			/>
+			<TheCard>
+				<header>
+					<h2 class="text-balance text-lg pb-2">
+						Programador y diseñador web.
+					</h2>
+					<p class="text-pretty">
+						<strong class="text-yellow-400/70">Informático</strong> y <strong
+							class="text-yellow-400/70">programador</strong
+						> y por encima entusiasta de la divulgación, educación y formación en el
+						desarrollo de <strong class="text-yellow-400/70"
+							>aplicaciones web</strong
+						>.
+					</p>
+				</header>
+				<nav>
+					<ul>
+						<li>
+							<SocialLink href="https://www.linkedin.com/in/webferrol/">
+								<LinkedIn class="w-6 h-6 text-[#0A66C2] hover:text-current" />
+							</SocialLink>
+						</li>
+					</ul>
+				</nav>
+			</TheCard>
+		</aside>
+		<section class="w-full">
+			<h2 class="title">Hola, mi nombre es Xurxo González</h2>
+			<div class="content"></div>
+		</section>
+	</main>
 </Layout>
 
 <style>
@@ -45,8 +50,9 @@ import Layout from '../layouts/Layout.astro'
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
-		.title, .content {
-			grid-column: 1 / -1;
-		}
+	}
+	.title,
+	.content {
+		grid-column: 1 / -1;
 	}
 </style>
