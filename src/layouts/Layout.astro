@@ -1,31 +1,50 @@
 ---
+import '@fontsource/onest/400.css'
+import '@fontsource/onest/700.css'
+
 interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #050518;
-	}
+  :root {
+    color-scheme: light dark;
+  }
+  html {
+    font-family: 'Onest', system-ui, sans-serif;
+    color: #e6edf3;
+  }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+	 /*
+	* Created with https://www.css-gradient.com
+	* Gradient link: https://www.css-gradient.com/?c1=1e1f1f&c2=3c3d3d&gt=l&gd=dtt
+	*/
+    background: #1e1f1f;
+    background: linear-gradient(180deg, #1e1f1f, #3c3d3d);
+  }
+  h1,
+  h2,
+  strong,
+  mark {
+    font-family: 'Onest', system-ui, sans-serif;
+  }
 </style>

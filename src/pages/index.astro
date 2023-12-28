@@ -1,11 +1,52 @@
 ---
-import TheHeader from '../components/TheHeader.astro';
-import Layout from '../layouts/Layout.astro';
+import { SocialLink, TheCard, TheHeader } from '../components'
+import LinkedIn from '../icons/LinkedIn.astro'
+import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Xurxo web developer">
-	<main class="max-w-5xl m-auto p-2">
-		<TheHeader />
-	</main>
+  <TheHeader />
+  <main class="flex flex-col sm:flex-row gap-4 p-4 max-w-6xl m-auto">
+    <aside class="flex justify-center items-center">
+      <img
+        class="rounded-full"
+        src="/avatar.jfif"
+        alt="Xurxo González Tenreiro"
+      />
+    </aside>
+    <section class="w-full">
+      <h2 class="title">Hola, mi nombre es Xurxo González</h2>
+	  <div class="content">
+
+		  <TheCard>
+			<header>
+				<h2 class="text-balance text-lg pb-2">Programador y diseñador web.</h2>
+				<p class="text-pretty">
+					<strong class="text-yellow-400/70">Informático</strong> y <strong class="text-yellow-400/70">programador</strong> y entusiasta de la divulgación, educación y formación en el desarrollo de <strong class="text-yellow-400/70">aplicaciones web</strong>.
+				</p>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<SocialLink href='https://www.linkedin.com/in/webferrol/'>
+							<LinkedIn class="w-6 h-6 text-[#0A66C2] hover:text-current" />
+						</SocialLink>
+					</li>
+				</ul>
+			</nav>
+		  </TheCard>
+	  </div>
+    </section>
+  </main>
 </Layout>
 
+<style>
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		.title, .content {
+			grid-column: 1 / -1;
+		}
+	}
+</style>
