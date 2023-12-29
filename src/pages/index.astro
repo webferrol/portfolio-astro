@@ -1,58 +1,43 @@
 ---
-import { SocialLink, TheCard, TheHeader } from "../components";
-import LinkedIn from "../icons/LinkedIn.astro";
-import Layout from "../layouts/Layout.astro";
+import { AboutMe, TheCard, TheHeader, Experience } from '../components'
+import { ArrowUp } from '../icons';
+import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="WebFerrol: programación y diseño web" description="Educador vocacional que le encanta la programación y diseño web">
-	<TheHeader />
-	<main class="flex flex-col sm:flex-row gap-4 p-4 max-w-6xl m-auto">
-		<aside class="flex flex-col justify-center items-center gap-4 sm:w-2/4 w-auto">
-			<img
-				class="rounded-full"
-				src="/avatar.jfif"
-				alt="Xurxo González Tenreiro"
-			/>
-			<TheCard>
-				<header>
-					<h2 class="text-balance text-lg pb-2">
-						Programador y diseñador web.
-					</h2>
-					<p class="text-pretty">
-						<strong class="text-yellow-400/70">Informático</strong> y <strong
-							class="text-yellow-400/70">programador</strong
-						> y por encima entusiasta de la divulgación, educación y formación en el
-						desarrollo de <strong class="text-yellow-400/70"
-							>aplicaciones web</strong
-						>.
-					</p>
-				</header>
-				<nav>
-					<ul>
-						<li>
-							<SocialLink href="https://www.linkedin.com/in/webferrol/">
-								<LinkedIn class="w-6 h-6 text-[#0A66C2] hover:text-current" />
-							</SocialLink>
-						</li>
-					</ul>
-				</nav>
-			</TheCard>
-		</aside>
-		<section class="w-full">
-			<h2 class="title">Hola, mi nombre es Xurxo González</h2>
-			<div class="content"></div>
-		</section>
-	</main>
-</Layout>
+<Layout
+  title="WebFerrol: programación y diseño web"
+  description="Educador vocacional que le encanta la programación y diseño web"
+>
+  <TheHeader />
 
-<style>
-	section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1rem;
-	}
-	.title,
-	.content {
-		grid-column: 1 / -1;
-	}
-</style>
+  <main class="flex flex-col sm:gap-5 sm:flex-row p-6 max-w-6xl m-auto" id="top">
+    <aside
+      class="flex flex-col items-start justify-start sm:items-center gap-4 sm:w-2/4 w-auto"    >
+		<TheCard class="sticky top-2">
+			<AboutMe />	
+		</TheCard>
+    </aside>
+
+    <section class="grid gap-8 w-full mt-10">
+      <TheCard title="Programador y diseñador web.">
+        <header>
+          <p class="text-pretty">
+            <strong class="text-yellow-400/70">Informático</strong> y <strong
+              class="text-yellow-400/70">programador</strong
+            > Entusiasta de la <mark class="text-yellow-400/70 font-thin bg-transparent">divulgación</mark>, <mark class="text-yellow-400/70 font-thin bg-transparent">educación</mark> y <mark class="text-yellow-400/70 font-thin bg-transparent">formación</mark> en el
+            desarrollo de <strong class="text-yellow-400/70"
+              >aplicaciones web</strong
+            >.
+          </p>
+        </header>
+      </TheCard>
+	  <TheCard title='Experiencia laboral'>
+		  <Experience />
+	  </TheCard>
+	  <a href="#top" class="fixed bottom-5 right-5">
+		<ArrowUp class="hover:text-blue-400 hover:scale-150 transition"/>
+	  </a>
+    </section>
+  </main>
+
+</Layout>

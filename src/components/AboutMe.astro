@@ -1,0 +1,39 @@
+---
+import { SocialLink } from '../components'
+import { AstroIcon, CSS3, JavaScript, HTML5, LinkedIn } from '../icons'
+---
+<figure>
+  <img
+    class="block m-auto rounded-full"
+    src="/avatar.jfif"
+    alt="Xurxo González Tenreiro"
+  />
+  <figcaption class="pt-2">Xurxo González Tenreiro</figcaption>
+</figure>
+<div class="grid gap-4">
+  <section>
+    <h2 class="pb-2">Tecnologías</h2>
+    <ul aria-label="Tecnologías" class="flex flex-wrap content-start gap-2">
+      <li title="HTML5">
+        <HTML5 class="w-9" aria-label="HTML5" />
+      </li>
+      <li title="CSS3">
+        <CSS3 class="w-9" aria-label="CSS3" />
+      </li>
+      <li title="JavaScript">
+        <JavaScript class="w-9" aria-label="JavaScript" />
+      </li>
+      <li title="Astro">
+        <AstroIcon class="w-9" aria-label="Astro" />
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2 class="pb-2">Sígueme</h2>
+    <nav aria-label="Redes Sociales" class="flex flex-wrap gap-2">
+      <SocialLink href="https://www.linkedin.com/in/webferrol/">
+        <LinkedIn class="w-9 h-9 text-[#0A66C2] hover:text-current" />
+      </SocialLink>
+    </nav>
+  </section>
+</div>

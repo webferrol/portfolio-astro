@@ -31,6 +31,7 @@ const { title, description = 'Webferrol' } = Astro.props
   html {
     font-family: 'Onest', system-ui, sans-serif;
     color: #e6edf3;
+    scroll-behavior: smooth;
   }
   body {
     margin: 0;
@@ -47,5 +48,11 @@ const { title, description = 'Webferrol' } = Astro.props
   strong,
   mark {
     font-family: 'Onest', system-ui, sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 </style>
