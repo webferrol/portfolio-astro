@@ -5,12 +5,12 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout
-  title="WebFerrol: programación y diseño web"
-  description="Educador vocacional que le encanta la programación y diseño web"
+title="WebFerrol: programación y diseño web"
+description="Educador vocacional que le encanta la programación y diseño web"
 >
-  <TheHeader />
+<TheHeader />
 
-  <main class="flex flex-col sm:gap-5 sm:flex-row p-6 max-w-6xl m-auto" id="top">
+<main class="bg-light-bg-main dark:bg-dark-bg-main text-light-text-main dark:text-dark-text-main flex flex-col sm:gap-10 sm:flex-row p-6 max-w-6xl m-auto" id="top">
     <aside
       class="flex flex-col items-start justify-start sm:items-center gap-4 sm:w-2/4 w-auto"    >
 		<TheCard class="sticky top-2">
@@ -19,7 +19,7 @@ import Layout from '../layouts/Layout.astro'
     </aside>
 
     <section class="grid gap-8 w-full mt-10">
-      <TheCard title="Programador y diseñador web.">
+      <TheCard title="Programador y diseñador web." class="text-light-subheading dark:text-dark-subheading">
         <header>
           <p class="text-pretty">
             <strong class="text-yellow-400/70">Informático</strong> y <strong
@@ -36,6 +36,7 @@ import Layout from '../layouts/Layout.astro'
 	  </TheCard>
 	  <a href="#top" class="fixed bottom-5 right-5">
 		<ArrowUp class="hover:text-blue-400 hover:scale-150 transition"/>
+    
 	  </a>
     </section>
   </main>

@@ -1,4 +1,5 @@
 ---
+import '../assets/global.css'
 import '@fontsource/onest/400.css'
 import '@fontsource/onest/700.css'
 
@@ -20,39 +21,7 @@ const { title, description = 'Webferrol' } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-light-bg-main dark:bg-dark-bg-main">
     <slot />
   </body>
 </html>
-<style is:global>
-  :root {
-    color-scheme: light dark;
-  }
-  html {
-    font-family: 'Onest', system-ui, sans-serif;
-    color: #e6edf3;
-    scroll-behavior: smooth;
-  }
-  body {
-    margin: 0;
-    min-height: 100dvh;
-	 /*
-	* Created with https://www.css-gradient.com
-	* Gradient link: https://www.css-gradient.com/?c1=1e1f1f&c2=3c3d3d&gt=l&gd=dtt
-	*/
-    background: #1e1f1f;
-    background: linear-gradient(180deg, #0d0d0d, #111212);
-  }
-  h1,
-  h2,
-  strong,
-  mark {
-    font-family: 'Onest', system-ui, sans-serif;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-</style>
