@@ -1,16 +1,14 @@
 ---
-import { AboutMe, TheCard, TheHeader, Experience } from '../components'
+import { AboutMe, TheCard, Experience } from '../components'
 import { ArrowUp } from '../icons';
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/MainLayout.astro'
 ---
 
 <Layout
 title="WebFerrol: programación y diseño web"
 description="Educador vocacional que le encanta la programación y diseño web"
 >
-<TheHeader />
-
-<main class="flex flex-col sm:gap-10 sm:flex-row p-6 max-w-6xl m-auto" id="top">
+<main class="flex flex-col sm:gap-10 sm:flex-row p-6 max-w-6xl m-auto">
     <aside
       class="flex flex-col items-start justify-start sm:items-center gap-4 sm:w-2/4 w-auto"    >
 		<TheCard class="sticky top-2">

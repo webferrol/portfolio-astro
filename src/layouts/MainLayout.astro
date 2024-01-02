@@ -2,6 +2,7 @@
 import '../assets/global.css'
 import '@fontsource/onest/400.css'
 import '@fontsource/onest/700.css'
+import { TheHeader } from '../components'
 
 interface Props {
   title: string,
@@ -21,7 +22,8 @@ const { title, description = 'Webferrol' } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
+  <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
+    <TheHeader />
     <slot />
   </body>
 </html>
