@@ -1,42 +1,55 @@
 ---
-import { AboutMe, TheCard, Experience } from '../components'
-import { ArrowUp } from '../icons';
-import Layout from '../layouts/MainLayout.astro'
+import { AboutMe, TheCard, Experience } from "../components"
+import { ArrowUp } from "../icons"
+import MainLayout from "../layouts/TheMainLayout.astro"
 ---
 
-<Layout
-title="WebFerrol: programación y diseño web"
-description="Educador vocacional que le encanta la programación y diseño web"
+<MainLayout
+  title='WebFerrol: programación y diseño web'
+  description='Educador vocacional que le encanta la programación y diseño web'
 >
-<main class="flex flex-col sm:gap-10 sm:flex-row p-6 max-w-6xl m-auto">
+  <main class='flex flex-col sm:gap-10 sm:flex-row p-6 max-w-6xl m-auto'>
     <aside
-      class="flex flex-col items-start justify-start sm:items-center gap-4 sm:w-2/4 w-auto"    >
-		<TheCard class="sticky top-2">
-			<AboutMe />	
-		</TheCard>
+      class='flex flex-col items-start justify-start sm:items-center gap-4 sm:w-2/4 w-auto'
+    >
+      <TheCard class='sticky top-2'>
+        <AboutMe />
+      </TheCard>
     </aside>
 
-    <section class="grid gap-8 w-full mt-10">
-      <TheCard title="Programador y diseñador web." class="text-light-subheading dark:text-dark-subheading">
+    <section class='grid gap-8 w-full mt-10'>
+      <TheCard
+        title='Programador y diseñador web.'
+        class='text-light-subheading dark:text-dark-subheading'
+      >
         <header>
-          <p class="text-pretty">
-            <strong class="text-highlighted dark:text-highlighted-dark">Informático</strong> y <strong
-              class="text-highlighted dark:text-highlighted-dark">programador</strong
-            >. Entusiasta de la <mark class="text-highlighted dark:text-highlighted-dark font-thin bg-transparent">divulgación</mark>, <mark class="text-highlighted dark:text-highlighted-dark font-thin bg-transparent">educación</mark> y <mark class="text-highlighted dark:text-highlighted-dark font-thin bg-transparent">formación</mark> en el
-            desarrollo de <strong class="text-highlighted dark:text-highlighted-dark"
+          <p class='text-pretty'>
+            <strong class='text-highlighted dark:text-highlighted-dark'
+              >Informático</strong
+            > y <strong class='text-highlighted dark:text-highlighted-dark'
+              >programador</strong
+            >. Entusiasta de la <mark
+              class='text-highlighted dark:text-highlighted-dark font-thin bg-transparent'
+              >divulgación</mark
+            >, <mark
+              class='text-highlighted dark:text-highlighted-dark font-thin bg-transparent'
+              >educación</mark
+            > y <mark
+              class='text-highlighted dark:text-highlighted-dark font-thin bg-transparent'
+              >formación</mark
+            > en el desarrollo de <strong
+              class='text-highlighted dark:text-highlighted-dark'
               >aplicaciones web</strong
             >.
           </p>
         </header>
       </TheCard>
-	  <TheCard title='Experiencia laboral'>
-		  <Experience />
-	  </TheCard>
-	  <a href="#top" class="fixed bottom-5 right-5">
-		<ArrowUp class="hover:text-blue-400 hover:scale-150 transition"/>
-    
-	  </a>
+      <TheCard title='Experiencia laboral'>
+        <Experience />
+      </TheCard>
+      <a href='#top' class='fixed bottom-5 right-5'>
+        <ArrowUp class='hover:text-blue-400 hover:scale-150 transition' />
+      </a>
     </section>
   </main>
-
-</Layout>
+</MainLayout>
