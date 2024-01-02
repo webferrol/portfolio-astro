@@ -11,7 +11,7 @@ image:
 tags: ['react', 'javascript']
 ---
 
-<link rel="stylesheet" href="../../src/assets/markdown.css">
+<link rel="stylesheet" href="/markdown.css">
 
 # React
 
