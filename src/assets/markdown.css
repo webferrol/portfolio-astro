@@ -1,0 +1,27 @@
+body {
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  padding-bottom: .2em;
+  margin-bottom: .5em;
+  border-bottom: 1px solid currentColor;
+}
+
+p {
+  line-height: 1.8em;
+  text-wrap: pretty;
+}
+
+pre {
+  padding: 1.5em;
+  margin: .5em 0;
+  border-radius: .3em;
+}
