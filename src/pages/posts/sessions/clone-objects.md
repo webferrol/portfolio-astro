@@ -6,6 +6,7 @@ description: 'Existen varios mecanismos para evitar la mutalidad de los arrays y
 email: 'xurxo@webferrol.com'
 author: 'Xurxo González Tenreiro'
 tags: ['mutables', 'objetos', 'arrays', 'javascript']
+ogImage: '/javascript.svg'
 ---
 
 

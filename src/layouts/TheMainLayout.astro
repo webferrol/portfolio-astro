@@ -6,10 +6,11 @@ import { TheHeader, UpLink } from '../components'
 
 interface Props {
   title: string,
-	description?: string
+	description?: string,
+  ogImage?: string
 }
 
-const { title, description = 'Webferrol' } = Astro.props
+const { title, description = 'Webferrol', ogImage = '#' } = Astro.props
 ---
 
 <!doctype html>
@@ -20,7 +21,7 @@ const { title, description = 'Webferrol' } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <meta property="og:title" content={title}>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.webferrol.com/">
+    <meta property="og:image" content={ogImage??'/avatar.webp'} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>

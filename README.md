@@ -6,3 +6,4 @@
 
 - [dark mode](https://www.kevinzunigacuellar.com/blog/dark-mode-in-astro/)
 
+- [El protocolo Open Graph](https://ogp.me/)

@@ -20,7 +20,9 @@ h2 {
 }
 
 p {
-  line-height: 2em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  line-height: 1.8em;
   text-wrap: pretty;
 }
 

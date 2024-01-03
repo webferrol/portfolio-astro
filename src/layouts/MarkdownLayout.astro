@@ -6,7 +6,7 @@ import '../assets/markdown.css'
 const { frontmatter } = Astro.props
 ---
 
-<MainLayout title={frontmatter.title} description={frontmatter.description}>
+<MainLayout title={frontmatter.title} description={frontmatter.description} ogImage={frontmatter.ogImage}>
   <section class="p-10">
     <header>
       <SubHeading>
