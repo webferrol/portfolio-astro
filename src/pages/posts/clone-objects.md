@@ -1,5 +1,5 @@
 ---
-layout: '../../../layouts/MarkdownLayout.astro'
+layout: '../../layouts/MarkdownLayout.astro'
 title: 'Clonación de objetos'
 pubDate: 2024-01-02
 description: 'Existen varios mecanismos para evitar la mutalidad de los arrays y objetos o los conocidos como datos mutables o no primitivos. Sin duda la función global structuredClone es un excelente opción. Pero en este artículo repasaremos otras posibilidades.'
