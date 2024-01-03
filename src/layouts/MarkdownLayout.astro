@@ -1,11 +1,13 @@
 ---
 import { SubHeading } from "../components";
 import MainLayout from "./TheMainLayout.astro"
+import '../assets/markdown.css'
+
 const { frontmatter } = Astro.props
 ---
 
 <MainLayout title={frontmatter.title} description={frontmatter.description}>
-  <section class="p-5">
+  <section class="p-10">
     <header>
       <SubHeading>
         {frontmatter.title}
@@ -13,16 +15,12 @@ const { frontmatter } = Astro.props
       <time>{frontmatter.pubDate.slice(0, 10)}</time>
       <p>{frontmatter.description}</p>
     </header>
-    <address>
+    <address class="font-semibold">
       Autor:
-      <a href={`mailto: ${frontmatter.email}`}>
+      <a class="text-link dark:text-link-dark hover:underline" href={`mailto: ${frontmatter.email}`}>
         {frontmatter.author}
       </a>
     </address>
-    <figure class="flex items-center gap-4">
-      <img class="w-10 h-10 rounded-full" src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-      <figcaption class="text-sm text-gray-500 dark:text-gray-400">{frontmatter.image.alt}</figcaption>
-    </figure>
     <slot />
   </section>
 </MainLayout>

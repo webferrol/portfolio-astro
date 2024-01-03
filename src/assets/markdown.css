@@ -2,6 +2,10 @@ body {
   font-size: 1.1em;
 }
 
+h1, h2 {
+  text-wrap: balance;
+}
+
 h1 {
   font-size: 1.6em;
   line-height: 1.8em;
@@ -16,7 +20,7 @@ h2 {
 }
 
 p {
-  line-height: 1.8em;
+  line-height: 2em;
   text-wrap: pretty;
 }
 
@@ -24,4 +28,10 @@ pre {
   padding: 1.5em;
   margin: .5em 0;
   border-radius: .3em;
+  font-size: .9em;
+}
+
+time {
+  font-size: .8em;
+  font-weight: 600;
 }
