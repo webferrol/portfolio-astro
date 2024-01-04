@@ -1,9 +1,9 @@
 ---
+import { TheHeader, UpLink } from '../components'
+import { urlBase } from '../constants'
 import '../assets/global.css'
 import '@fontsource/onest/400.css'
 import '@fontsource/onest/700.css'
-import { TheHeader, UpLink } from '../components'
-import { urlBase } from '../constants.ts'
 
 interface Props {
   title: string,
@@ -11,9 +11,7 @@ interface Props {
   ogImage?: string
 }
 
-
 const { title, description = 'Webferrol', ogImage = '#' } = Astro.props
-const ogImg = ogImage ? `${urlBase}/${ogImage}` : `${urlBase}avatar.webp`
 ---
 
 <!doctype html>
@@ -24,7 +22,7 @@ const ogImg = ogImage ? `${urlBase}/${ogImage}` : `${urlBase}avatar.webp`
     <meta name="viewport" content="width=device-width" />
     <meta property="og:title" content={title}>
     <meta property="og:type" content="website">
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={ogImage?? urlBase + '/avatar.webp'} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
