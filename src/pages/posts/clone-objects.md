@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownLayout.astro'
 title: 'Clonación de objetos'
 pubDate: 2024-01-02
-description: 'Existen varios mecanismos para evitar la mutabilidad de los arrays y objetos o los conocidos como datos mutables o no primitivos. Sin duda la función global structuredClone es un excelente opción.'
+description: 'Existen varios mecanismos para evitar la mutabilidad de los objetos o de los primitivos o no mutables. Hay varias soluciones como structuredClone. Veamos unas cuantas.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 author: 'Xurxo González Tenreiro'
