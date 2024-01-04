@@ -22,7 +22,7 @@ const { title, description = 'Webferrol', ogImage } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <meta property="og:title" content={title}>
     <meta property="og:type" content="website">
-    <meta property="og:image" content={ogImage?? urlBase + '/avatar.webp'} />
+    <meta property="og:image" content={ogImage?? urlBase + 'avatar.webp'} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
