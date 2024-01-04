@@ -11,17 +11,17 @@ import MainLayout from "../layouts/TheMainLayout.astro"
     <aside
       class='flex flex-col justify-start items-center gap-4 sm:w-2/4 w-auto'
     >
-      <TheCard class='sticky top-2'>
+      <div class='sticky top-2'>
         <AboutMe />
-      </TheCard>
+      </div>
     </aside>
 
-    <section class='grid gap-8 w-full mt-10'>
+    <div class='grid gap-8 w-full mt-10'>
       <TheCard
         title='Programador y diseñador web.'
         class='text-light-subheading dark:text-dark-subheading'
       >
-        <header>
+        <div>
           <p class='text-pretty'>
             <strong class='text-highlighted dark:text-highlighted-dark'
               >Informático</strong
@@ -41,11 +41,11 @@ import MainLayout from "../layouts/TheMainLayout.astro"
               >aplicaciones web</strong
             >.
           </p>
-        </header>
+        </div>
       </TheCard>
       <TheCard title='Experiencia laboral'>
         <Experience />
       </TheCard>
-    </section>
+    </div>
   </main>
 </MainLayout>
