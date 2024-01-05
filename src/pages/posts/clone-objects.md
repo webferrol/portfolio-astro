@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownLayout.astro'
 title: 'Clonación de objetos'
 pubDate: 2024-01-02
-description: 'Existen varios mecanismos para evitar la mutabilidad de los objetos o de los primitivos o no mutables. Hay varias soluciones como structuredClone.'
+description: 'Existen varios mecanismos para evitar la mutabilidad en la copia de los objetos y arrays. structuredClone es una buena solución. Pero veamos otras.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 author: 'Xurxo González Tenreiro'
@@ -14,9 +14,8 @@ tags: ['mutables', 'objetos', 'arrays', 'javascript']
 
 Ahora veremos varias formas de clonar objetos y arrays con problemas de mutación.
 
-Partiremos del siguiente código:
-
 ```js
+// Partimos del siguiente código:
 const p1 = {
   nombre: "Xurxo",
   domicilio: {
@@ -30,12 +29,11 @@ const p1 = {
     },
     {
       id: 2,
-      titutlo: 'DAI'
+      tituto: 'DAW'
     }
   ]
 }
 ```
-
 ## Object.assign({}, object)
 
 > [!WARNING]
@@ -57,14 +55,14 @@ console.log(p1, p2)
   domicilio: { numero: '2', calle: 'Calle del Percebe' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Calle del Percebe' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 }
 ```
@@ -88,14 +86,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '1', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 }
 ```
@@ -121,14 +119,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Celso Emilio Ferreiro' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAI' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAI' }
   ]
 }
 ```
@@ -155,14 +153,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Celso Emilio Ferreiro' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAI' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAI' }
   ]
 }
 ```
@@ -187,14 +185,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Celso Emilio Ferreiro' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAI' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titutlo: 'DAI' }
+    { id: 2, titulo: 'DAI' }
   ]
 }
 ```
