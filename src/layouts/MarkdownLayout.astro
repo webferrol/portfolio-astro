@@ -1,26 +1,19 @@
 ---
-import { SubHeading } from "../components";
 import MainLayout from "./TheMainLayout.astro"
-import '../assets/markdown.css'
+import { Markdown } from "../components";
+
 
 const { frontmatter } = Astro.props
 ---
 
 <MainLayout title={frontmatter.title} description={frontmatter.description} ogImage={frontmatter.ogImage}>
-  <section class="p-10 mark-down">
-    <header>
-      <SubHeading>
-        {frontmatter.title}
-      </SubHeading>
-      <time>{frontmatter.pubDate.slice(0, 10)}</time>
-      <p>{frontmatter.description}</p>
-    </header>
-    <address class="font-semibold">
-      Autor:
-      <a class="text-link dark:text-link-dark hover:underline" href={`mailto:${frontmatter.email}`}>
-        {frontmatter.author}
-      </a>
-    </address>
+  <Markdown
+    title={frontmatter.title}
+    description={frontmatter.description}
+    pubDate={frontmatter.pubDate}
+    email={frontmatter.email}
+    author={frontmatter.author}
+  >
     <slot />
-  </section>
+  </Markdown>
 </MainLayout>

@@ -1,6 +1,6 @@
 ---
-import { SubHeading } from "../components"
 import MainLayout from "../layouts/TheMainLayout.astro"
+import { SubHeading } from "../components"
 
 const allPosts = await Astro.glob("./posts/*.md")
 ---
@@ -9,7 +9,7 @@ const allPosts = await Astro.glob("./posts/*.md")
   title='Sesiones de clase'
   description='React, javascript, css, html. Sesiones preparadas de clase'
 >
-  <article class='p-5 text-text dark:text-text-dark'>
+  <main class='p-5 text-text dark:text-text-dark'>
     <SubHeading class='mt-5'>Entradas</SubHeading>
     <ul class='space-y-4'>
       {
@@ -42,5 +42,5 @@ const allPosts = await Astro.glob("./posts/*.md")
         })
       }
     </ul>
-  </article>
+  </main>
 </MainLayout>
