@@ -1,23 +1,44 @@
 ---
-import { SubHeading } from "../components";
-import MainLayout from "../layouts/TheMainLayout.astro";
+import { SubHeading } from "../components"
+import MainLayout from "../layouts/TheMainLayout.astro"
 
-const allPosts = await Astro.glob('./posts/*.md')
-
+const allPosts = await Astro.glob("./posts/*.md")
 ---
 
-<MainLayout title="Sesiones de clase" description="React, javascript, css, html. Sesiones preparadas de clase">
-  <article class="p-5 text-text dark:text-text-dark">
-    <SubHeading class="mt-5">
-      Entradas
-    </SubHeading>
-    <ul>
+<MainLayout
+  title='Sesiones de clase'
+  description='React, javascript, css, html. Sesiones preparadas de clase'
+>
+  <article class='p-5 text-text dark:text-text-dark'>
+    <SubHeading class='mt-5'>Entradas</SubHeading>
+    <ul class='space-y-4'>
       {
-        allPosts.map( post => {
+        allPosts.map((post) => {
           return (
-            <li>
-             <a class="text-link hover:text-highlighted dark:text-link-dark dark:hover:text-highlighted-dark" href={post.url}>{post.frontmatter.title}</a>
-            </li>)
+            <li class="flex items-center space-x-3 rtl:space-x-reverse">
+              <svg
+                class='flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 16 12'
+              >
+                <path
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M1 5.917 5.724 10.5 15 1.5'
+                />
+              </svg>
+              <a
+                class='text-link hover:underline dark:text-link-dark'
+                href={post.url}
+              >
+                {post.frontmatter.title}
+              </a>
+            </li>
+          )
         })
       }
     </ul>
