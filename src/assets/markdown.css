@@ -33,16 +33,18 @@
   
 }
 
-pre,
-code {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+.mark-down {
+  pre,
+  code {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  pre {
+    padding: .5rem;
+    line-height: 1.25;
+    overflow-x: scroll;
+  }
 }
 
-pre {
-  padding: .5rem;
-  line-height: 1.25;
-  overflow-x: scroll;
-}
 
 @media print {
   *,
@@ -112,84 +114,83 @@ pre {
   }
 }
 
-
-.retro-no-decoration {
-  text-decoration: none;
+.mark-down {
+  .retro-no-decoration {
+    text-decoration: none;
+  }
+  
+  p,
+  .retro-p {
+    margin-bottom: 1.3rem;
+    text-wrap: pretty;
+    line-height: 2;
+    font-size: inherit;
+  }
+  
+  h1,
+  .retro-h1,
+  h2,
+  .retro-h2,
+  h3,
+  .retro-h3,
+  h4,
+  .retro-h4 {
+    margin: 1.414rem 0 .5rem;
+    font-weight: inherit;
+    line-height: 1.42;
+    text-wrap: balance;
+  }
+  
+  h1,
+  .retro-h1 {
+    margin-top: 0;
+    font-size: var(--global-h1-size);
+  }
+  
+  h2,
+  .retro-h2 {
+    font-size: var(--global-h2-size);
+  }
+  
+  h3,
+  .retro-h3 {
+    font-size: var(--global-h3-size);
+  }
+  
+  h4,
+  .retro-h4 {
+    font-size: var(--global-h4-size);
+  }
+  
+  
+  small,
+  .retro-small {
+    font-size: .707em;
+  }
+  
+  /* https://github.com/mrmrs/fluidity */
+  
+  img,
+  canvas,
+  iframe,
+  video,
+  svg,
+  select,
+  textarea {
+    max-width: 100%;
+  }
 }
 
-p,
-.retro-p {
-  margin-bottom: 1.3rem;
-  text-wrap: pretty;
-  line-height: 2;
-  font-size: inherit;
-}
-
-h1,
-.retro-h1,
-h2,
-.retro-h2,
-h3,
-.retro-h3,
-h4,
-.retro-h4 {
-  margin: 1.414rem 0 .5rem;
-  font-weight: inherit;
-  line-height: 1.42;
-  text-wrap: balance;
-}
-
-h1,
-.retro-h1 {
-  margin-top: 0;
-  font-size: var(--global-h1-size);
-}
-
-h2,
-.retro-h2 {
-  font-size: var(--global-h2-size);
-}
-
-h3,
-.retro-h3 {
-  font-size: var(--global-h3-size);
-}
-
-h4,
-.retro-h4 {
-  font-size: var(--global-h4-size);
-}
-
-
-small,
-.retro-small {
-  font-size: .707em;
-}
-
-/* https://github.com/mrmrs/fluidity */
-
-img,
-canvas,
-iframe,
-video,
-svg,
-select,
-textarea {
-  max-width: 100%;
-}
 
 
 
-body {
-  color: #fafafa;
-  line-height: 1.45;
-}
-
-pre {
-  background-color: #333;
-}
-
-blockquote {
-  border-left: 3px solid #01ff70;
-  padding-left: 1rem;
+.mark-down {
+  pre {
+    background-color: #333;
+  }
+  
+  blockquote {
+    border-left: 3px solid #01ff70;
+    padding-left: 1rem;
+  }
 }
