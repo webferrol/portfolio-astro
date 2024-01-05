@@ -11,9 +11,11 @@ tags: ['typescript', 'namedItem', 'instanceof', 'react']
 
 ## Tenemos varias estrategias. Destacamos:
 
-1. **Estrategia 1**
+### Estrategia 1
 
 Menos correcto puesto que obtendríamos un error en **tiempo de ejecución** si por ejemplo no existiera el elemento con ese nombre.
+
+#### Ejemplo de código en React
 
 ```ts
 const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -25,23 +27,23 @@ const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
   if (!isInput || input === null) return
 }
 ```
-
-2. **Estrategia 2**
+### Estrategia 2
 
 Mucho más correcto con un mínimo coste de proceso.
 
 Tener en cuenta lo que devuelve __namedItem__:
 
-- Element
-- RadioNodeList
-- null
-
-```
-(method) HTMLFormControlsCollection.namedItem(name: string): Element | RadioNodeList | null
-```
+  - Element
+  - RadioNodeList
+  - null
 
 
-## Ejemplo de código en React
+  <code><small>
+    (method) HTMLFormControlsCollection.namedItem(name: string): Element | RadioNodeList | null
+  </small></code>
+
+
+#### Ejemplo de código en React
 
 ```ts
 const handleSubmit = (event: FormEvent<HTMLFormElement>) => {

@@ -49,7 +49,7 @@ p2.domicilio.calle = "Calle del Percebe";
 console.log(p1, p2)
 ```
 
-Salida
+### Salida
 
 ```
 {
@@ -80,7 +80,7 @@ p2.nombre = "David";
 p2.domicilio.calle="Desconocido";
 console.log(p1, p2)
 ```
-Salida
+### Salida
 
 ```
 {
@@ -113,7 +113,7 @@ p2.domicilio.calle = "Desconocido";
 console.log(p1, p2)
 ```
 
-Salida
+### Salida
 
 ```
 {
@@ -147,7 +147,7 @@ p2.domicilio.calle = "Desconocido";
 console.log(p1, p2)
 ```
 
-Salida
+### Salida
 
 ```
 {
@@ -179,7 +179,7 @@ p2.domicilio.calle = "Desconocido";
 console.log(p1, p2)
 ```
 
-Salida
+### Salida
 
 ```
 {
