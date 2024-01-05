@@ -119,14 +119,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Celso Emilio Ferreiro' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titulo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titulo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 }
 ```
@@ -153,14 +153,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Celso Emilio Ferreiro' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titulo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titulo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 }
 ```
@@ -185,14 +185,14 @@ console.log(p1, p2)
   domicilio: { numero: '1', calle: 'Celso Emilio Ferreiro' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titulo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 } {
   nombre: 'David',
   domicilio: { numero: '2', calle: 'Desconocido' },
   titulos: [
     { id: 1, titulo: 'Filología clásica' },
-    { id: 2, titulo: 'DAI' }
+    { id: 2, titulo: 'DAW' }
   ]
 }
 ```
