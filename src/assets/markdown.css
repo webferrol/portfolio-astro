@@ -1,33 +1,35 @@
 :root {
+  --global-body-size: clamp(
+    1em, 
+    calc(2 / 72 * 100vw), 
+    1.6em
+  );
+
   --global-h1-size: clamp(
     1.6em, 
-    calc(3 / 80 * 100vw), 
-    9em
+    calc(3 / 72 * 100vw), 
+    3em
   );
 
   --global-h2-size: clamp(
     1.4em, 
-    calc(3 / 80 * 100vw), 
-    9em
+    calc(2.4 / 72 * 100vw), 
+    2.4em
   );
 
   --global-h3-size: clamp(
     1.2em, 
-    calc(3 / 80 * 100vw), 
-    9em
+    calc(2.2 / 72 * 100vw), 
+    2.2em
   );
 
   --global-h4-size: clamp(
     1.1em, 
-    calc(3 / 80 * 100vw), 
-    9em
+    calc(1.8 / 72 * 100vw), 
+    1.8em
   );
 
-  --line: clamp(
-    .8em, 
-    calc(2 / 80 * 100vw), 
-    1em
-  );
+  
   
 }
 
@@ -102,35 +104,25 @@ pre {
   }
 }
 
+@media screen {
+  .mark-down {
+    font-size: var(--global-body-size);
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+}
+
+
 .retro-no-decoration {
   text-decoration: none;
 }
 
-html {
-  font-size: 12px;
-}
-
-@media screen and (min-width: 32rem) and (max-width: 48rem) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 48rem) {
-  html {
-    font-size: 16px;
-  }
-}
-
-body {
-  line-height: 1.85;
-}
-
 p,
 .retro-p {
-  font-size: 1rem;
   margin-bottom: 1.3rem;
   text-wrap: pretty;
+  line-height: 2;
+  font-size: inherit;
 }
 
 h1,
@@ -169,10 +161,6 @@ h4,
 }
 
 
-.line {
-  font-size: var(--line);
-}
-
 small,
 .retro-small {
   font-size: .707em;
@@ -190,18 +178,10 @@ textarea {
   max-width: 100%;
 }
 
-html,
-body {
-  background-color: #222;
-}
 
-html {
-  font-size: 18px;
-}
 
 body {
   color: #fafafa;
-  font-family: "Courier New";
   line-height: 1.45;
 }
 
