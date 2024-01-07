@@ -11,7 +11,7 @@ interface Props {
 
 const { title, pubDate, description, email, author } = Astro.props
 ---
-<section class="p-10 markdown">
+<section class="p-10 mark-down">
   <header>
     <SubHeading>
       {title}
@@ -29,7 +29,7 @@ const { title, pubDate, description, email, author } = Astro.props
 </section>
 
 <style>
-.markdown {
+.mark-down {
   --global-body-size: clamp(
     1em, 
     calc(2 / 72 * 100vw), 
@@ -63,76 +63,75 @@ const { title, pubDate, description, email, author } = Astro.props
    font-size: var(--global-body-size);
     margin: 0 auto;
     max-width: 60rem;
-}
 
-.markdown pre {
+    pre {
       background-color: #333;
       font-size: calc(var(--global-body-size) - 1vw);
     }
   
-.markdown pre,
-.markdown code {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+    pre,
+    code {
+      font-family: Menlo, Monaco, "Courier New", monospace;
+    }
+    pre {
+      padding: .5rem;
+      line-height: 1.25;
+      overflow-x: scroll;
+    }
+    blockquote {
+      border-left: 3px solid #01ff70;
+      padding-left: 1rem;
+    }    
+    
+    p {
+      margin-bottom: 1.3rem;
+      text-wrap: pretty;
+      line-height: 2;
+      font-size: inherit;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 1.414rem 0 .5rem;
+      font-weight: inherit;
+      line-height: 1.42;
+      text-wrap: balance;
+    }
+    
+    h1{
+      margin-top: 0;
+      font-size: var(--global-h1-size);
+    }
+    
+    h2 {
+      font-size: var(--global-h2-size);
+    }
+    
+    h3 {
+      font-size: var(--global-h3-size);
+    }
+    
+    h4 {
+      font-size: var(--global-h4-size);
+    }
+    
+    
+    small {
+      font-size: .707em;
+    }
+    
+    /* https://github.com/mrmrs/fluidity */
+    
+    img,
+    canvas,
+    iframe,
+    video,
+    svg,
+    select,
+    textarea {
+      max-width: 100%;
+    }
 }
-.markdown pre {
-  padding: .5rem;
-  line-height: 1.25;
-  overflow-x: scroll;
-}
-.markdown blockquote {
-  border-left: 3px solid #01ff70;
-  padding-left: 1rem;
-}    
-
-.markdown p {
-  margin-bottom: 1.3rem;
-  text-wrap: pretty;
-  line-height: 2;
-  font-size: inherit;
-}
-
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4 {
-  margin: 1.414rem 0 .5rem;
-  font-weight: inherit;
-  line-height: 1.42;
-  text-wrap: balance;
-}
-
-.markdown h1 {
-  margin-top: 0;
-  font-size: var(--global-h1-size);
-}
-
-.markdown h2 {
-  font-size: var(--global-h2-size);
-}
-
-.markdown h3 {
-  font-size: var(--global-h3-size);
-}
-
-.markdown h4 {
-  font-size: var(--global-h4-size);
-}
-
-
-.markdown small {
-  font-size: .707em;
-}
-
-/* https://github.com/mrmrs/fluidity */
-
-.markdown img,
-.markdown canvas,
-.markdown iframe,
-.markdown video,
-.markdown svg,
-.markdown select,
-.markdown textarea {
-  max-width: 100%;
-}
-
 </style>
