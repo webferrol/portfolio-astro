@@ -2,7 +2,7 @@
 import { BasicList, SubHeading } from '../../components';
 import MainLayout from '../../layouts/TheMainLayout.astro'
 
-export async function getStaticPaths() {
+export async function getStaticPaths(): Promise<any> {
   const allPosts = await Astro.glob("../posts/*.md");
 
   const uniqueTags = [
