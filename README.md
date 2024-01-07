@@ -9,3 +9,7 @@
 - [dark mode](https://www.kevinzunigacuellar.com/blog/dark-mode-in-astro/)
 
 - [El protocolo Open Graph](https://ogp.me/)
+
+- [Crear un Blog](https://docs.astro.build/es/tutorial/0-introduction/)
+
+- [Inferir los tipos de datos getStaticPaths()](https://docs.astro.build/es/guides/typescript/#inferir-los-tipos-de-getstaticpaths)

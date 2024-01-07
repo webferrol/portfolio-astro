@@ -1,0 +1,23 @@
+---
+import { BasicList, SubHeading } from '../../components';
+import MainLayout from '../../layouts/TheMainLayout.astro'
+
+const allPosts = await Astro.glob("../posts/*.md")
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+---
+
+<MainLayout title='Etiquetas' description='Palabras clave de los contenidos temáticos de diseño web y programación del blog.'>
+  <main class='p-5 text-text dark:text-text-dark'>
+    <SubHeading class='mt-5'>Etiquetas</SubHeading>
+    <ul>
+      {
+        tags.map(
+          tag => (
+            <BasicList title={tag} url={`${tag}`}/>
+
+          )
+        )
+      }
+    </ul>
+  </main>
+</MainLayout>

@@ -1,6 +1,6 @@
 ---
 import ThemeIcon from './ThemeIcon.astro'
-import School from '../icons/School.astro'
+import { School, Tags } from '../icons';
 ---
 
 <header
@@ -22,6 +22,15 @@ import School from '../icons/School.astro'
         >
           <School />
           <span class='inline-bock py-2'>Entradas</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class='flex items-center space-x-3 rtl:space-x-reverse text-link hover:text-highlighted dark:text-link-dark dark:hover:text-highlighted-dark'
+          href='/tags/'
+        >
+          <Tags />
+          <span class='inline-bock py-2'>Etiquetas</span>
         </a>
       </li>
     </ul>
