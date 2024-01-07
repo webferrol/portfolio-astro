@@ -11,7 +11,7 @@ interface Props {
 
 const { title, pubDate, description, email, author } = Astro.props
 ---
-<section class="p-10 mark-down">
+<section class="p-10 markdown">
   <header>
     <SubHeading>
       {title}
@@ -29,7 +29,7 @@ const { title, pubDate, description, email, author } = Astro.props
 </section>
 
 <style>
-.mark-down {
+.markdown {
   --global-body-size: clamp(
     1em, 
     calc(2 / 72 * 100vw), 
@@ -65,7 +65,7 @@ const { title, pubDate, description, email, author } = Astro.props
     max-width: 60rem;
 }
 
-.mark-down pre {
+.markdown pre {
       background-color: #333;
       font-size: calc(var(--global-body-size) - 1vw);
     }
@@ -101,7 +101,7 @@ const { title, pubDate, description, email, author } = Astro.props
   text-wrap: balance;
 }
 
-.markdown h1{
+.markdown h1 {
   margin-top: 0;
   font-size: var(--global-h1-size);
 }
