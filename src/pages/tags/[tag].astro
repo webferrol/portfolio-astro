@@ -1,6 +1,7 @@
 ---
 import { BasicList, SubHeading } from "../../components"
 import MainLayout from "../../layouts/TheMainLayout.astro"
+import type { GetStaticPaths } from "astro"
 
 interface Frontmatter {
   tags: string[]
@@ -18,7 +19,9 @@ interface Props {
   posts: Post[]
 }
 
-export const getStaticPaths: () => Promise<any[]> = async () => {
+// (alias) type GetStaticPaths = (options: GetStaticPathsOptions) => Promise<GetStaticPathsResult> | GetStaticPathsResult
+
+export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await Astro.glob("../posts/*.md")
 
   const uniqueTags = [
@@ -36,8 +39,8 @@ export const getStaticPaths: () => Promise<any[]> = async () => {
   })
 }
 
-const { tag } = Astro.params as { tag: string }
-const { posts } = Astro.props as Props
+const { tag } = Astro.params
+const { posts } = Astro.props
 ---
 
 <MainLayout

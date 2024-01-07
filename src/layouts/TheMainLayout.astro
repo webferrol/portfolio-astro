@@ -6,7 +6,7 @@ import '@fontsource/onest/400.css'
 import '@fontsource/onest/700.css'
 
 interface Props {
-  title?: string,
+  title?: string | number,
 	description?: string,
   ogImage?: string
 }
@@ -20,7 +20,7 @@ const { title, description = 'Webferrol', ogImage } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <meta property="og:title" content={title}>
+    <meta property="og:title" content={`${title}`}>
     <meta property="og:description" content={description}>
     <meta property="og:type" content="website">
     <meta property="og:image" content={ogImage?? urlBase + 'avatar.webp'} />
