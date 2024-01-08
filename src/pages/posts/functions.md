@@ -70,7 +70,7 @@ const miFuncion = (parameter1, parameter2, parameterN) => {  // No olvides el op
 let nombre = prompt('Dame tu nombre','Xurxo') // El segundo argumento es opcional
 ```
 
-![prompt()](/assets/prompt.gif)
+![prompt()](/prompt.gif)
 
 ### Salida de datos
   1. Función __alert()__. _⚠️ Sólo para desarrollo_

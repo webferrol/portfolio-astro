@@ -36,6 +36,12 @@ const { title, pubDate, description, email, author } = Astro.props
     1.6em
   );
 
+  --global-pre-size: clamp(
+    .8em, 
+    calc(1.2 / 72 * 100vw), 
+    1.2em
+  );
+
   --global-h1-size: clamp(
     1.6em, 
     calc(3 / 72 * 100vw), 
@@ -66,7 +72,7 @@ const { title, pubDate, description, email, author } = Astro.props
 
     pre {
       background-color: #333;
-      font-size: calc(var(--global-body-size) - 1vw);
+      font-size: calc(var(--global-pre-size));
     }
   
     pre,
@@ -84,7 +90,7 @@ const { title, pubDate, description, email, author } = Astro.props
     }    
     
     p {
-      margin-bottom: 1.3rem;
+      margin: 1.3rem 0;
       text-wrap: pretty;
       line-height: 2;
       font-size: inherit;
