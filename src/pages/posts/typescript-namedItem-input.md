@@ -5,7 +5,7 @@ pubDate: 2024-01-02
 description: 'Para obtener en JavaScript los valores de un control de formulario : input de tipo texto. Podemos utilizar el método namedItem. ¿Cómo hacerlo de manera correcta en TypeScript?'
 email: 'xurxo@webferrol.com'
 author: 'Xurxo González Tenreiro'
-tags: ['typescript', 'namedItem', 'instanceof', 'react']
+tags: ['typescript', 'método', 'namedItem', 'instanceof', 'react']
 ---
 # Get input value with TypeScript
 

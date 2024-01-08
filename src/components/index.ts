@@ -1,5 +1,5 @@
 export { default as AboutMe } from './AboutMe.astro'
-export { default as BasicList } from './BasicList.astro'
+export { default as BasicListItem } from './ui/BasicListItem.astro'
 export { default as Experience } from './Experience.astro'
 export { default as Markdown } from './Markdown.astro'
 export { default as SocialLink} from './ui/SocialLink.astro'

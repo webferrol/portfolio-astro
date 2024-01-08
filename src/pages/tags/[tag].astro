@@ -1,5 +1,5 @@
 ---
-import { BasicList, SubHeading } from "../../components"
+import { BasicListItem, SubHeading } from "../../components"
 import MainLayout from "../../layouts/TheMainLayout.astro"
 import type { GetStaticPaths } from "astro"
 
@@ -54,7 +54,7 @@ const { posts } = Astro.props
     <ul>
       {
         posts.map((post) => (
-          <BasicList title={post.frontmatter.title} url={post.url} />
+          <BasicListItem title={post.frontmatter.title} url={post.url} />
         ))
       }
     </ul>

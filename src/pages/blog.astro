@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/TheMainLayout.astro"
-import { BasicList, SubHeading } from "../components"
+import { BasicListItem, SubHeading } from "../components"
 
 const allPosts = await Astro.glob("./posts/*.md")
 ---
@@ -13,9 +13,9 @@ const allPosts = await Astro.glob("./posts/*.md")
     <SubHeading class='mt-5'>Entradas</SubHeading>
     <ul class='space-y-4'>
       {
-        allPosts.map((post) => {
+        allPosts.map(post => {
           return (
-            <BasicList title={post.frontmatter.title} url={post.url}/>
+            <BasicListItem title={post.frontmatter.title} url={post.url}/>
           )
         })
       }
