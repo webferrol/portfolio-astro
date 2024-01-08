@@ -6,7 +6,7 @@ description: 'Existen varios mecanismos para evitar la mutabilidad en la copia d
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 author: 'Xurxo González Tenreiro'
-tags: ['mutabilidad', 'objetos', 'clonación', javascript']
+tags: ['mutabilidad', 'objetos', 'arrays', 'clonación', javascript']
 ---
 
 
