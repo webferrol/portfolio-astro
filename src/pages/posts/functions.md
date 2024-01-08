@@ -172,4 +172,3 @@ function divisoresComunes (i, numberValue, divisoresTmp) {
 // Lanzamos la función
 const divisores = divisoresComunes(1, 232, [])
 ```
-[Volver](README.md#tabla-de-contenidos)
