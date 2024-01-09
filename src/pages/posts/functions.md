@@ -6,7 +6,7 @@ description: 'La funciones en JavaScript nos permiten modular nuestro código y 
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 author: 'Xurxo González Tenreiro'
-tags: ['funciones', 'arrow functions', 'function expresion', javascript']
+tags: ['funciones', 'arrow functions', 'function expresion', 'javascript']
 ---
 
 # Funciones
