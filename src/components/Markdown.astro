@@ -2,16 +2,17 @@
 import { SubHeading } from "../components"
 
 interface Props {
-  title: string,
-  pubDate: string,
-  description: string,
-  email: string,
+  title: string
+  pubDate: string
+  description: string
+  email: string
   author: string
 }
 
 const { title, pubDate, description, email, author } = Astro.props
 ---
-<section class="p-10 mark-down">
+
+<section class='p-10 mark-down'>
   <header>
     <SubHeading>
       {title}
@@ -19,125 +20,103 @@ const { title, pubDate, description, email, author } = Astro.props
     <time>{pubDate?.slice(0, 10)}</time>
     <p>{description}</p>
   </header>
-  <address class="font-semibold">
+  <address class='font-semibold'>
     Autor:
-    <a class="text-link dark:text-link-dark hover:underline" href={`mailto:${email}`}>
+    <a
+      class='text-link dark:text-link-dark hover:underline'
+      href={`mailto:${email}`}
+    >
       {author}
     </a>
   </address>
   <slot />
 </section>
 
-<style>
-.mark-down {
-  --global-body-size: clamp(
-    1em, 
-    calc(2 / 72 * 100vw), 
-    1.6em
-  );
+<style is:inline>
+  .mark-down {
+    --global-body-size: clamp(1em, calc(2 / 72 * 100vw), 1.6em);
 
-  --global-pre-size: clamp(
-    .8em, 
-    calc(1.2 / 72 * 100vw), 
-    1.2em
-  );
+    --global-pre-size: clamp(0.8em, calc(1.2 / 72 * 100vw), 1.2em);
 
-  --global-h1-size: clamp(
-    1.6em, 
-    calc(3 / 72 * 100vw), 
-    3em
-  );
+    --global-h1-size: clamp(1.6em, calc(3 / 72 * 100vw), 3em);
 
-  --global-h2-size: clamp(
-    1.4em, 
-    calc(2.4 / 72 * 100vw), 
-    2.4em
-  );
+    --global-h2-size: clamp(1.4em, calc(2.4 / 72 * 100vw), 2.4em);
 
-  --global-h3-size: clamp(
-    1.2em, 
-    calc(2.2 / 72 * 100vw), 
-    2.2em
-  );
+    --global-h3-size: clamp(1.2em, calc(2.2 / 72 * 100vw), 2.2em);
 
-  --global-h4-size: clamp(
-    1.1em, 
-    calc(1.8 / 72 * 100vw), 
-    1.8em
-  );
+    --global-h4-size: clamp(1.1em, calc(1.8 / 72 * 100vw), 1.8em);
 
-   font-size: var(--global-body-size);
+    font-size: var(--global-body-size);
     margin: 0 auto;
     max-width: 60rem;
+  }
 
-    pre {
-      background-color: #333;
-      font-size: calc(var(--global-pre-size));
-    }
-  
-    pre,
-    code {
-      font-family: Menlo, Monaco, "Courier New", monospace;
-    }
-    pre {
-      padding: .5rem;
-      line-height: 1.25;
-      overflow-x: scroll;
-    }
-    blockquote {
-      border-left: 3px solid #01ff70;
-      padding-left: 1rem;
-    }    
-    
-    p {
-      margin: 1.3rem 0;
-      text-wrap: pretty;
-      line-height: 2;
-      font-size: inherit;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4 {
-      margin: 1.414rem 0 .5rem;
-      font-weight: inherit;
-      line-height: 1.42;
-      text-wrap: balance;
-    }
-    
-    h1{
-      margin-top: 0;
-      font-size: var(--global-h1-size);
-    }
-    
-    h2 {
-      font-size: var(--global-h2-size);
-    }
-    
-    h3 {
-      font-size: var(--global-h3-size);
-    }
-    
-    h4 {
-      font-size: var(--global-h4-size);
-    }
-    
-    
-    small {
-      font-size: .707em;
-    }
-    
-    /* https://github.com/mrmrs/fluidity */
-    
-    img,
-    canvas,
-    iframe,
-    video,
-    svg,
-    select,
-    textarea {
-      max-width: 100%;
-    }
-}
+  .mark-down pre {
+    background-color: #333;
+    font-size: calc(var(--global-pre-size));
+  }
+
+  .mark-down pre,
+  .mark-down code {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  .mark-down pre {
+    padding: 0.5rem;
+    line-height: 1.25;
+    overflow-x: scroll;
+  }
+  .mark-down blockquote {
+    border-left: 3px solid #01ff70;
+    padding-left: 1rem;
+  }
+
+  .mark-down p {
+    margin: 1.3rem 0;
+    text-wrap: pretty;
+    line-height: 2;
+    font-size: inherit;
+  }
+
+  .mark-down h1,
+  .mark-down h2,
+  .mark-down h3,
+  .mark-down h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: inherit;
+    line-height: 1.42;
+    text-wrap: balance;
+  }
+
+  .mark-down h1 {
+    margin-top: 0;
+    font-size: var(--global-h1-size);
+  }
+
+  .mark-down h2 {
+    font-size: var(--global-h2-size);
+  }
+
+  .mark-down h3 {
+    font-size: var(--global-h3-size);
+  }
+
+  .mark-down h4 {
+    font-size: var(--global-h4-size);
+  }
+
+  .mark-down small {
+    font-size: 0.707em;
+  }
+
+  /* https://github.com/mrmrs/fluidity */
+
+  .mark-down img,
+  .mark-down canvas,
+  .mark-down iframe,
+  .mark-down video,
+  .mark-down svg,
+  .mark-down select,
+  .mark-down textarea {
+    max-width: 100%;
+  }
 </style>
