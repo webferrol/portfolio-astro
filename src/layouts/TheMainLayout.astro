@@ -1,4 +1,5 @@
 ---
+import {ViewTransitions} from 'astro:transitions'
 import { TheHeader, UpLink } from '../components'
 import { urlBase } from '../constants'
 import '../styles/global.css'
@@ -27,6 +28,7 @@ const { title, description = 'Webferrol', ogImage } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
     <TheHeader />
