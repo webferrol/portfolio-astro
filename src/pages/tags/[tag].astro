@@ -1,11 +1,16 @@
 ---
-import { BasicListItem, SubHeading } from "../../components"
+import { SubHeading } from "../../components"
+import Bento from "../../components/ui/Bento.astro"
+import BentoItem from "../../components/ui/BentoItem.astro"
 import MainLayout from "../../layouts/TheMainLayout.astro"
 import type { GetStaticPaths } from "astro"
+import image from '../../assets/post.webp'
 
 interface Frontmatter {
   tags: string[]
-  title: string
+  title: string,
+  url: string,
+  description: string,
   // Agrega otras propiedades de frontmatter según sea necesario
 }
 
@@ -48,15 +53,29 @@ const { posts } = Astro.props
   description='Palabras clave de las diferentes publicaciones'
 >
   <main class='p-5 text-text dark:text-text-dark'>
-    <SubHeading>
+    <SubHeading class="text-2xl text-center py-4 mb-4">
       Entradas <strong>etiquetadas</strong> con <strong>{tag}</strong>
     </SubHeading>
-    <ul>
+    <Bento title="Resultados de la búsqueda">
       {
-        posts.map((post) => (
-          <BasicListItem title={post.frontmatter.title} url={post.url} />
-        ))
+        posts.map((post, index) => {
+          const { title, description, url } = post.frontmatter
+          let className = index === 0 
+              ? 'md:col-span-6' 
+              : index === 1 
+                ? 'md:col-span-4' 
+                : 'md:col-span-5'
+          return (
+            <BentoItem title={title} description={description} url={post.url} class={className}>
+              <div 
+                slot="image"
+                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-cover bg-no-repeat bg-blend-luminosity opacity-90" style={`background-image: url(${url || image.src})`}>               
+              </div>
+            </BentoItem>
+          )
+        })
       }
-    </ul>
+
+    </Bento>
   </main>
 </MainLayout>
