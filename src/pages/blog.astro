@@ -1,24 +1,37 @@
 ---
-import MainLayout from "../layouts/TheMainLayout.astro"
-import { BasicListItem, SubHeading } from "../components"
+import MainLayout from '../layouts/TheMainLayout.astro'
+import Bento from '../components/ui/Bento.astro'
+import BentoItem from '../components/ui/BentoItem.astro';
 
-const allPosts = await Astro.glob("./posts/*.md")
+import image from '../assets/post.webp'
+
+const allPosts = await Astro.glob('./posts/*.md')
 ---
 
 <MainLayout
-  title='Publicaciones sobre programación'
-  description='React, javascript, css, html.'
+  title="Publicaciones sobre programación"
+  description="React, javascript, css, html."
 >
-  <main class='p-5 text-text dark:text-text-dark'>
-    <SubHeading class='mt-5'>Entradas</SubHeading>
-    <ul class='space-y-4'>
+  <main class="text-text dark:text-text-dark p-5">
+    <Bento title="Entradas">   
       {
-        allPosts.map(post => {
+        allPosts.map((post, index) => {
+          const { title, description, url } = post.frontmatter
+          let className = index === 0 
+              ? 'md:col-span-6' 
+              : index === 1 
+                ? 'md:col-span-4' 
+                : 'md:col-span-5'
           return (
-            <BasicListItem title={post.frontmatter.title} url={post.url}/>
+            <BentoItem title={title} description={description} url={post.url} class={className}>
+              <div 
+                slot="image"
+                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-cover bg-no-repeat bg-blend-luminosity opacity-90" style={`background-image: url(${url || image.src})`}>               
+              </div>
+            </BentoItem>
           )
         })
       }
-    </ul>
+    </Bento>
   </main>
 </MainLayout>

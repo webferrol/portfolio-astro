@@ -1,0 +1,44 @@
+---
+interface Props {
+    title: string,
+    description?: string,
+    class?: string,
+    url?: string
+}
+const { title, description, url = '#', class: className = 'md:col-span-5' } = Astro.props
+---
+<a href={url} 
+    class={`
+    ${className}
+    relative
+    group
+    overflow-hidden
+    col-span-10
+    border 
+    border-sky-500/20 
+    rounded
+    backdrop-blur-md
+    shadow-inner
+    shadow-white/10`}>
+    <article
+        class="flex flex-col justify-end h-full">
+        <!-- fade in black to see the content -->
+        <div class="
+                absolute
+                let-0
+                bottom-0 
+                top-0
+                z-20 
+                w-full 
+                h-full
+                bg-gradient-to-b from-transparent from-60% via-black/30 to-black/80"
+        ></div>
+
+        <slot name="image"/>
+
+        <header class="z-20 p-5">
+            <h2 class="font-semibold text-2xl text-balance">{title}</h2>
+            {description && <p class="leading-loose text-pretty">{description}</p>}
+        </header>
+    </article>
+</a>

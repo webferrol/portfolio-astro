@@ -6,6 +6,7 @@ description: 'El método sort() de JavaScript nos sirve para ordenar elementos d
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 author: 'Xurxo González Tenreiro'
+url: '/javascript.webp'
 tags: ['mutabilidad', 'métodos', 'arrays', 'javascript']
 ---
 >[!NOTE] 

@@ -5,6 +5,7 @@ pubDate: '2024/01/08'
 description: 'La funciones en JavaScript nos permiten modular nuestro código y crear scripts más fácil de mantener'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
+url: '/web-developer.webp'
 author: 'Xurxo González Tenreiro'
 tags: ['funciones', 'arrow functions', 'function expresion', 'javascript']
 ---
