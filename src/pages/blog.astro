@@ -3,7 +3,6 @@ import MainLayout from '../layouts/TheMainLayout.astro'
 import Bento from '../components/ui/Bento.astro'
 import BentoItem from '../components/ui/BentoItem.astro';
 
-import image from '../assets/post.webp'
 
 const allPosts = await Astro.glob('./posts/*.md')
 ---
@@ -16,7 +15,7 @@ const allPosts = await Astro.glob('./posts/*.md')
     <Bento title="Entradas">   
       {
         allPosts.map((post, index) => {
-          const { title, description, url } = post.frontmatter
+          const { title, description, url = '' } = post.frontmatter
           let className = index === 0 
               ? 'md:col-span-6' 
               : index === 1 
@@ -26,7 +25,8 @@ const allPosts = await Astro.glob('./posts/*.md')
             <BentoItem title={title} description={description} url={post.url} class={className}>
               <div 
                 slot="image"
-                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-cover bg-no-repeat bg-blend-luminosity opacity-90" style={`background-image: url(${url || image.src})`}>               
+                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-bento bg-cover bg-no-repeat bg-blend-luminosity opacity-90"
+                style={url && `background-image: url(${url})`}>               
               </div>
             </BentoItem>
           )

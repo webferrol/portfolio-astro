@@ -16,9 +16,12 @@ export default {
 				'highlighted-dark': 'rgb(250 204 21 / 0.7)',
 				'link-dark': '#DAFF3E',
 				'heading-dark': '#fff',
-				'subheading-dark': '#fff',			
+				'subheading-dark': '#fff'		
+			},
+			backgroundImage: {
+				'bento': 'url(/public/post.webp)',
 			}
-		},
+		}
 	},
 	plugins: [],
 }
