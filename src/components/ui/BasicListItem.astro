@@ -24,7 +24,7 @@ const { title, url } = Astro.props
   {
     url ? (
       <a class='text-link hover:underline dark:text-link-dark' href={url}>
-        {title}
+        {title}-{url}
       </a>
     ) : (
       title
