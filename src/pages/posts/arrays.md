@@ -20,8 +20,8 @@ Nos permiten guardar una colección de datos **primitivos** o **no primitivos**.
 
 A la hora de hablar de este tipo de datos tenemos que tener claro dos conceptos:
 
-1. Índice. La posición en que se encuentra cada uno de los datos del array. El primer elemento empieza por cero
-2. Elemento de un array. El contenido propio de cada una de la posiciones del array
+1. **Índice**. La posición en que se encuentra cada uno de los datos del array. El primer elemento empieza por cero
+2. **Elemento de un array**. El contenido propio de cada una de la posiciones del array
 
 ```js
 const nombres = ['Xurxo', 'Jorge', 'George']

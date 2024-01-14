@@ -71,6 +71,17 @@ const { title, pubDate, description, email, author } = Astro.props
     padding-left: 1rem;
   }
 
+  .mark-down ul,
+  .mark-down ol {
+    list-style-type: initial;
+    padding-left: .8em;
+  }
+
+  .mark-down a {
+    text-decoration: underline;
+  }
+
+  .mark-down li,
   .mark-down p {
     margin: 1.3rem 0;
     text-wrap: pretty;
