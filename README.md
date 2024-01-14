@@ -13,3 +13,5 @@
 - [Crear un Blog](https://docs.astro.build/es/tutorial/0-introduction/)
 
 - [Inferir los tipos de datos getStaticPaths()](https://docs.astro.build/es/guides/typescript/#inferir-los-tipos-de-getstaticpaths)
+
+- [Evitar el parpadeo en el modo dark o light](https://dev.to/ayc0/light-dark-mode-avoid-flickering-on-reload-1567)

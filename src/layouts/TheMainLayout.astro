@@ -29,6 +29,10 @@ const { title, description = 'Webferrol', ogImage } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
+    <script>
+      const theme = localStorage.getItem('theme') || 'light'
+      document.documentElement.classList.add(theme)
+    </script>
   </head>
   <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
     <Navbar />
