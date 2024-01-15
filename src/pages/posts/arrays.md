@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownLayout.astro'
 title: 'Arrays, vectores, listas o matrices'
 pubDate: '2024/01/14'
-description: 'Dentro de los datos no primitvos o mutables están los arrays. Aquí consideramos aspectos de inicialización, recorrido y métodos más comunes utilizados.'
+description: 'Dentro de los datos no primitivos o mutables están los arrays. Aquí consideramos aspectos de inicialización, recorrido y métodos más comunes utilizados.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 url: '/javascript.webp'
