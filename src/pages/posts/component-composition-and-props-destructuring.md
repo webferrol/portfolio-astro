@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownLayout.astro'
 title: 'Componentización y desestructuración de propiedades'
 pubDate: '2024/01/14'
-description: 'Ejemplo de composición de componentes o compenntización y, de paso, un ejemplo de desestructuración de las <strong>props</strong> en React'
+description: 'Ejemplo de composición de componentes o compenntización y, de paso, un ejemplo de desestructuración de las props en React'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 url: '/javascript.webp'
