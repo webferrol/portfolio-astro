@@ -15,6 +15,7 @@ __Tabla de contenidos__
 
 1. [Con position](#position-absolute)
 2. [Con flex](#display-flex)
+3. [Con grid](#display-grid)
 
 ## position: absolute
 
@@ -61,5 +62,16 @@ Con flex también podemos centrar los elementos hijos
   display: flex;
   justify-content: center;
   align-items: center;
+}
+```
+
+## display: grid
+
+Con grid también podemos centrar los elementos hijos
+
+```css
+.grid-container {
+  display: grid;
+  place-items: center;
 }
 ```
