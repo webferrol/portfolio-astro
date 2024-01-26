@@ -4,6 +4,7 @@ title: 'Usabilidad en CSS'
 pubDate: 2024/01/26
 description: 'Ulizaremos CSS de forma efectiva para mejorar la experiencia de usuario en nuestra aplicaciones.'
 email: 'xurxo@webferrol.com'
+ogImage: 'https://webferrol.netlify.app/post.webp'
 author: 'Xurxo González Tenreiro'
 tags: ['css', 'usabilidad']
 ---
