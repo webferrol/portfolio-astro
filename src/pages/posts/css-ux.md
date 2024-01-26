@@ -17,17 +17,11 @@ La **usabilidad en CSS** se refiere a la práctica de utilizar CSS de manera efe
 Aquí hay algunas consideraciones importantes sobre usabilidad en CSS:
 
 1. **Legibilidad y Contraste:** Es crucial elegir combinaciones de colores y tamaños de texto que sean fáciles de leer para los usuarios. Asegúrate de que haya suficiente contraste entre el texto y el fondo para que sea legible.
-
 2. **Diseño Responsivo:** Utiliza CSS para crear un diseño que se adapte y se vea bien en una variedad de dispositivos y tamaños de pantalla. [grid](https://developer.mozilla.org/es/docs/Web/CSS/grid), [flex](https://developer.mozilla.org/es/docs/Web/CSS/flex) junto a las *media queries* son un ejemplo de técnicas responsivas.
-
 3. **Accesibilidad:** Aplica prácticas de accesibilidad, **Web Accessibility Initiative (WAI)**, en tu CSS para garantizar que tu sitio web sea usable para todas las personas, incluidas aquellas con discapacidades. Esto implica utilizar etiquetas semánticas adecuadas, proporcionar alternativas textuales para contenido no textual (como imágenes) y hacer que el sitio sea navegable y utilizable mediante el teclado. Puedes ver más información en [Directrices de Accesibilidad para el Contenido Web](https://es.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines).
-
 4. **Tiempo de Carga:** Optimiza tu CSS para que los tiempos de carga sean rápidos. Esto implica reducir el tamaño del archivo CSS mediante la eliminación de código no utilizado, la concatenación de archivos CSS y la minificación del código.
-
 5. **Animaciones y Transiciones:** Utiliza animaciones y transiciones CSS con moderación para mejorar la usabilidad y la interactividad del sitio web. Las animaciones pueden ayudar a guiar la atención del usuario, proporcionar retroalimentación sobre las acciones realizadas y mejorar la experiencia de navegación en general.
-
 6. **Consistencia:** Mantén una apariencia y sensación consistentes en todo el sitio web mediante el uso de clases y estilos CSS coherentes. Esto ayuda a los usuarios a familiarizarse con la interfaz y a navegar por el sitio de manera intuitiva.
-
 7. **Pruebas y Retroalimentación:** Realiza pruebas de usabilidad en tu sitio web para identificar posibles problemas y áreas de mejora. Aprovecha la retroalimentación de los usuarios para ajustar y mejorar continuamente la experiencia de usuario mediante ajustes en tu CSS.
 
 ## CSS reset
