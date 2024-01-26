@@ -1,6 +1,4 @@
 ---
-import { SubHeading } from "../components"
-
 interface Props {
   title: string
   pubDate: string
@@ -13,22 +11,21 @@ const { title, pubDate, description, email, author } = Astro.props
 ---
 
 <section class='p-10 mark-down'>
-  <header>
-    <SubHeading>
+  <aside class="flex justify-between items-center gap-2 mb-4 text-sm">
+    <strong>
       {title}
-    </SubHeading>
+    </strong>
+    <address class='font-semibold'>
+      Autor:
+      <a
+        class='text-link dark:text-link-dark hover:underline'
+        href={`mailto:${email}`}
+      >
+        {author}
+      </a>
+    </address>
     <time>{pubDate?.slice(0, 10)}</time>
-    <p>{description}</p>
-  </header>
-  <address class='font-semibold'>
-    Autor:
-    <a
-      class='text-link dark:text-link-dark hover:underline'
-      href={`mailto:${email}`}
-    >
-      {author}
-    </a>
-  </address>
+  </aside>
   <slot />
 </section>
 

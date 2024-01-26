@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+    .subtitle {
+        @apply text-subheading dark:text-subheading-dark font-bold text-balance text-lg;
+    }
+}

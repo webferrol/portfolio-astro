@@ -121,19 +121,19 @@ html {
 ### Reseteo de los formularios
 
 1. Los padding que introduzcamos dentro de un elemento de formularios input afectar a nuestro diseño. Soluciones:
-    a. Tener en cuenta estos márgenes en el tamaño total definido
-    b. Utilizar la propiedad box-sizing
+    - Tener en cuenta estos márgenes en el tamaño total definido
+    - Utilizar la propiedad box-sizing
 2. Los controles de nuestro formulario tiene un borde por defecto. Solución:
-    a. En el reseteo quitar dichos bordes
+    - En el reseteo quitar dichos bordes
+    - Poner un borde
 3. Elementos input. Darles una altura debido a la variedad que presentan los distintos tipos o su presentación en los diferentes navegadores.
-    a. Ejemplo: input{min-height: 2.5em}
+    - Ejemplo: input{min-height: 2.5em}
 4. Limpiar la pseudo clase o pseudo elemento :focus
 5. Pseudoelemento ::placeholder para dar estilo
 6. :invalid, :valid, :required. Es posible estas pseudo-clases o pseudo-elementos de CSS para dar estilos a un elemento form o input...
 7. Trabajar en modo Responsive Web Design
 a. Utilizar la meta viewport
-8. Textarea. El problema que tiene a parte de los bordes es que puede ser redimensionado, lo que en ocasiones puede desmontarnos la web. Solución:
-9. Propiedad: resize.
-    La propiedad resize de CSS permite controlar la capacidad de cambio de tamaño de un elemento. Se aplica también a los elementos que utilicen la propiedad overflow.
-    resize: none | both | horizontal | vertical
+8. Textarea. El problema que tiene a parte de los bordes es que puede ser redimensionado, lo que en ocasiones puede desmontarnos la web. **Solución: Propiedad: resize**.
+  - La propiedad resize de CSS permite controlar la capacidad de cambio de tamaño de un elemento. Se aplica también a los elementos que utilicen la propiedad overflow.
+  - resize: none | both | horizontal | vertical
 
