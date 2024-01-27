@@ -1,11 +1,11 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
 title: 'Clonación de objetos'
 pubDate: 2024-01-02
 description: 'Existen varios mecanismos para evitar la mutabilidad en la copia de los objetos y arrays. structuredClone es una buena solución. Pero veamos otras.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
 author: 'Xurxo González Tenreiro'
+url: '/web-developer.webp'
 tags: ['mutabilidad', 'objetos', 'arrays', 'clonación', 'javascript']
 ---
 

@@ -1,10 +1,10 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
 title: 'Centrado en CSS con position o display'
-pubDate: 2024/01/21
+pubDate: 2024-01-21
 description: 'Con las propiedades position o display tenemos valores para poder centrar elementos en css. Veamos'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
+url: '/web-developer.webp'
 author: 'Xurxo González Tenreiro'
 tags: ['css']
 ---

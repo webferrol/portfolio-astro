@@ -1,13 +1,13 @@
 ---
 interface Props {
   title: string
-  pubDate: string
+  pubDate: Date
   description: string
   email: string
   author: string
 }
 
-const { title, pubDate, description, email, author } = Astro.props
+const { title = 'Sin título', pubDate, description, email = 'gonzaleztenreiro@gmail.com', author } = Astro.props
 ---
 
 <section class='p-10 mark-down'>
@@ -24,7 +24,7 @@ const { title, pubDate, description, email, author } = Astro.props
         {author}
       </a>
     </address>
-    <time>{pubDate?.slice(0, 10)}</time>
+    <time>{pubDate?.toDateString()}</time>
   </aside>
   <slot />
 </section>

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
 title: 'Método toSorted()'
 pubDate: 2024-01-02
 description: 'El método sort() de JavaScript nos sirve para ordenar elementos de un array pero no evita la mutabilidad. Para ello toSorted().'

@@ -1,46 +1,23 @@
 ---
+import { getCollection } from "astro:content"
 import Bento from "../../components/ui/Bento.astro"
 import BentoItem from "../../components/ui/BentoItem.astro"
 import MainLayout from "../../layouts/TheMainLayout.astro"
-import type { GetStaticPaths } from "astro"
 import image from '../../assets/post.webp'
 
-interface Frontmatter {
-  tags: string[]
-  title: string,
-  url: string,
-  description: string,
-  // Agrega otras propiedades de frontmatter según sea necesario
-}
-
-interface Post {
-  frontmatter: Frontmatter
-  url: string
-  // Agrega otras propiedades del post según sea necesario
-}
-
-interface Props {
-  posts: Post[]
-}
-
-// (alias) type GetStaticPaths = (options: GetStaticPathsOptions) => Promise<GetStaticPathsResult> | GetStaticPathsResult
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const allPosts = await Astro.glob("../posts/*.md")
-
-  const uniqueTags = [
-    ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
-  ]
+export async function getStaticPaths() {
+  const allPosts = await getCollection("posts");
+  const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post) =>
-      post.frontmatter.tags.includes(tag)
-    )
+      post.data.tags.includes(tag)
+    );
     return {
       params: { tag },
       props: { posts: filteredPosts },
-    }
-  })
+    };
+  });
 }
 
 const { tag } = Astro.params
@@ -58,17 +35,17 @@ const { posts } = Astro.props
     <Bento title="Resultados de la búsqueda">
       {
         posts.map((post, index) => {
-          const { title, description, url } = post.frontmatter
+          const { slug, data } = post
           let className = index === 0 
               ? 'md:col-span-6' 
               : index === 1 
                 ? 'md:col-span-4' 
                 : 'md:col-span-5'
           return (
-            <BentoItem title={title} description={description} url={post.url} class={className}>
+            <BentoItem title={data.title} description={data.description} url={`/posts/${slug}`} class={className}>
               <div 
                 slot="image"
-                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-cover bg-no-repeat bg-blend-luminosity opacity-90" style={`background-image: url(${url || image.src})`}>               
+                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-cover bg-no-repeat bg-blend-luminosity opacity-90" style={`background-image: url(${data.url})`}>               
               </div>
             </BentoItem>
           )

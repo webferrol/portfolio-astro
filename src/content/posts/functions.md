@@ -1,7 +1,6 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
 title: 'Funciones en JavaScript'
-pubDate: '2024/01/08'
+pubDate: 2024-01-18
 description: 'La funciones en JavaScript nos permiten modular nuestro código y crear scripts más fácil de mantener'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'

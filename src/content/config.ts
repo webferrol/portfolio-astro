@@ -1,22 +1,12 @@
 // Importa las utilidades de `astro:content`
-import { z, defineCollection } from 'astro:content'
+import docSchema from '../schemas/docSchema'
+import { defineCollection } from 'astro:content'
 // Define un `type` y un `schema` para cada colección
-const postsCollection = defineCollection({
+const docsCollection = defineCollection({
 	type: 'content',
-	schema: z.object({
-		title: z.string(),
-		pubDate: z.date(),
-		description: z.string(),
-		author: z.string(),
-        url: z.string(),
-		image: z.object({
-			url: z.string(),
-			alt: z.string(),
-		}),
-		tags: z.array(z.string()),
-	}),
+	schema: docSchema
 })
 // Exporta un solo objeto `collections` con las colecciones registradas
 export const collections = {
-	posts: postsCollection,
+	posts: docsCollection
 }
