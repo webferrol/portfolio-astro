@@ -1,34 +1,38 @@
 ---
-import { getCollection } from "astro:content";
+import { sortedPosts as allPosts, tags } from '../helpers/getPosts'
 import MainLayout from '../layouts/TheMainLayout.astro'
 import Bento from '../components/ui/Bento.astro'
-import BentoItem from '../components/ui/BentoItem.astro';
-
-
-const allPosts = await getCollection("posts");
+import BentoItem from '../components/ui/BentoItem.astro'
+import Tags from '../components/ui/Tags.astro'
 ---
 
 <MainLayout
-  title="Publicaciones sobre programación"
-  description="React, javascript, css, html."
+  title='Publicaciones sobre programación'
+  description='React, javascript, css, html.'
 >
-  <main class="text-text dark:text-text-dark p-5">
-    <Bento title="Entradas">   
+  <main class='text-text dark:text-text-dark p-5'>
+    <Tags data={tags}/>
+    <Bento title='Entradas'>
       {
-        allPosts.map((post, index) => {
-          const { slug, data } = post
-          let className = index === 0 
-              ? 'md:col-span-6' 
-              : index === 1 
-                ? 'md:col-span-4' 
+        allPosts.map(({ slug, data }, index) => {
+          let className =
+            index === 0
+              ? 'md:col-span-6'
+              : index === 1
+                ? 'md:col-span-4'
                 : 'md:col-span-5'
           return (
-            <BentoItem title={data.title} description={data.description} url={`/posts/${slug}`} class={className}>
-              <div 
-                slot="image"
-                class="absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-bento bg-cover bg-no-repeat bg-blend-luminosity opacity-90"
-                style={data?.url && `background-image: url(${data.url})`}>               
-              </div>
+            <BentoItem
+              title={data.title}
+              description={data.description}
+              url={`/posts/${slug}`}
+              class={className}
+            >
+              <div
+                slot='image'
+                class='absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-bento bg-cover bg-no-repeat bg-blend-luminosity opacity-90'
+                style={data?.url && `background-image: url(${data.url})`}
+              ></div>
             </BentoItem>
           )
         })
@@ -36,3 +40,4 @@ const allPosts = await getCollection("posts");
     </Bento>
   </main>
 </MainLayout>
+../helpers/getPosts../helpers/getPosts

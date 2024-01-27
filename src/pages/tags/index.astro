@@ -1,10 +1,9 @@
 ---
-import { getCollection } from "astro:content"
+import { tags } from '../../helpers/getPosts'
 import { BasicListItem } from '../../components';
 import MainLayout from '../../layouts/TheMainLayout.astro'
 
-const allPosts = await getCollection("posts");
-const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
 ---
 
 <MainLayout title='Etiquetas' description='Palabras clave de los contenidos temáticos de diseño web y programación del blog.'>
