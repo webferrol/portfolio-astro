@@ -4,7 +4,7 @@ pubDate: 2024-01-26
 description: 'Ulizaremos CSS de forma efectiva para mejorar la experiencia de usuario en nuestra aplicaciones.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/post.webp'
-url: '/web-developer.webp'
+url: '/css.webp'
 author: 'Xurxo González Tenreiro'
 tags: ['css', 'usabilidad']
 ---
@@ -32,8 +32,10 @@ Un **reset CSS** es un conjunto de reglas CSS diseñadas para eliminar las difer
 ```css
 * {
   box-sizing: border-box;
-  /*The next property fix problems of overflow with flex items in flex or grid*/
-  min-width: 0; 
+  min-width: 0; /*Fix problems of overflow with flex items in flex or grid*/
+}
+:root {
+  color-scheme: light dark;
 }
 
 html {
@@ -54,16 +56,7 @@ p {
   text-wrap: pretty;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-mark {
-  font-family: 'Onest', system-ui, sans-serif;
-}
+
 
 @media (prefers-reduced-motion: reduce) {
   html {

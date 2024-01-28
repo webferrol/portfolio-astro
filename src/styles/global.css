@@ -24,16 +24,7 @@ p {
   text-wrap: pretty;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-mark {
-  font-family: 'Onest', system-ui, sans-serif;
-}
+
 
 @media (prefers-reduced-motion: reduce) {
   html {

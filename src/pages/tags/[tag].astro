@@ -1,13 +1,11 @@
 ---
-import { getCollection } from "astro:content"
+import { sortedPosts as allPosts, tags as uniqueTags } from '../../helpers/getPosts'
 import Bento from "../../components/ui/Bento.astro"
 import BentoItem from "../../components/ui/BentoItem.astro"
 import MainLayout from "../../layouts/TheMainLayout.astro"
-import image from '../../assets/post.webp'
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("posts");
-  const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+ 
 
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post) =>
@@ -29,7 +27,7 @@ const { posts } = Astro.props
   description='Palabras clave de las diferentes publicaciones'
 >
   <main class='p-5 text-text dark:text-text-dark'>
-    <h2 class="subtitle py-4 mb-4">
+    <h2 class="subtitle text-center py-4 mb-4">
       Entradas <strong>etiquetadas</strong> con <strong>{tag}</strong>
     </h2>
     <Bento title="Resultados de la búsqueda">

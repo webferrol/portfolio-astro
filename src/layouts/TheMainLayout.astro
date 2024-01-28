@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
-import { Navbar, UpLink } from '../components'
+import { LoadTheme, Navbar, UpLink } from '../components'
 import { urlBase } from '../constants'
 import '../styles/global.css'
 import '../styles/custom.css'
@@ -37,6 +37,9 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
   <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
     <Navbar />
     <slot />
-    <UpLink />
+    <div class='flex items-center gap-4 fixed z-50 bottom-5 right-5'>
+      <UpLink />
+      <LoadTheme client:only/>
+    </div>
   </body>
 </html>

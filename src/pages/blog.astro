@@ -1,9 +1,8 @@
 ---
-import { sortedPosts as allPosts, tags } from '../helpers/getPosts'
+import { sortedPosts as allPosts } from '../helpers/getPosts'
 import MainLayout from '../layouts/TheMainLayout.astro'
 import Bento from '../components/ui/Bento.astro'
 import BentoItem from '../components/ui/BentoItem.astro'
-import Tags from '../components/ui/Tags.astro'
 ---
 
 <MainLayout
@@ -11,14 +10,13 @@ import Tags from '../components/ui/Tags.astro'
   description='React, javascript, css, html.'
 >
   <main class='text-text dark:text-text-dark p-5'>
-    <Tags data={tags}/>
     <Bento title='Entradas'>
       {
         allPosts.map(({ slug, data }, index) => {
           let className =
-            index === 0
+            index === 0 || index === 4
               ? 'md:col-span-6'
-              : index === 1
+              : index === 1 || index === 5
                 ? 'md:col-span-4'
                 : 'md:col-span-5'
           return (

@@ -1,23 +1,14 @@
 ---
 import { tags } from '../../helpers/getPosts'
-import { BasicListItem } from '../../components';
 import MainLayout from '../../layouts/TheMainLayout.astro'
+import Tags from '../../components/ui/Tags.astro';
 
 
 ---
 
 <MainLayout title='Etiquetas' description='Palabras clave de los contenidos temáticos de diseño web y programación del blog.'>
   <main class='p-5 text-text dark:text-text-dark'>
-    <h2 class="subtitle mt-5">Etitquetas</h2>
-    <ul>
-      {
-        tags.map(
-          tag => (
-            <BasicListItem title={tag} url={`/tags/${tag}`}/>
-
-          )
-        )
-      }
-    </ul>
+    <h2 class="subtitle text-center py-4 mb-4">Etitquetas</h2>
+    <Tags data={tags}/>
   </main>
 </MainLayout>
