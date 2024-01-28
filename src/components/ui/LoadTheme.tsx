@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'preact/hooks'
+import { useFaviconChange } from '../../hooks/useFaviconChange'
 import styles from './theme-icon.module.css'
 
 function getTheme() {
@@ -13,6 +14,8 @@ function getTheme() {
 
 export function LoadTheme() {
   const [theme, setTheme] = useState(localStorage.getItem('theme'))
+
+  useFaviconChange()
 
   useEffect(() => {
     const currentTheme = getTheme()
