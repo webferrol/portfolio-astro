@@ -126,7 +126,7 @@ html {
 5. Pseudoelemento ::placeholder para dar estilo
 6. :invalid, :valid, :required. Es posible estas pseudo-clases o pseudo-elementos de CSS para dar estilos a un elemento form o input...
 7. Trabajar en modo Responsive Web Design
-a. Utilizar la meta viewport
+  - Utilizar la meta viewport
 8. Textarea. El problema que tiene a parte de los bordes es que puede ser redimensionado, lo que en ocasiones puede desmontarnos la web. **Solución: Propiedad: resize**.
   - La propiedad resize de CSS permite controlar la capacidad de cambio de tamaño de un elemento. Se aplica también a los elementos que utilicen la propiedad overflow.
   - resize: none | both | horizontal | vertical

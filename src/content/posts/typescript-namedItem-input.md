@@ -23,8 +23,6 @@ const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
   const { elements } = event.currentTarget
 
   const input = elements.namedItem('name-input') as HTMLInputElement
-
-  if (!isInput || input === null) return
 }
 ```
 ### Estrategia 2
