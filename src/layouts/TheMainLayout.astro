@@ -29,7 +29,7 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <title>{title}</title>
     <ViewTransitions />
-    <script>
+    <script is:inline>
       const theme = localStorage.getItem('theme') || 'light'
       document.documentElement.classList.add(theme)
     </script>
