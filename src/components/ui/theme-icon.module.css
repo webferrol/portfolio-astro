@@ -6,6 +6,7 @@
 .sun {
   fill: black;
 }
+
 .moon {
   fill: transparent;
 }
@@ -13,6 +14,7 @@
 :global(.dark) .sun {
   fill: transparent;
 }
+
 :global(.dark) .moon {
   fill: white;
 }

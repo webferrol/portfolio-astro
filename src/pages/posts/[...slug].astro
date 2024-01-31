@@ -1,6 +1,6 @@
 ---
-import { sortedPosts as blogEntries } from '../../helpers/getPosts'
-import MarkdownPostLayout from '../../layouts/MarkdownLayout.astro';
+import { sortedPosts as blogEntries } from '@/helpers/getPosts'
+import MarkdownPostLayout from '@/layouts/MarkdownLayout.astro';
 
 export async function getStaticPaths() {
   return blogEntries.map((entry:any) => ({
