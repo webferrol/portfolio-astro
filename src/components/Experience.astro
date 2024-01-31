@@ -1,5 +1,5 @@
 ---
-import DATA from '../assets/MOCK_DATA.json'
+import { experiences } from '@data'
 import ExperienceItem from './ExperienceItem.astro';
 ---
 
@@ -7,6 +7,6 @@ import ExperienceItem from './ExperienceItem.astro';
   class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400"
 >
   {
-    DATA.reverse().map(({title, details, date}) => <ExperienceItem title={title} details={details} date={date} />)
+    experiences.reverse().map(({title, details, date}) => <ExperienceItem title={title} details={details} date={date} />)
   }
 </ol>

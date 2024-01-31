@@ -3,6 +3,12 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@icons/*": ["src/icons/*"],
+      "@data": ["src/mocks/data.json"]
+    }
   }
 }

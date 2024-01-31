@@ -3,11 +3,11 @@
   min-width: 0; /*Fix problems of overflow with flex items in flex or grid*/
 }
 :root {
+  font-family: 'Onest', system-ui, sans-serif;
   color-scheme: light dark;
 }
 
 html {
-  font-family: 'Onest', system-ui, sans-serif;
   scroll-behavior: smooth;
 }
 

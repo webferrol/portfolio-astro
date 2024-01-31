@@ -9,7 +9,7 @@ author: 'Xurxo González Tenreiro'
 tags: ['javascript']
 ---
 
-# localStorage y document.documentElement
+# Parpadeo del light y/o dark mode
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W3DL-nRq9WU?si=ECYXGH1sfej6krW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

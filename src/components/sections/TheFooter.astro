@@ -1,0 +1,8 @@
+---
+import UpLink from '@components/ui/UpLink.astro'
+import { LoadTheme } from '@components/ui/LoadTheme'
+---
+<div class="flex items-center gap-4 fixed z-50 bottom-5 right-5">
+	<UpLink />
+	<LoadTheme client:only />
+</div>

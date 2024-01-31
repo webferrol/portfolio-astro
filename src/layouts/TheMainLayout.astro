@@ -1,11 +1,12 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
-import { LoadTheme, Navbar, UpLink } from '../components'
+import Navbar from '@components/sections/Navbar.astro'
+import TheFooter from '@components/sections/TheFooter.astro'
 import { urlBase } from '../constants'
-import '../styles/global.css'
-import '../styles/custom.css'
 import '@fontsource/onest/400.css'
 import '@fontsource/onest/700.css'
+import '../styles/global.css'
+import '../styles/custom.css'
 
 interface Props {
   title?: string | number
@@ -37,9 +38,6 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
   <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
     <Navbar />
     <slot />
-    <div class='flex items-center gap-4 fixed z-50 bottom-5 right-5'>
-      <UpLink />
-      <LoadTheme client:only/>
-    </div>
+    <TheFooter>    
   </body>
 </html>
