@@ -1,6 +1,9 @@
 @tailwind components;
 
 @layer components {
+    .title {
+        @apply whitespace-nowrap text-xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl
+    }
     .subtitle {
         @apply text-subheading dark:text-subheading-dark font-bold text-balance text-lg;
     }

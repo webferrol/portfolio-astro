@@ -5,9 +5,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'bg': '#D8E4E4',
+				'bg': '#F2EFE5',
 				'text': '#000000',
-				'highlighted': '#F88081',
+				'highlighted': '#000',
 				'link': '#A44A3F',
 				'heading': '#000D83',
 				'subheading': '#000D83',

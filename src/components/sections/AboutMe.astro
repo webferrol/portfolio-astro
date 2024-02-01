@@ -1,13 +1,7 @@
 ---
 import SocialLink from '@components/ui/SocialLink.astro'
-import { 
-  AstroIcon,
-  CSS3,
-  HTML5,
-  JavaScript,
-  LinkedIn,
-  Preact
-} from '@icons/index'
+import Technologies from '@components/sections/Technologies.astro'
+import LinkedIn from '@icons/LinkedIn.astro'
 ---
 <figure class="relative mb-6">
   <img
@@ -20,23 +14,7 @@ import {
 <div class="grid gap-4">
   <section>
     <h2 class="subtitle pb-2" id="tecnologias">Tecnologías</h2>
-    <ul aria-labelledby="tecnologias" class="flex items-center flex-wrap content-start gap-2">
-      <li title="HTML5">
-        <HTML5 class="w-9 h-9" aria-label="HTML5" />
-      </li>
-      <li title="CSS3">
-        <CSS3 class="w-9 h-9" aria-label="CSS3" />
-      </li>
-      <li title="JavaScript">
-        <JavaScript class="w-9 h-9" aria-label="JavaScript" />
-      </li>
-      <li title="Astro">
-        <AstroIcon class="w-9 h-9" aria-label="Astro" />
-      </li>
-      <li title="Preact">
-        <Preact class="w-9 h-9"/>
-      </li>
-    </ul>
+    <Technologies />
   </section>
   <section>
     <h2 class="subtitle pb-2">Sígueme</h2>

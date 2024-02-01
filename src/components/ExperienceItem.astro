@@ -12,7 +12,7 @@ const { title, details, date } = Astro.props
     class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-900"
   >
     <svg
-      class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400"
+      class="w-3.5 h-3.5 text-gray-900 dark:text-gray-400"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
@@ -23,7 +23,7 @@ const { title, details, date } = Astro.props
       ></path>
     </svg>
   </span>
-  <time class="mb-1 ml-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{date}</time>
+  <time class="mb-1 ml-2 text-sm font-normal leading-none text-gray-700 dark:text-gray-100">{date}</time>
   <h3 class="ml-2 font-medium leading-tight">{title}</h3>
   <p class="ml-2 text-sm">{details}</p>
 </li>

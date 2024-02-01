@@ -4,7 +4,7 @@ import ExperienceItem from './ExperienceItem.astro';
 ---
 
 <ol
-  class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400"
+  class="relative border-s border-gray-200 dark:border-gray-700 dark:text-gray-400"
 >
   {
     experiences.reverse().map(({title, details, date}) => <ExperienceItem title={title} details={details} date={date} />)
