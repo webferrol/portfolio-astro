@@ -1,8 +1,9 @@
 ---
-import { sortedPosts as allPosts, tags as uniqueTags } from '../../helpers/getPosts'
-import Bento from "../../components/ui/Bento.astro"
-import BentoItem from "../../components/ui/BentoItem.astro"
-import MainLayout from "../../layouts/TheMainLayout.astro"
+import MainLayout from "@/layouts/TheLayout.astro"
+import Bento from "@components/ui/Bento.astro"
+import BentoItem from "@components/ui/BentoItem.astro"
+import TheMain from '@/components/sections/TheMain.astro';
+import { sortedPosts as allPosts, tags as uniqueTags } from '@/helpers/getPosts'
 
 export async function getStaticPaths() {
  
@@ -26,7 +27,7 @@ const { posts } = Astro.props
   title={tag}
   description='Palabras clave de las diferentes publicaciones'
 >
-  <main class='p-5 text-text dark:text-text-dark'>
+  <TheMain>
     <h2 class="subtitle text-center py-4 mb-4">
       Entradas <strong>etiquetadas</strong> con <strong>{tag}</strong>
     </h2>
@@ -51,5 +52,5 @@ const { posts } = Astro.props
       }
 
     </Bento>
-  </main>
+  </TheMain>
 </MainLayout>

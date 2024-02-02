@@ -1,14 +1,15 @@
 ---
 import Tags from '@components/ui/Tags.astro';
-import MainLayout from '@/layouts/TheMainLayout.astro'
+import TheMain from '@components/sections/TheMain.astro';
+import MainLayout from '@/layouts/TheLayout.astro'
 import { tags } from '@/helpers/getPosts'
 
 
 ---
 
 <MainLayout title='Etiquetas' description='Palabras clave de los contenidos temáticos de diseño web y programación del blog.'>
-  <main class='p-5 text-text dark:text-text-dark'>
+  <TheMain>
     <h2 class="subtitle text-center py-4 mb-4">Etitquetas</h2>
     <Tags data={tags}/>
-  </main>
+  </TheMain>
 </MainLayout>

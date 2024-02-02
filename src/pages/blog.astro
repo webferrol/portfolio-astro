@@ -1,15 +1,16 @@
 ---
-import { sortedPosts as allPosts } from '@/helpers/getPosts'
-import MainLayout from '@/layouts/TheMainLayout.astro'
+import MainLayout from '@/layouts/TheLayout.astro'
+import TheMain from '@/components/sections/TheMain.astro'
 import Bento from '@components/ui/Bento.astro'
 import BentoItem from '@components/ui/BentoItem.astro'
+import { sortedPosts as allPosts } from '@/helpers/getPosts'
 ---
 
 <MainLayout
   title='Publicaciones sobre programación'
   description='React, javascript, css, html.'
 >
-  <main class='text-text dark:text-text-dark p-5'>
+  <TheMain>
     <Bento title='Entradas'>
       {
         allPosts.map(({ slug, data }, index) => {
@@ -36,5 +37,5 @@ import BentoItem from '@components/ui/BentoItem.astro'
         })
       }
     </Bento>
-  </main>
+  </TheMain>
 </MainLayout>
