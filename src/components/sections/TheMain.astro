@@ -1,3 +1,13 @@
-<main class='flex-1 p-5 text-text dark:text-text-dark'>
+---
+interface Props {
+  title?: string,
+  className?: string
+}
+const { title, className } = Astro.props
+---
+<main class='p-5 text-text dark:text-text-dark'>
+  {
+    title && <h2 class={`subtitle ${className || 'text-center py-4 mb-4'}`}>{title}</h2>
+  }  
   <slot />
 </main>
