@@ -3,5 +3,13 @@ import ArrowUp from '@icons/ArrowUp.astro';
 ---
 
 <a href='#top' class={Astro.props.class}>
+  <strong>Subir</strong>
   <ArrowUp class='text-sky-700 dark:text-white hover:scale-110 transition' />
 </a>
+
+<style>
+  strong {
+    position: absolute;
+    left: 9999px;
+  }
+</style>
