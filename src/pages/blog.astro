@@ -4,6 +4,22 @@ import TheMain from '@/components/sections/TheMain.astro'
 import Bento from '@components/ui/Bento.astro'
 import BentoItem from '@components/ui/BentoItem.astro'
 import { sortedPosts as allPosts } from '@/helpers/getPosts'
+
+function getSerie (size = 5) {
+  const serie1: number[] = []
+  const serie2: number[] = []
+  for (let i = 0; i <= size - 1; i++) {
+    serie1.push(4 * i) // 0-4-8-12-16
+    serie2.push(4 * i + 1) // 1-5-9-13-17
+    
+  }  
+  return {
+    serie1,
+    serie2
+  } 
+}
+
+const { serie1, serie2 } = getSerie(allPosts.length / 2 + 1)
 ---
 
 <MainLayout
@@ -15,9 +31,9 @@ import { sortedPosts as allPosts } from '@/helpers/getPosts'
       {
         allPosts.map(({ slug, data }, index) => {
           let className =
-            index === 0 || index === 4 || index === 8 // 0-4-8-12-14
+            serie1.includes(index)
               ? 'md:col-span-6'
-              : index === 1 || index === 5 || index === 9 // 1-5-9-13-17
+              : serie2.includes(index) // 1-5-9
                 ? 'md:col-span-4'
                 : 'md:col-span-5'
           return (
