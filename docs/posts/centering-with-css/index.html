@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="description" content="Con las propiedades position o display tenemos valores para poder centrar elementos en css. Veamos"><meta name="viewport" content="width=device-width"><meta property="og:title" content="Centrado en CSS con position o display"><meta property="og:description" content="Con las propiedades position o display tenemos valores para poder centrar elementos en css. Veamos"><meta property="og:type" content="website"><meta property="og:image" content="https://webferrol.netlify.app/avatar.webp"><link rel="icon" type="image/svg+xml" href="/favicon.ico"><title>Centrado en CSS con position o display</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script>
+      const theme = localStorage.getItem('theme') || 'light'
+      document.documentElement.classList.add(theme)
+    </script><link rel="stylesheet" href="/_astro/blog.JNZr4O3Q.css" />
+<link rel="stylesheet" href="/_astro/_slug_.3Mp4w9mX.css" />
+<style>._themeToggle_12vaj_1{border:0;background:none}._sun_12vaj_11{fill:#000}._moon_12vaj_19,.dark ._sun_12vaj_11{fill:transparent}.dark ._moon_12vaj_19{fill:#fff}
+</style><script type="module" src="/_astro/hoisted.VQD6ifx1.js"></script></head> <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark"> <nav class="border-gray-200  bg-slate-400/25 dark:bg-zinc-900"> <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"> <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse"> <h1 class="whitespace-nowrap text-xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
+Web <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Developer</span> </h1> </a> <button data-collapse-toggle="navbar-default" type="button" id="hamburger-btn" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false"> <span class="sr-only">Abrir menú principal</span> <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path> </svg> </button> <div class="hidden w-full md:block md:w-auto" id="navbar-default"> <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 dark:bg-transparent uppercase"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="ygEGK" component-url="/_astro/DropdownNavbar.SeZA8gwo.js" component-export="DropdownNavbar" renderer-url="/_astro/client.5wFXtxsr.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;DropdownNavbar&quot;,&quot;value&quot;:true}"></astro-island> </ul> </div> </div> </nav>   <section class="p-10 mark-down"> <aside class="flex justify-between items-center gap-2 mb-4 text-sm"> <strong> Centrado en CSS con position o display </strong> <address class="font-semibold">
+Autor:
+<a class="text-link dark:text-link-dark hover:underline" href="mailto:xurxo@webferrol.com"> Xurxo González Tenreiro </a> </address> <time datetime="2024-01-21">Sun Jan 21 2024</time> </aside>   <h1 id="centrado-de-elementos">Centrado de elementos</h1>
+<p><strong>Tabla de contenidos</strong></p>
+<ol>
+<li><a href="#position-absolute">Con position</a></li>
+<li><a href="#display-flex">Con flex</a></li>
+<li><a href="#display-grid">Con grid</a></li>
+</ol>
+<h2 id="position-absolute">position: absolute</h2>
+<p>Con las propiedades <strong>left: 0</strong>, <strong>top: 0</strong>, <strong>right: 0</strong>, <strong>bottom: 0</strong> y <strong>margin: auto</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"container"</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"item-container"</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">.container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  position</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">relative</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  background-color</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">red</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  width</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">100</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  height</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">100</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">  .</span><span style="color:#79B8FF">item-container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">    position</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">absolute</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">    inset</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">; </span><span style="color:#6A737D">/*top, right, bottom, left*/</span></span>
+<span class="line"><span style="color:#79B8FF">    margin</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">auto</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">    width</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">50</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">    height</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">50</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">    background-color</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">teal</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>La propiedad de CSS <strong>inset</strong> define el <strong>bloque lógico</strong> que nos permite prescindir de <strong>left: 0</strong>, <strong>top: 0</strong>, <strong>right: 0</strong>, <strong>bottom: 0</strong> y <strong>margin: auto</strong>.</p>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYbzRro" data-user="webferrol-the-typescripter" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/webferrol-the-typescripter/pen/zYbzRro">
+  Centering with position</a> by webFerrol (<a href="https://codepen.io/webferrol-the-typescripter">@webferrol-the-typescripter</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<h2 id="display-flex">display: flex</h2>
+<p>Con flex también podemos centrar los elementos hijos</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">.flex-container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  display</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">flex</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  justify-content</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  align-items</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h2 id="display-grid">display: grid</h2>
+<p>Con grid también podemos centrar los elementos hijos</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">.grid-container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  display</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">grid</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  place-items</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>   </section> <style>
+  .mark-down {
+    --global-body-size: clamp(1em, calc(2 / 72 * 100vw), 1.6em);
+
+    --global-pre-size: clamp(0.8em, calc(1.2 / 72 * 100vw), 1.2em);
+
+    --global-h1-size: clamp(1.6em, calc(3 / 72 * 100vw), 3em);
+
+    --global-h2-size: clamp(1.4em, calc(2.4 / 72 * 100vw), 2.4em);
+
+    --global-h3-size: clamp(1.2em, calc(2.2 / 72 * 100vw), 2.2em);
+
+    --global-h4-size: clamp(1.1em, calc(1.8 / 72 * 100vw), 1.8em);
+
+    font-size: var(--global-body-size);
+    text-transform: initial;
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+
+  .mark-down pre {
+    margin: 1em 0;
+    background-color: #333;
+    font-size: calc(var(--global-pre-size));
+  }
+
+  .mark-down pre,
+  .mark-down code {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  .mark-down pre {
+    padding: 0.5rem;
+    line-height: 1.25;
+    overflow-x: scroll;
+  }
+  .mark-down blockquote {
+    border-left: 3px solid #01ff70;
+    padding-left: 1rem;
+  }
+
+  .mark-down ul,
+  .mark-down ol {
+    list-style-type: initial;
+    padding-left: .8em;
+  }
+
+  .mark-down a {
+    text-decoration: underline;
+  }
+
+  .mark-down li,
+  .mark-down p {
+    margin: 1.3rem 0;
+    text-wrap: pretty;
+    line-height: 2;
+    font-size: inherit;
+  }
+
+  .mark-down li {
+    margin-left: 1rem;
+  }
+
+  .mark-down ol {
+    list-style-type: decimal;
+  }
+
+  .mark-down p {
+    border-left: 2px solid rgb(40 116 252/50%);
+    padding-left: 1rem;
+  }
+
+  .mark-down h1,
+  .mark-down h2,
+  .mark-down h3,
+  .mark-down h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: inherit;
+    line-height: 1.42;
+    text-wrap: balance;
+  }
+
+  .mark-down h1 {
+    margin-top: 0;
+    font-size: var(--global-h1-size);
+    text-wrap: balance;
+  }
+
+  .mark-down h2 {
+    font-size: var(--global-h2-size);
+    text-wrap: balance;
+  }
+
+  .mark-down h3 {
+    font-size: var(--global-h3-size);
+    text-wrap: balance;
+  }
+
+  .mark-down h4 {
+    font-size: var(--global-h4-size);
+    text-wrap: balance;
+  }
+
+  .mark-down small {
+    font-size: 0.707em;
+  }
+
+  /* https://github.com/mrmrs/fluidity */
+
+  .mark-down img,
+  .mark-down canvas,
+  .mark-down iframe,
+  .mark-down video,
+  .mark-down svg,
+  .mark-down select,
+  .mark-down textarea {
+    max-width: 100%;
+  }
+</style>  <div class="flex items-center gap-4 fixed z-50 bottom-5 right-5"> <a href="#top"> <svg class="text-sky-700 dark:text-white hover:scale-110 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="m9 13 3-3 3 3"></path><path d="M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0"></path></svg> </a> <astro-island uid="Z1mM2f5" component-url="/_astro/LoadTheme.znbYQeoy.js" component-export="LoadTheme" renderer-url="/_astro/client.5wFXtxsr.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;LoadTheme&quot;,&quot;value&quot;:true}"></astro-island> </div></body></html>
