@@ -1,13 +1,18 @@
 ---
 import LinkedIn from '@icons/LinkedIn.astro'
+import Blogger from '@icons/Blogger.astro'
 import UpLink from '@components/ui/UpLink.astro'
 import { LoadTheme } from '@components/ui/LoadTheme'
 ---
 <footer class="border-gray-200  bg-slate-400/25 dark:bg-zinc-900 p-2">
     <nav aria-label="Redes Sociales" class="flex flex-wrap gap-2">
-      <a title="Sígueme en LinkedIn" href="https://www.linkedin.com/in/webferrol" target="_blank" >
+      <a title="Sígueme en LinkedIn" href="https://www.linkedin.com/in/webferrol" rel="noreferrer noopener" target="_blank" >
         <strong>LinkedIn</strong>
         <LinkedIn aria-label="Sígueme en LinkedIn" class="w-5 h-5 text-[#0A66C2] hover:text-current" />
+      </a>
+      <a title="Sígueme" href="/blog" >
+        <strong>Blog</strong>
+        <Blogger aria-label="Mis publicaciones" class="w-5 h-5 text-[#0A66C2] hover:text-current" />
       </a>
 			<LoadTheme client:only />
     </nav>

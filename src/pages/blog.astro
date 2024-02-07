@@ -1,7 +1,7 @@
 ---
 import MainLayout from '@/layouts/TheLayout.astro'
 import TheMain from '@/components/sections/TheMain.astro'
-import Bento from '@components/sections/Bento.tsx'
+import Bento from '@components/sections/Bento/Bento'
 import { sortedPosts, tags } from '@/helpers/getPosts'
 const allPosts = sortedPosts.map(post => ({slug: post.slug, data: post.data }) )
 ---
