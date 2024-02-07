@@ -1,25 +1,9 @@
 ---
 import MainLayout from '@/layouts/TheLayout.astro'
 import TheMain from '@/components/sections/TheMain.astro'
-import Bento from '@components/ui/Bento.astro'
-import BentoItem from '@components/ui/BentoItem.astro'
-import { sortedPosts as allPosts } from '@/helpers/getPosts'
-
-function getSerie (size = 5) {
-  const serie1: number[] = []
-  const serie2: number[] = []
-  for (let i = 0; i <= size - 1; i++) {
-    serie1.push(4 * i) // 0-4-8-12-16
-    serie2.push(4 * i + 1) // 1-5-9-13-17
-    
-  }  
-  return {
-    serie1,
-    serie2
-  } 
-}
-
-const { serie1, serie2 } = getSerie(allPosts.length / 2 + 1)
+import Bento from '@components/sections/Bento.tsx'
+import { sortedPosts, tags } from '@/helpers/getPosts'
+const allPosts = sortedPosts.map(post => ({slug: post.slug, data: post.data }) )
 ---
 
 <MainLayout
@@ -27,31 +11,6 @@ const { serie1, serie2 } = getSerie(allPosts.length / 2 + 1)
   description='React, javascript, css, html.'
 >
   <TheMain>
-    <Bento title='Entradas'>
-      {
-        allPosts.map(({ slug, data }, index) => {
-          let className =
-            serie1.includes(index)
-              ? 'md:col-span-6'
-              : serie2.includes(index) // 1-5-9
-                ? 'md:col-span-4'
-                : 'md:col-span-5'
-          return (
-            <BentoItem
-              title={data.title}
-              description={data.description}
-              url={`/posts/${slug}`}
-              class={className}
-            >
-              <div
-                slot='image'
-                class='absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-bento bg-cover bg-no-repeat bg-blend-luminosity opacity-90'
-                style={data?.url && `background-image: url(${data.url})`}
-              ></div>
-            </BentoItem>
-          )
-        })
-      }
-    </Bento>
+    <Bento client:idle posts={allPosts} tags={tags} title='Bento' />
   </TheMain>
 </MainLayout>
