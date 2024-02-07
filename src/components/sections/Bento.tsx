@@ -51,7 +51,7 @@ export default function Bento ({ title, posts, tags }: MyProps) {
 
 function BentoItem ({ slug, url, title, description }: {slug: string, url: string, title: string, description: string}) {
     return (
-        <a href={`posts/${slug}`} 
+        <a href={`/posts/${slug}`} 
     className={`
     relative
     group
