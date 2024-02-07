@@ -27,7 +27,7 @@ export default function Bento ({ title, posts, tags }: MyProps) {
         <>
             <div role="search" className="max-w-[1140px]  mx-auto mb-2">
                 <select className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onChange={handleChange}>
-                    <option>Todo</option>
+                    <option value="">Todo</option>
                     {
                         tags.map(item => (
                             <option value={item} key={item}>{item}</option>
