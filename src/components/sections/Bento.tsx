@@ -56,7 +56,8 @@ function BentoItem ({ slug, url, title, description }: {slug: string, url: strin
     relative
     group
     overflow-hidden
-    col-span-5
+    col-span-10
+    md:col-span-5
     border 
     border-sky-500/20 
     rounded
