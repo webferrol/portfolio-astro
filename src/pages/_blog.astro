@@ -3,7 +3,8 @@ import MainLayout from '@/layouts/TheLayout.astro'
 import TheMain from '@/components/sections/TheMain.astro'
 import Bento from '@components/ui/Bento.astro'
 import BentoItem from '@components/ui/BentoItem.astro'
-import { sortedPosts as allPosts } from '@/helpers/getPosts'
+import Select from '@components/ui/HTMLSelect'
+import { sortedPosts as allPosts, tags } from '@/helpers/getPosts'
 
 function getSerie (size = 5) {
   const serie1: number[] = []
@@ -27,6 +28,11 @@ const { serie1, serie2 } = getSerie(allPosts.length / 2 + 1)
   description='React, javascript, css, html.'
 >
   <TheMain>
+   
+    <Select
+      client:idle
+      tags={tags}
+     />
    
     <Bento title='Entradas'>
       {
@@ -55,4 +61,4 @@ const { serie1, serie2 } = getSerie(allPosts.length / 2 + 1)
       }
     </Bento>
   </TheMain>
-</MainLayout>
+</MainLayout>../components/ui/_HTMLSelect../components/ui/HTMLSelect

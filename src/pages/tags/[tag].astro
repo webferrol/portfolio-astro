@@ -3,6 +3,7 @@ import MainLayout from "@/layouts/TheLayout.astro"
 import Bento from "@components/ui/Bento.astro"
 import BentoItem from "@components/ui/BentoItem.astro"
 import TheMain from '@/components/sections/TheMain.astro';
+import Select from '@components/ui/HTMLSelect'
 import { sortedPosts as allPosts, tags as uniqueTags } from '@/helpers/getPosts'
 
 export async function getStaticPaths() {
@@ -28,9 +29,15 @@ const { posts } = Astro.props
   description='Palabras clave de las diferentes publicaciones'
 >
   <TheMain>
-    <h2 class="subtitle text-center py-4 mb-4">
+    <!-- <h2 class="subtitle text-center py-4 mb-4">
       Entradas <strong>etiquetadas</strong> con <strong>{tag}</strong>
-    </h2>
+    </h2> -->
+
+    <Select
+      client:idle
+      tags={uniqueTags}
+     />
+
     <Bento title="Resultados de la búsqueda">
       {
         posts.map((post, index) => {
@@ -54,3 +61,4 @@ const { posts } = Astro.props
     </Bento>
   </TheMain>
 </MainLayout>
+../../components/ui/_HTMLSelect../../components/ui/HTMLSelect
