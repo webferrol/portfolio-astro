@@ -39,6 +39,7 @@ tags: ['recursos']
 
 ## Deploy
 
+- [Netlify](https://www.netlify.com/)
 - [Render](https://render.com/)
 - [fl0](https://www.fl0.com/)
 - [fly](https://fly.io/)
