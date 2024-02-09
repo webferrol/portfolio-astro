@@ -8,7 +8,6 @@ export default function HTMLSearchElement ({ tags } : {tags: string[] }) {
        const { current } = formRef
        const isForm = current instanceof HTMLFormElement
        if (!isForm || current === null) return 
-       const action = current.getAttribute('action')
 
        const { currentTarget } = event
 
@@ -17,7 +16,7 @@ export default function HTMLSearchElement ({ tags } : {tags: string[] }) {
        if (!isValue || currentTarget === null) return
 
        if (currentTarget.value.length) {
-           current.setAttribute('action', `${action}/${currentTarget.value}`)
+           current.setAttribute('action', `/tags/${currentTarget.value}`)
        } else {
         current.setAttribute('action', '/blog')
        }
