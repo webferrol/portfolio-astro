@@ -28,7 +28,7 @@ export default function HTMLSearchElement ({ tags } : {tags: string[] }) {
     }
 
     return (
-            <form ref={formRef} action='/tags' role="search" className="max-w-[1140px]  mx-auto mb-2" method="post">
+            <form ref={formRef} action='/tags' role="search" className="max-w-[1140px]  mx-auto mb-2">
                 <select
                     placeholder="Categorías"
                     onChange={handleChange} 
