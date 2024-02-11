@@ -14,6 +14,10 @@ tags: ['recursos']
 ## Chequeo
 - [Chequeo Web](https://web-check.xyz/)
 
+## Accesibility
+
+- [webaim](https://wave.webaim.org/standalone)
+
 ## SVG's
 - [Limpiar SVG's](https://jakearchibald.github.io/svgomg/)
 - [A beautiful library with SVG logos](https://svgl.vercel.app/)
@@ -25,13 +29,15 @@ tags: ['recursos']
 - [Optimiza tus imágenes para web](https://squoosh.app/)
 - [Diversos efectos sobre imágenes](https://shots.so/)
 
-## Recursos 
+## Responsivo
+
+- [CSS Layout Generator](https://layout.bradwoods.io/)
+- [Flexbox froggy](https://flexboxfroggy.com/#es)
+- [Grid garden](https://cssgridgarden.com/#es)
+
+## Recursos de blogueros
 
 - [ibelick](https://www.ibelick.com/): botones tailwind, background-snippets, animaciones tailwind ...
-
-## Accesibility
-
-- [webaim](https://wave.webaim.org/standalone)
 
 ## Embed youtube
 
