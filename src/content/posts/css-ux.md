@@ -18,6 +18,20 @@ La **usabilidad en CSS** se refiere a la práctica de utilizar CSS de manera efe
 Aquí hay algunas consideraciones importantes sobre usabilidad en CSS:
 
 1. **Legibilidad y Contraste:** Es crucial elegir combinaciones de colores y tamaños de texto que sean fáciles de leer para los usuarios. Asegúrate de que haya suficiente contraste entre el texto y el fondo para que sea legible.
+
+[WCAG 2.0](https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast)
+```
+1.4.3 Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least **4.5:1**, except for the following: (Level AA)
+  - 💡 Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least **3:1**;
+  - 💡 Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+  - 💡 Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
+```
+
+Recursos de contraste:
+
+  - [webaim](https://webaim.org/resources/contrastchecker/)
+  - [wave](https://wave.webaim.org/standalone)
+
 2. **Diseño Responsivo:** Utiliza CSS para crear un diseño que se adapte y se vea bien en una variedad de dispositivos y tamaños de pantalla. [grid](https://developer.mozilla.org/es/docs/Web/CSS/grid), [flex](https://developer.mozilla.org/es/docs/Web/CSS/flex) junto a las *media queries* son un ejemplo de técnicas responsivas.
 3. **Accesibilidad:** Aplica prácticas de accesibilidad, **Web Accessibility Initiative (WAI)**, en tu CSS para garantizar que tu sitio web sea usable para todas las personas, incluidas aquellas con discapacidades. Esto implica utilizar etiquetas semánticas adecuadas, proporcionar alternativas textuales para contenido no textual (como imágenes) y hacer que el sitio sea navegable y utilizable mediante el teclado. Puedes ver más información en [Directrices de Accesibilidad para el Contenido Web](https://es.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines).
 4. **Tiempo de Carga:** Optimiza tu CSS para que los tiempos de carga sean rápidos. Esto implica reducir el tamaño del archivo CSS mediante la eliminación de código no utilizado, la concatenación de archivos CSS y la minificación del código.

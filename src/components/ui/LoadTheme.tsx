@@ -38,7 +38,7 @@ export function LoadTheme() {
   }
 
   return (
-    <button onClick={handleTheme} className={styles.themeToggle}>
+    <button onClick={handleTheme} className={styles.themeToggle} aria-label="Intercambiar tema claro y oscuro">
       <svg width="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           className={styles.sun}
