@@ -1,6 +1,6 @@
 ---
 title: 'Recursos'
-pubDate: 2024-01-31
+pubDate: 2024-02-21
 description: 'Recursos de desarrollo para imágenes, vídeo ...'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
@@ -18,6 +18,7 @@ tags: ['recursos']
 ## Chequeo
 
 - [Chequeo Web](https://web-check.xyz/)
+- [Saber qué tecnologías tiene tu web](https://www.wappalyzer.com/)
 
 ## SVG's
 
@@ -37,6 +38,7 @@ tags: ['recursos']
 
 ## Accesibility
 
+- [axe DevTools](https://www.deque.com/axe/)
 - [webaim](https://wave.webaim.org/standalone)
 - [What length CSS unit should you use?](https://whatunit.com/)
 - [clamp calculator](https://utopia.fyi/type/calculator/)
@@ -47,6 +49,7 @@ tags: ['recursos']
 
 ## Deploy
 
+- [Netlify](https://www.netlify.com/)
 - [Render](https://render.com/)
 - [fl0](https://www.fl0.com/)
 - [fly](https://fly.io/)

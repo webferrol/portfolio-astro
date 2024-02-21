@@ -27,7 +27,20 @@ Aquí hay algunas consideraciones importantes sobre usabilidad en CSS:
   - 💡 Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
 ```
 
-Recursos de contraste:
+**Devtools**
+
+Una buena opción de las **herramientas de de desarrollo** de los navegadores de **Chrome** son las **CSS Overview**. Con el atajo <kbd>Ctrl + Shift + P<kbd> podemos buscar esta opción.
+
+![CSS Overview](/blog/css-overview.webp)
+
+Podemos ver un panel donde a parte del contraste tenemos los siguientes apartados:
+
+- Colors
+- Font Info
+- Unused declarations
+- Media queries
+
+**Recursos de contraste**:
 
   - [webaim](https://webaim.org/resources/contrastchecker/)
   - [wave](https://wave.webaim.org/standalone)
@@ -37,6 +50,9 @@ Recursos de contraste:
   - [CSS Layout Generator](https://layout.bradwoods.io/)
 
 3. **Accesibilidad:** Aplica prácticas de accesibilidad, **Web Accessibility Initiative (WAI)**, en tu CSS para garantizar que tu sitio web sea usable para todas las personas, incluidas aquellas con discapacidades. Esto implica utilizar etiquetas semánticas adecuadas, proporcionar alternativas textuales para contenido no textual (como imágenes) y hacer que el sitio sea navegable y utilizable mediante el teclado. Puedes ver más información en [Directrices de Accesibilidad para el Contenido Web](https://es.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines).
+
+  -[Una buena herramienta para testear accesibilidad es axe DevTools](https://www.deque.com/axe/)
+
 4. **Tiempo de Carga:** Optimiza tu CSS para que los tiempos de carga sean rápidos. Esto implica reducir el tamaño del archivo CSS mediante la eliminación de código no utilizado, la concatenación de archivos CSS y la minificación del código.
 5. **Animaciones y Transiciones:** Utiliza animaciones y transiciones CSS con moderación para mejorar la usabilidad y la interactividad del sitio web. Las animaciones pueden ayudar a guiar la atención del usuario, proporcionar retroalimentación sobre las acciones realizadas y mejorar la experiencia de navegación en general.
 6. **Consistencia:** Mantén una apariencia y sensación consistentes en todo el sitio web mediante el uso de clases y estilos CSS coherentes. Esto ayuda a los usuarios a familiarizarse con la interfaz y a navegar por el sitio de manera intuitiva.
