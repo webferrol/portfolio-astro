@@ -1,6 +1,6 @@
 ---
 title: 'Usabilidad en CSS'
-pubDate: 2024-01-26
+pubDate: 2024-02-22
 description: 'Ulizaremos CSS de forma efectiva para mejorar la experiencia de usuario en nuestra aplicaciones.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/post.webp'
@@ -58,7 +58,9 @@ Podemos ver un panel donde a parte del contraste tenemos los siguientes apartado
 6. **Consistencia:** Mantén una apariencia y sensación consistentes en todo el sitio web mediante el uso de clases y estilos CSS coherentes. Esto ayuda a los usuarios a familiarizarse con la interfaz y a navegar por el sitio de manera intuitiva.
 7. **Pruebas y Retroalimentación:** Realiza pruebas de usabilidad en tu sitio web para identificar posibles problemas y áreas de mejora. Aprovecha la retroalimentación de los usuarios para ajustar y mejorar continuamente la experiencia de usuario mediante ajustes en tu CSS.
 
-## CSS reset
+## Consejos generales CSS
+
+### CSS reset
 
 Un **reset CSS** es un conjunto de reglas CSS diseñadas para eliminar las diferencias predeterminadas en la representación de elementos HTML entre diferentes navegadores.
 
@@ -98,7 +100,7 @@ p {
 }
 ```
 
-## scroll-behavior: smooth
+### scroll-behavior: smooth
 
 En el **reset** del apartado anterior aparecía la utilización de esta propiedad.
 La preferencia **prefers-reduced-motion: reduce** es una característica de accesibilidad en CSS que permite a los usuarios indicar que prefieren o necesitan reducir la cantidad de animaciones o movimientos en una página web.
@@ -116,6 +118,17 @@ html {
   html {
     scroll-behavior: auto;
   }
+}
+```
+
+### Deshabilitar el sombreado al hacer clic en elementos en dispositivos móviles */
+
+```css
+*:active {
+    -webkit-tap-highlight-color: transparent; /* Para navegadores basados en WebKit, como Chrome y Safari */
+    -moz-tap-highlight-color: transparent; /* Para navegadores basados en Gecko, como Firefox */
+    -ms-tap-highlight-color: transparent; /* Para Internet Explorer */
+    tap-highlight-color: transparent; /* Propiedad genérica */
 }
 ```
 
