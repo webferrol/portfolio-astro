@@ -26,6 +26,14 @@ p {
   text-wrap: pretty;
 }
 
+/* Deshabilitar el sombreado al hacer clic en elementos en dispositivos móviles */
+*:active {
+  -webkit-tap-highlight-color: transparent; /* Para navegadores basados en WebKit, como Chrome y Safari */
+  -moz-tap-highlight-color: transparent; /* Para navegadores basados en Gecko, como Firefox */
+  -ms-tap-highlight-color: transparent; /* Para Internet Explorer */
+  tap-highlight-color: transparent; /* Propiedad genérica */
+}
+
 
 
 @media (prefers-reduced-motion: reduce) {

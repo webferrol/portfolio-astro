@@ -121,7 +121,7 @@ html {
 }
 ```
 
-### Deshabilitar el sombreado al hacer clic en elementos en dispositivos móviles */
+### Deshabilitar el sombreado al hacer clic en elementos en dispositivos móviles
 
 ```css
 *:active {
