@@ -19,6 +19,8 @@ tags: ['recursos']
 
 - [Chequeo Web](https://web-check.xyz/)
 - [Saber qué tecnologías tiene tu web](https://www.wappalyzer.com/)
+- [Can I include. Chequeo de anidamiento de etiquetas](https://caninclude.glitch.me/)
+- [Validador de HTML](https://validator.w3.org)
 
 ## SVG's
 
@@ -32,9 +34,14 @@ tags: ['recursos']
 - [Optimiza tus imágenes para web](https://squoosh.app/)
 - [Diversos efectos sobre imágenes](https://shots.so/)
 
-## Recursos 
+## Recursos de otros developers
 
 - [ibelick](https://www.ibelick.com/): botones tailwind, background-snippets, animaciones tailwind ...
+
+## Fuentes
+
+- [Fuentes instalables - fontsource](https://fontsource.org/)
+- [clamp calculator](https://utopia.fyi/type/calculator/)
 
 ## Accesibility
 
