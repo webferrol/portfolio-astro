@@ -65,7 +65,7 @@ tags: ['recursos']
 - [koyeb](https://www.koyeb.com/)
 ### Otros recursos de deployments
 
-- [Para comparar despliegues]()
+- [getdeploying: para comparar despliegues](https://getdeploying.com/)
 
 ## Herramientas generales
 
