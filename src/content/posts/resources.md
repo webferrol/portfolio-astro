@@ -1,6 +1,6 @@
 ---
 title: 'Recursos'
-pubDate: 2024-02-21
+pubDate: 2024-03-06
 description: 'Recursos de desarrollo para imágenes, vídeo ...'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
@@ -42,6 +42,7 @@ tags: ['recursos']
 
 - [Fuentes instalables - fontsource](https://fontsource.org/)
 - [clamp calculator](https://utopia.fyi/type/calculator/)
+- [Evitar el flash al cargar fuentes que no son del sistema](https://meowni.ca/font-style-matcher/)
 
 ## Accesibility
 
@@ -55,12 +56,16 @@ tags: ['recursos']
 - [Lite youtube embed](https://github.com/paulirish/lite-youtube-embed?tab=readme-ov-file)
 
 ## Deploy
+### Para desplegar
 
 - [Netlify](https://www.netlify.com/)
 - [Render](https://render.com/)
 - [fl0](https://www.fl0.com/)
 - [fly](https://fly.io/)
 - [koyeb](https://www.koyeb.com/)
+### Otros recursos de deployments
+
+- [Para comparar despliegues]()
 
 ## Herramientas generales
 

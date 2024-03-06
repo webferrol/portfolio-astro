@@ -3,9 +3,8 @@ import { ViewTransitions } from 'astro:transitions'
 import Navbar from '@components/sections/Navbar.astro'
 import TheFooter from '@components/sections/TheFooter.astro'
 import { urlBase } from '../constants'
-import '@fontsource/onest/400.css'
-import '@fontsource/onest/700.css'
-import '../styles/global.css'
+// Supports weights 100-900
+import '@fontsource-variable/onest';
 import '../styles/custom.css'
 
 interface Props {
@@ -43,3 +42,67 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
     <TheFooter>    
   </body>
 </html>
+
+<style is:global>
+  * {
+  box-sizing: border-box;
+  min-width: 0; /*Fix problems of overflow with flex items in flex or grid*/
+}
+
+:root {
+  --step-0: clamp(1rem, 0.913rem + 0.4348vi, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0739rem + 0.6304vi, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.2615rem + 0.8924vi, 1.9531rem);
+  --step-3: clamp(1.728rem, 1.4799rem + 1.2407vi, 2.4414rem);
+  font-family: 'Onest Variable', sans-serif;
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  min-height: 100dvh;
+  font-size: var(--step-0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Deshabilitar el sombreado al hacer clic en elementos en dispositivos móviles */
+*:active {
+  -webkit-tap-highlight-color: transparent; /* Para navegadores basados en WebKit, como Chrome y Safari */
+  -moz-tap-highlight-color: transparent; /* Para navegadores basados en Gecko, como Firefox */
+  -ms-tap-highlight-color: transparent; /* Para Internet Explorer */
+  tap-highlight-color: transparent; /* Propiedad genérica */
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+</style>
