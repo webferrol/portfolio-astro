@@ -15,4 +15,4 @@ tags: ['unity']
 
 >Los **GameObject** son  cualquier objeto que está en **scene**, desde una luz, un modelo, un *sprite*, personajes, etc.
 
-Por ejemplo para generar un **GameOject** como un *sprite* puedes utilizar sobre el panel **Assets** el botón derecho del ratón y seleccionar Create > Sprites > Square
+Por ejemplo para generar un **GameOject** como un *sprite* puedes utilizar sobre el panel **Assets** el botón derecho del ratón y seleccionar <code>Create > Sprites > Square</code>

@@ -1,0 +1,118 @@
+.mark-down {
+    /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1000,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    --step-0: clamp(1.125rem, 1.0662rem + 0.2941vi, 1.25rem);
+    --step-1: clamp(1.35rem, 1.25rem + 0.5vi, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.4632rem + 0.7838vi, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.7099rem + 1.1704vi, 2.4414rem);
+    --step-4: clamp(2.3328rem, 1.9945rem + 1.6917vi, 3.0518rem);
+    font-size: var(--step-0);
+    text-transform: initial;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.mark-down pre {
+    margin: 1em 0;
+    background-color: #333;
+}
+
+.mark-down pre,
+.mark-down code {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: var(--step-0);
+}
+
+.mark-down pre {
+    padding: 0.5rem;
+    line-height: 1.25;
+    overflow-x: scroll;
+}
+
+.mark-down blockquote {
+    border-left: 3px solid #01ff70;
+    padding-left: 1rem;
+}
+
+.mark-down ul,
+.mark-down ol {
+    list-style-type: initial;
+    padding-left: 0.8em;
+}
+
+.mark-down a {
+    text-decoration: underline;
+}
+
+.mark-down li,
+.mark-down p {
+    margin: 1.3rem 0;
+    text-wrap: pretty;
+    line-height: 2;
+    font-size: inherit;
+}
+
+.mark-down li {
+    margin-left: 1rem;
+}
+
+.mark-down ol {
+    list-style-type: decimal;
+}
+
+.mark-down p {
+    border-left: 2px solid rgb(40 116 252/50%);
+    padding-left: 1rem;
+}
+
+.mark-down h1,
+.mark-down h2,
+.mark-down h3,
+.mark-down h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: inherit;
+    line-height: 1.42;
+    text-wrap: balance;
+}
+
+.mark-down h1 {
+    margin-top: 0;
+    font-size: var(--step-4);
+    text-wrap: balance;
+}
+
+.mark-down h2 {
+    font-size: var(--step-3);
+    text-wrap: balance;
+}
+
+.mark-down h3 {
+    font-size: var(--step-2);
+    text-wrap: balance;
+}
+
+.mark-down h4 {
+    font-size: var(--step-1);
+    text-wrap: balance;
+}
+
+.mark-down small {
+    font-size: 0.707em;
+}
+
+.mark-down iframe {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+.mark-down img,
+.mark-down canvas,
+.mark-down iframe,
+.mark-down video,
+.mark-down svg,
+.mark-down select,
+.mark-down textarea {
+    max-width: 100%;
+}

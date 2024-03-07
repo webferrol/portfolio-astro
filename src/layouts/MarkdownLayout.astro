@@ -3,16 +3,25 @@ import MainLayout from "@/layouts/TheLayout.astro"
 import Markdown from "@components/sections/Markdown.astro"
 
 
-const { frontmatter } = Astro.props
+const {  
+  frontmatter : { 
+    author,
+    description, 
+    email,
+    ogImage,
+    pubDate,
+    title
+  }
+} = Astro.props
 ---
 
-<MainLayout title={frontmatter.title} description={frontmatter.description} ogImage={frontmatter.ogImage}>
+<MainLayout title={title} description={description} ogImage={ogImage}>
   <Markdown
-    title={frontmatter.title}
-    description={frontmatter.description}
-    pubDate={frontmatter.pubDate}
-    email={frontmatter.email}
-    author={frontmatter.author}
+    title={title}
+    description={description}
+    pubDate={pubDate}
+    email={email}
+    author={author}
   >
     <slot />
   </Markdown>
