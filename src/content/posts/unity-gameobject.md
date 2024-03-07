@@ -24,6 +24,11 @@ Un **GameObject** por sí solo no hace mucho. Es necesario darle funcionalidad. 
 
 ![GameObject empty](/blog/gameobject-empty.webp)
 
+## Prefabs
+
+Los **prefabs** son literalmente *GameObject prefabricados*, es decir, creas un *GameObject*, le añades todo el comportamiento y componentes que quieras, lo dejas listo para usarse y lo conviertes en un **prefab**. Cuando lo conviertes en un *prefab*, se puede utilizar como una plantilla y puede utilizarse en todas las escenas de tu proyecto.
+
+Podemos convertir cualquier *GameObject* en **prefabs** y tener los *GameObject* con todas sus propiedades disponibles en otra escena. Para convertirlos en **prefab** primero voy a crear una nueva carpeta con el botón secundario del ratón en <code>Create > Folder</code>, voy a llamar a la nueva carpeta **/Prefabs** y lo único que he de hacer es entrar a esta carpeta, coger el *GameObject* que quiero crear como *prefab* y arrastrarlo dentro.
 
 ## Atajos teclado
 
