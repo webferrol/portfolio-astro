@@ -29,7 +29,7 @@ Aquí hay algunas consideraciones importantes sobre usabilidad en CSS:
 
 **Devtools**
 
-Una buena opción de las **herramientas de de desarrollo** de los navegadores de **Chrome** son las **CSS Overview**. Con el atajo <kbd>Ctrl + Shift + P<kbd> podemos buscar esta opción. ![CSS Overview](/blog/css-overview.webp)
+Una buena opción de las **herramientas de desarrollo** de los navegadores de **Chrome** son las **CSS Overview**. Con el atajo <kbd>Ctrl + Shift + P<kbd> podemos buscar esta opción. ![CSS Overview](/blog/css-overview.webp)
 
 Podemos ver un panel donde a parte del contraste tenemos los siguientes apartados:
 
@@ -37,6 +37,9 @@ Podemos ver un panel donde a parte del contraste tenemos los siguientes apartado
 - Font Info
 - Unused declarations
 - Media queries
+
+Otra buena **herramienta de desarrollo** en **Chrome** para mejorar la **performance** es **Lighthouse** que te hace un informe completo y enlaces para mejorar. ![CSS Overview](/blog/lighthouse.webp)
+
 
 **Recursos de contraste**:
 
