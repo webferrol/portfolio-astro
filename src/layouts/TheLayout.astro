@@ -1,11 +1,12 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
 import Navbar from '@components/sections/Navbar.astro'
+import ChangePrefersColorScheme from '@components/utils/ChangePrefersColorScheme.astro'
 import TheFooter from '@components/sections/TheFooter.astro'
 import { urlBase } from '../constants'
 // Supports weights 100-900
 import '@fontsource-variable/onest';
-import '../styles/custom.css'
+import '@/styles/custom.css'
 
 interface Props {
   title?: string | number
@@ -28,12 +29,10 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
     <meta property="og:image" content={ogImage ?? urlBase + 'avatar.webp'} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <title>{title}</title>
+    <ChangePrefersColorScheme />
     <ViewTransitions />
-    <script is:inline>
-      const theme = localStorage.getItem('theme') || 'light'
-      document.documentElement.classList.add(theme)
-    </script>
   </head>
+    
   <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
     <Navbar />
     <div>

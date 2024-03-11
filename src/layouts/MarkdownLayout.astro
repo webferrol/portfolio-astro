@@ -1,29 +1,34 @@
 ---
-import '@/styles/markdown.css'
-import MainLayout from "@/layouts/TheLayout.astro"
-import Markdown from "@components/sections/Markdown.astro"
+import "@/styles/markdown.css";
+import MainLayout from "@/layouts/TheLayout.astro";
 
-
-const {  
-  frontmatter : { 
-    author,
-    description, 
-    email,
-    ogImage,
-    pubDate,
-    title
-  }
-} = Astro.props
+const {
+  frontmatter: { author, description, email, ogImage, pubDate, title },
+} = Astro.props;
 ---
 
 <MainLayout title={title} description={description} ogImage={ogImage}>
-  <Markdown
-    title={title}
-    description={description}
-    pubDate={pubDate}
-    email={email}
-    author={author}
-  >
+  <section class="p-10 mark-down">
+    <aside
+      class="flex justify-between items-center flex-wrap gap-2 mb-4 text-sm"
+    >
+      <strong>
+        {title}
+      </strong>
+      <address class="font-semibold">
+        Autor:
+        <a
+          class="text-link dark:text-link-dark hover:underline"
+          href={`mailto:${email}`}
+        >
+          {author}
+        </a>
+      </address>
+      <time
+        datetime={`${pubDate.getFullYear()}-${(pubDate.getMonth() + 1).toString().padStart(2, "0")}-${pubDate.getDate().toString().padStart(2, "0")}`}
+        >{pubDate?.toDateString()}</time
+      >
+    </aside>
     <slot />
-  </Markdown>
+  </section>
 </MainLayout>
