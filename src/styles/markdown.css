@@ -29,14 +29,34 @@
 }
 
 .mark-down blockquote {
-    border-left: 3px solid #01ff70;
+    position: relative;
     padding-left: 1rem;
 }
+
+.mark-down blockquote::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "🗨️";
+}
+
 
 .mark-down ul,
 .mark-down ol {
     list-style-type: initial;
-    padding-left: 0.8em;
+    padding-left: 0.8rem;
+}
+
+.mark-down ul > li {
+    list-style-type: none;
+}
+
+.mark-down ul > li::before {
+    content: '👌';
+}
+
+.mark-down ul > li li::before {
+    content: '👉';
 }
 
 .mark-down a {
@@ -59,8 +79,7 @@
     list-style-type: decimal;
 }
 
-.mark-down p {
-    border-left: 2px solid rgb(40 116 252/50%);
+.mark-down p {    
     padding-left: 1rem;
 }
 
