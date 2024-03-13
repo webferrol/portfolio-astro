@@ -34,6 +34,7 @@
 }
 
 .mark-down kbd {
+    position: relative;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 3px;
