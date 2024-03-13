@@ -33,6 +33,48 @@
     padding-left: 1rem;
 }
 
+.mark-down kbd {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f7f7f7;
+    min-width: 3em;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Estilos adicionales para simular el relieve */
+.mark-down kbd::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border-radius: 2px 2px 0 0;
+}
+
+.mark-down kbd::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    border-radius: 0 0 2px 2px;
+}
+
 .mark-down blockquote::before {
     position: absolute;
     top: 0;
