@@ -32,5 +32,5 @@ Podemos convertir cualquier *GameObject* en **prefabs** y tener los *GameObject*
 
 ## Atajos teclado
 
-- <code>Ctrl + D</code> Puedes duplicar tantos *GameObjects* como desees.
-- <code>W</code> Seleccionando un *GameObject* del panel de **Hierarchy** puedes desplazarlos por la *Scene*
+- <kbd>Ctrl</kbd> + <kbd>D</kbd> Puedes duplicar tantos *GameObjects* como desees.
+- <kbd>W</kbd> Seleccionando un *GameObject* del panel de **Hierarchy** puedes desplazarlos por la *Scene*

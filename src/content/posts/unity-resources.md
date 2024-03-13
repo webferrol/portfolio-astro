@@ -18,6 +18,6 @@ tags: ['unity']
 
 ## Atajos de unity
 
-- <code>W</code> Desplazar un objeto.
-- <code>R</code> Escalar un objeto.
-- <code>F</code> Acercar/alejar un objeto *seleccionado*.
+- <kbd>W</kbd> Desplazar un objeto.
+- <kbd>R</kbd> Escalar un objeto.
+- <kbd>F</kbd> Acercar/alejar un objeto *seleccionado*.
