@@ -33,6 +33,18 @@
     padding-left: 1rem;
 }
 
+.mark-down blockquote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 6rem;
+    background: transparent url(/icons/chat-message.svg) no-repeat;
+  }
+
 .mark-down kbd {
     position: relative;
     display: inline-block;
@@ -76,14 +88,6 @@
     border-radius: 0 0 2px 2px;
 }
 
-.mark-down blockquote::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "🗨️";
-}
-
-
 .mark-down ul,
 .mark-down ol {
     list-style-type: initial;
@@ -96,6 +100,7 @@
 
 .mark-down ul > li::before {
     content: '👌';
+    display: inline-block;
 }
 
 .mark-down ul > li li::before {
