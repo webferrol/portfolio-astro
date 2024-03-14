@@ -43,7 +43,7 @@
     height: 2rem;
     font-size: 6rem;
     background: transparent url(/icons/chat-message.svg) no-repeat;
-  }
+}
 
 .mark-down kbd {
     position: relative;
