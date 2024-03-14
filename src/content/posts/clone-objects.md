@@ -36,7 +36,7 @@ const p1 = {
 ```
 ## Object.assign({}, object)
 
-> [!WARNING]
+> [⚠️]
 > Problemas de anidamiento
 
 ```js
@@ -69,7 +69,7 @@ console.log(p1, p2)
 
 ## Destructuring
 
-> [!WARNING]
+> [⚠️]
 > Problemas de anidamiento
 
 ```js
@@ -100,7 +100,7 @@ console.log(p1, p2)
 
 ## JSON.parse
 
-> [!NOTE]
+> [🗒️]
 > Resolvemos el anidamiento sin librería externa
 
 ```js
@@ -200,9 +200,6 @@ console.log(p1, p2)
 ## Bibliografía
 
 - [Object.assign](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-
 - [La desestructuración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
-
 - [JSON.parse()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
-
 - [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone)
