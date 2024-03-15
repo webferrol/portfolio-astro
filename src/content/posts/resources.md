@@ -66,6 +66,7 @@ tags: ['recursos']
 ### Otros recursos de deployments
 
 - [getdeploying: para comparar despliegues](https://getdeploying.com/)
+- [emojis para markdown](https://gist.github.com/rxaviers/7360908)
 
 ## Herramientas generales
 
