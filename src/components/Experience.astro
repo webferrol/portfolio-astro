@@ -1,12 +1,12 @@
 ---
-import { experiences } from '@data'
 import ExperienceItem from './ExperienceItem.astro';
+import { experiences }  from '@data';
 ---
 
 <ol
   class="relative border-s border-gray-200 dark:border-gray-700 dark:text-gray-400"
 >
   {
-    experiences.reverse().map(({title, details, date}) => <ExperienceItem title={title} details={details} date={date} />)
+   experiences.length && experiences.map(({title, details, date, place}) => <ExperienceItem place={place} title={title} details={details} date={date} />)
   }
 </ol>

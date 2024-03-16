@@ -1,52 +1,60 @@
 {
     "experiences": [
         {
-            "id": 6,
+            "id": 1,
+            "title": "Docente en Cersia",
+            "details": "Obradoiro AppVenturers",
+            "date": "2024",
+            "place": "Santiago de Compostela"
+        },
+        {
+            "id": 2,
+            "title": "Profesor de Programación",
+            "details": "Obradoiro Sansus 3",
+            "date": "2020",
+            "place": "Santiago de Compostela"
+        },
+        {
+            "id": 3,
+            "title": "Docente",
+            "details": "AFD (MF0491_3)",
+            "date": "2019",
+            "place": "Oviedo"
+        },
+        {
+            "id": 4,
             "title": "Programador",
-            "details": "Empresa Englishpanish - Mantenimiento de la página y responsable del soporte técnico",
-            "date": "2016"
+            "details": "Empresa Englishpanish",
+            "date": "2019",
+            "place": "Ferrol"
+        },
+        {
+            "id": 5,
+            "title": "Docente FP",
+            "details": "Desarrollo de Aplicaciones Web (DAW)",
+            "date": "2019",
+            "place": "Oviedo"
+        },
+        {
+            "id": 6,
+            "title": "Formador WEB",
+            "details": "AFD (MF0491_3), Computer 3",
+            "date": "2018",
+            "place": "Lugo"
         },
         {
             "id": 7,
             "title": "Profesor en WEB",
-            "details": "AFD (MF0491_3) - Lugo (Academia Foremprego)",
-            "date": "2017"
+            "details": "AFD (MF0491_3), Academia Foremprego",
+            "date": "2017",
+            "place": "Lugo"
         },
         {
             "id": 8,
-            "title": "Formador WEB",
-            "details": "AFD (MF0491_3) - Lugo (Computer 3)",
-            "date": "2018"
-        },
-        {
-            "id": 9,
-            "title": "Docente FP",
-            "details": "DAW - Oviedo",
-            "date": "2019"
-        },
-        {
-            "id": 10,
             "title": "Programador",
-            "details": "Empresa Englishpanish",
-            "date": "2019"
-        },
-        {
-            "id": 11,
-            "title": "Docente",
-            "details": "AFD (MF0491_3) - Oviedo",
-            "date": "2019"
-        },
-        {
-            "id": 12,
-            "title": "Profesor de Programación",
-            "details": "Módulo MF0491_3. Obradoiro Sansus 3 (Santiago de Compostela)",
-            "date": "2020"
-        },
-        {
-            "id": 13,
-            "title": "Docente en Cersia",
-            "details": "Desenvolvemento de Aplicacións Web. AppVenturers",
-            "date": "2024"
+            "details": "Empresa Englishpanish - Mantenimiento de la página y responsable del soporte técnico",
+            "date": "2016",
+            "place": "Ferrol"
         }
     ]
 }
