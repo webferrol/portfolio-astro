@@ -1,11 +1,12 @@
 ---
 interface Props {
     title: string,
+    place: string,
     details: string,
     date: string
 }
 
-const { title, details, date } = Astro.props
+const { title, details, date, place } = Astro.props
 ---
 <li class="mb-10 ms-6">
   <span
@@ -25,5 +26,5 @@ const { title, details, date } = Astro.props
   </span>
   <time class="mb-1 ml-2 text-sm font-normal leading-none text-gray-700 dark:text-gray-100">{date}</time>
   <h3 class="ml-2 font-medium leading-tight">{title}</h3>
-  <p class="ml-2 text-sm">{details}</p>
+  <p class="ml-2 text-sm">{details}, {place}</p>
 </li>
