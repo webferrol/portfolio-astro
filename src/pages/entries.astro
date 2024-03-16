@@ -2,6 +2,7 @@
 import Layout from '@/layouts/TheLayout.astro'
 import TheMain from '@/components/sections/TheMain.astro'
 import { WORDPRESS_URL } from '@/constants.ts'
+import { type Post } from '@/wordpress-types.ts'
 const res = await fetch(WORDPRESS_URL)
 const posts = await res.json()
 ---
@@ -17,7 +18,7 @@ const posts = await res.json()
     >
       {
         posts.length &&
-          posts.map(({ link, title, yoast_head_json }) => (
+          posts.map(({ link, title, yoast_head_json }: Post) => (
             <a
               href={link}
               target="_blank"
@@ -55,7 +56,7 @@ const posts = await res.json()
 
                 <div
                   class='absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-bento bg-cover bg-no-repeat bg-blend-luminosity opacity-90'
-                  style={yoast_head_json?.og_image.length && `background-image: url(${yoast_head_json?.og_image[0].url})`}
+                  style={`background-image: url(${yoast_head_json?.og_image[0].url})`}
                 />
 
                 <header class='z-20 p-5'>
