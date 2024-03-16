@@ -1,5 +1,1 @@
-const urlBase = 'https://webferrol.netlify.app/'
-
-export {
-  urlBase
-}
+export const WORDPRESS_URL = 'https://www.webferrol.com/wp-json/wp/v2/posts'
