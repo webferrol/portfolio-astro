@@ -1,0 +1,72 @@
+---
+import Layout from '@/layouts/TheLayout.astro'
+import TheMain from '@/components/sections/TheMain.astro'
+import { WORDPRESS_URL } from '@/constants.ts'
+const res = await fetch(WORDPRESS_URL)
+const posts = await res.json()
+---
+
+<Layout
+  title='Entradas de programación publicadas en WebFerrol.com'
+  description='Entradas de programación de mi blog en Wordpress'
+>
+  <TheMain title='Entradas de programación en WebFerrol.com'>
+    <section
+      aria-label='Entradas de Wordpress'
+      class='grid grid-cols-10 auto-rows-[20rem] gap-4 max-w-[1140px] mx-auto text-white'
+    >
+      {
+        posts.length &&
+          posts.map(({ link, title, yoast_head_json }) => (
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer noopener"
+              class={`
+                relative
+                group
+                overflow-hidden
+                col-span-10
+                md:col-span-5
+                border 
+                border-sky-500/20 
+                rounded
+                backdrop-blur-md
+                shadow-inner
+                shadow-white/10`
+              }
+            >
+              <article class='flex flex-col justify-end h-full'>
+                <div
+                  class='
+                  absolute
+                  let-0
+                  bottom-0 
+                  top-0
+                  z-20 
+                  w-full 
+                  h-full
+                  bg-gradient-to-b
+                  from-transparent 
+                  from-20% 
+                  via-black/80 
+                  to-black/90'
+                />
+
+                <div
+                  class='absolute z-10 left-0 top-0 bottom-0 w-full h-full bg-blue-950 group-hover:scale-110 transition-scale duration-1000 ease-in-out bg-bento bg-cover bg-no-repeat bg-blend-luminosity opacity-90'
+                  style={yoast_head_json?.og_image.length && `background-image: url(${yoast_head_json?.og_image[0].url})`}
+                />
+
+                <header class='z-20 p-5'>
+                  <h2 set:html class='font-semibold text-2xl text-balance'>
+                    {title.rendered}
+                  </h2>
+                </header>
+              </article>
+            </a>
+          ))
+      }
+    </section>
+  </TheMain>
+</Layout>

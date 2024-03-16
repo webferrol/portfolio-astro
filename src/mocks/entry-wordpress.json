@@ -1,0 +1,310 @@
+{
+    "id": 5797,
+    "date": "2021-08-28T10:25:52",
+    "date_gmt": "2021-08-28T08:25:52",
+    "guid": {
+      "rendered": "https://www.webferrol.com/?p=5797"
+    },
+    "modified": "2021-08-31T10:13:06",
+    "modified_gmt": "2021-08-31T08:13:06",
+    "slug": "ejemplo-de-uso-de-arrays-en-javascript",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/",
+    "title": {
+      "rendered": "Ejemplo de uso de arrays en JavaScript"
+    },
+    "content": {
+      "rendered": "\n<p>Un <strong>array</strong>, <strong>arreglo</strong>, <strong>vector</strong> o <strong>tabla unidimensional</strong> es un tipo de dato estructurado que permite almacenar un conjunto de datos. Como JavaScript es un lenguaje <a href=\"https://es.wikipedia.org/wiki/Tipado_fuerte#Lenguajes_no_tipados\">débilmente tipado</a> estos datos pueden ser datos heterogéneos al mismo tiempo.</p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<h2 class=\"wp-block-heading\">Inicialización de un array</h2>\n\n\n\n<p>No es este un artículo donde quiera exponer cómo se crea un <strong>Array</strong> para eso tenemos amplia información en <cite><a href=\"https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array\">JavaScript | MDN</a></cite>. A modo de ejemplo definiremos el siguiente array.</p>\n\n\n\n<pre class=\"wp-block-code\"><code>let images = &#91;\n'http://placekitten.com/300/600',\n'http://placekitten.com/800/300',\n'http://placekitten.com/400/600',\n'http://placekitten.com/320/400',\n'http://placekitten.com/350/400',\n'http://placekitten.com/420/600',\n'http://placekitten.com/320/710'];</code></pre>\n\n\n\n<p>Como observamos hemos creado un <strong>vector</strong> de siete elementos que contienen enlaces al dominio <a href=\"http://placekitten.com\">placekitten</a>. <br>Utilizaremos este array en un ejemplo práctico para cargar un <em>elemento</em> selector y asignar las rutas a un elemento imagen</p>\n            Para recorrer un <strong>arreglo</strong> nos hace falta utilizar unas estructuras repetitivas conocidas como <em>bucles</em> o <em>ciclos</em>:\n            <ul>\n                <li>for</li>\n                <li>while</li>\n                <li>do&#8230;while</li>\n            </ul>\nPor ejemplo, imaginemos un <strong>vector</strong> de N elementos:\n\n\n\n<pre class=\"wp-block-code\"><code>//Array de imágenes definido anteriormente.\nlet i=0;\ndo{\n  images&#91;i];           \n  i++;\n}i&lt;7</code></pre>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<h2 class=\"wp-block-heading\">Ejemplo de arreglo</h2>\n\n\n\nA continuación sobre un elemento <em>img</em> cargaremos las rutas de imágenes de un <em>array</em> para después selecionarlos de un combo o elemento <em>select</em>.\n<select id=\"selector\"></select>\n\n\n\n<hr class=\"wp-block-separator\"/>\n\n\n\n<img decoding=\"async\" style=\"display: block;width: 90%;margin: 0 auto;height: 70vh;object-fit: cover;border-radius: .5em;box-shadow: 0 0 .5em .2em black;\" id=\"imagen\" src=\"http://placekitten.com/300/600\" alt=\"Gatitos\">\n\n\n\n<hr class=\"wp-block-separator\"/>\n\n\n\n<pre class=\"wp-block-code\"><code>let i=0;\nlet images = &#91;\n'http://placekitten.com/300/600',\n'http://placekitten.com/800/300',\n'http://placekitten.com/400/600',\n'http://placekitten.com/320/400',\n'http://placekitten.com/350/400',\n'http://placekitten.com/420/600',\n'http://placekitten.com/320/710'];\nlet imagenEl = document.querySelector('#imagen');\nlet selectorEl = window.document.querySelector('#selector');\ndo{\n    let optionEl = window.document.createElement('option');\n    optionEl.text = `Imagen ${i+1}`;\n    optionEl.value = images&#91;i];\n    selectorEl.appendChild(optionEl);            \n    i++;\n}while(i&lt;images.length)\n\nselectorEl.addEventListener(\n    'change',\n    (e)=&gt;{\n        imagenEl.src=selectorEl.options&#91;selectorEl.selectedIndex].value;\n    }\n);</code></pre>\n\n\n\n<script>\n        let i=0, images = ['http://placekitten.com/300/600',\n                      'http://placekitten.com/800/300',\n                      'http://placekitten.com/400/600',\n                      'http://placekitten.com/320/400',\n                      'http://placekitten.com/350/400',\n                      'http://placekitten.com/420/600',\n                      'http://placekitten.com/320/710',];\n        let imagenEl = document.querySelector('#imagen');\n        let selectorEl = window.document.querySelector('#selector');\n        do{\n            let optionEl = window.document.createElement('option');\n            optionEl.text = `Imagen ${i+1}`;\n            optionEl.value = images[i];\n            selectorEl.appendChild(optionEl);            \n            i++;\n        }while(i<images.length)\n\n        selectorEl.addEventListener(\n            'change',\n            (e)=>{\n                imagenEl.src=selectorEl.options[selectorEl.selectedIndex].value;\n            }\n        );\n    </script>\n</div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Un array, arreglo, vector o tabla unidimensional es un tipo de dato estructurado que permite almacenar un conjunto de datos. Como JavaScript es un lenguaje débilmente tipado estos datos pueden ser datos heterogéneos al mismo tiempo. Inicialización de un array No es este un artículo donde quiera exponer cómo se crea un Array para eso tenemos amplia [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 5821,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [
+      250,
+      251,
+      252
+    ],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Ejemplo de uso de arrays en JavaScript - WebFerrol</title>\n<meta name=\"description\" content=\"Ejemplo de uso de arrays en JavaScript -\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Ejemplo de uso de arrays en JavaScript - WebFerrol\" />\n<meta property=\"og:description\" content=\"Ejemplo de uso de arrays en JavaScript -\" />\n<meta property=\"og:url\" content=\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\" />\n<meta property=\"og:site_name\" content=\"WebFerrol\" />\n<meta property=\"article:published_time\" content=\"2021-08-28T08:25:52+00:00\" />\n<meta property=\"article:modified_time\" content=\"2021-08-31T08:13:06+00:00\" />\n<meta property=\"og:image\" content=\"https://www.webferrol.com/wp-content/uploads/html5.png\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"author\" content=\"Xurxo González Tenreiro\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:creator\" content=\"@web_ferrol\" />\n<meta name=\"twitter:site\" content=\"@web_ferrol\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"Xurxo González Tenreiro\" />\n\t<meta name=\"twitter:label2\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data2\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#article\",\"isPartOf\":{\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\"},\"author\":{\"name\":\"Xurxo González Tenreiro\",\"@id\":\"https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068\"},\"headline\":\"Ejemplo de uso de arrays en JavaScript\",\"datePublished\":\"2021-08-28T08:25:52+00:00\",\"dateModified\":\"2021-08-31T08:13:06+00:00\",\"mainEntityOfPage\":{\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\"},\"wordCount\":175,\"commentCount\":1,\"publisher\":{\"@id\":\"https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068\"},\"image\":{\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage\"},\"thumbnailUrl\":\"https://www.webferrol.com/wp-content/uploads/html5.png\",\"keywords\":[\"arrays en JavaScript\",\"definición de un arreglo\",\"ejemplo de vector\"],\"articleSection\":[\"Diseño\"],\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\",\"url\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\",\"name\":\"Ejemplo de uso de arrays en JavaScript - WebFerrol\",\"isPartOf\":{\"@id\":\"https://www.webferrol.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage\"},\"image\":{\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage\"},\"thumbnailUrl\":\"https://www.webferrol.com/wp-content/uploads/html5.png\",\"datePublished\":\"2021-08-28T08:25:52+00:00\",\"dateModified\":\"2021-08-31T08:13:06+00:00\",\"description\":\"Ejemplo de uso de arrays en JavaScript -\",\"breadcrumb\":{\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage\",\"url\":\"https://www.webferrol.com/wp-content/uploads/html5.png\",\"contentUrl\":\"https://www.webferrol.com/wp-content/uploads/html5.png\",\"width\":600,\"height\":600,\"caption\":\"HTML5\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"WebFerrol\",\"item\":\"https://www.webferrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diseño\",\"item\":\"https://www.webferrol.com/category/diseno/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Ejemplo de uso de arrays en JavaScript\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.webferrol.com/#website\",\"url\":\"https://www.webferrol.com/\",\"name\":\"WebFerrol\",\"description\":\"Diseño Web, SEO, Imagen Corporativa\",\"publisher\":{\"@id\":\"https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.webferrol.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068\",\"name\":\"Xurxo González Tenreiro\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://www.webferrol.com/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/53988c6a7763a46300feccccc6553b03?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/53988c6a7763a46300feccccc6553b03?s=96&d=mm&r=g\",\"caption\":\"Xurxo González Tenreiro\"},\"logo\":{\"@id\":\"https://www.webferrol.com/#/schema/person/image/\"},\"description\":\"Informático de mente inquieta con grandes ideas en el ámbito de la progamación. Especialista en el desarrollo web e interesado en el análisis SEO. Me encanta mi labor en el ámbito de la divulgación por lo cual he ampliado mis horizontes al ámbito de la educación y formación en el desarrollo de aplicaciones web. También como gestor de contenidos web soy muy puntilloso con la divulgación y la elaboración de publicaciones en la red.\",\"sameAs\":[\"http://wwww.webferrol.com\",\"https://www.linkedin.com/in/webferrol/\"],\"url\":\"https://www.webferrol.com/author/xurxo/\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Ejemplo de uso de arrays en JavaScript - WebFerrol",
+      "description": "Ejemplo de uso de arrays en JavaScript -",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Ejemplo de uso de arrays en JavaScript - WebFerrol",
+      "og_description": "Ejemplo de uso de arrays en JavaScript -",
+      "og_url": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/",
+      "og_site_name": "WebFerrol",
+      "article_published_time": "2021-08-28T08:25:52+00:00",
+      "article_modified_time": "2021-08-31T08:13:06+00:00",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://www.webferrol.com/wp-content/uploads/html5.png",
+          "type": "image/png"
+        }
+      ],
+      "author": "Xurxo González Tenreiro",
+      "twitter_card": "summary_large_image",
+      "twitter_creator": "@web_ferrol",
+      "twitter_site": "@web_ferrol",
+      "twitter_misc": {
+        "Written by": "Xurxo González Tenreiro",
+        "Est. reading time": "2 minutes"
+      },
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#article",
+            "isPartOf": {
+              "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/"
+            },
+            "author": {
+              "name": "Xurxo González Tenreiro",
+              "@id": "https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068"
+            },
+            "headline": "Ejemplo de uso de arrays en JavaScript",
+            "datePublished": "2021-08-28T08:25:52+00:00",
+            "dateModified": "2021-08-31T08:13:06+00:00",
+            "mainEntityOfPage": {
+              "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/"
+            },
+            "wordCount": 175,
+            "commentCount": 1,
+            "publisher": {
+              "@id": "https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068"
+            },
+            "image": {
+              "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.webferrol.com/wp-content/uploads/html5.png",
+            "keywords": [
+              "arrays en JavaScript",
+              "definición de un arreglo",
+              "ejemplo de vector"
+            ],
+            "articleSection": [
+              "Diseño"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "CommentAction",
+                "name": "Comment",
+                "target": [
+                  "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#respond"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/",
+            "url": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/",
+            "name": "Ejemplo de uso de arrays en JavaScript - WebFerrol",
+            "isPartOf": {
+              "@id": "https://www.webferrol.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage"
+            },
+            "image": {
+              "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.webferrol.com/wp-content/uploads/html5.png",
+            "datePublished": "2021-08-28T08:25:52+00:00",
+            "dateModified": "2021-08-31T08:13:06+00:00",
+            "description": "Ejemplo de uso de arrays en JavaScript -",
+            "breadcrumb": {
+              "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#primaryimage",
+            "url": "https://www.webferrol.com/wp-content/uploads/html5.png",
+            "contentUrl": "https://www.webferrol.com/wp-content/uploads/html5.png",
+            "width": 600,
+            "height": 600,
+            "caption": "HTML5"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.webferrol.com/ejemplo-de-uso-de-arrays-en-javascript/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "WebFerrol",
+                "item": "https://www.webferrol.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Diseño",
+                "item": "https://www.webferrol.com/category/diseno/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ejemplo de uso de arrays en JavaScript"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.webferrol.com/#website",
+            "url": "https://www.webferrol.com/",
+            "name": "WebFerrol",
+            "description": "Diseño Web, SEO, Imagen Corporativa",
+            "publisher": {
+              "@id": "https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.webferrol.com/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": [
+              "Person",
+              "Organization"
+            ],
+            "@id": "https://www.webferrol.com/#/schema/person/d8f28aedee9bac503e6fa76a5fefd068",
+            "name": "Xurxo González Tenreiro",
+            "image": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://www.webferrol.com/#/schema/person/image/",
+              "url": "https://secure.gravatar.com/avatar/53988c6a7763a46300feccccc6553b03?s=96&d=mm&r=g",
+              "contentUrl": "https://secure.gravatar.com/avatar/53988c6a7763a46300feccccc6553b03?s=96&d=mm&r=g",
+              "caption": "Xurxo González Tenreiro"
+            },
+            "logo": {
+              "@id": "https://www.webferrol.com/#/schema/person/image/"
+            },
+            "description": "Informático de mente inquieta con grandes ideas en el ámbito de la progamación. Especialista en el desarrollo web e interesado en el análisis SEO. Me encanta mi labor en el ámbito de la divulgación por lo cual he ampliado mis horizontes al ámbito de la educación y formación en el desarrollo de aplicaciones web. También como gestor de contenidos web soy muy puntilloso con la divulgación y la elaboración de publicaciones en la red.",
+            "sameAs": [
+              "http://wwww.webferrol.com",
+              "https://www.linkedin.com/in/webferrol/"
+            ],
+            "url": "https://www.webferrol.com/author/xurxo/"
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.webferrol.com/wp-json/wp/v2/posts/5797"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.webferrol.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.webferrol.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/comments?post=5797"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 22,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/posts/5797/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 5830,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/posts/5797/revisions/5830"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/media/5821"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://www.webferrol.com/wp-json/wp/v2/media?parent=5797"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/categories?post=5797"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.webferrol.com/wp-json/wp/v2/tags?post=5797"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
