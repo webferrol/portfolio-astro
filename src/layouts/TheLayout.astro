@@ -3,7 +3,7 @@ import { ViewTransitions } from 'astro:transitions'
 import Navbar from '@components/sections/Navbar.astro'
 import ChangePrefersColorScheme from '@components/utils/ChangePrefersColorScheme.astro'
 import TheFooter from '@components/sections/TheFooter.astro'
-import { URLBASE } from '@/constants'
+import { PUBLIC_URL } from '@/constants.ts'
 // Supports weights 100-900
 import '@fontsource-variable/onest';
 import '@/styles/custom.css'
@@ -13,6 +13,7 @@ interface Props {
   description?: string
   ogImage?: string
 }
+
 
 const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa y divugador en el ámbito de la programación web sobre todo en el ámbito de HTML, CSS y JavaScript', ogImage } = Astro.props
 ---
@@ -26,7 +27,7 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
     <meta property="og:title" content={`${title}`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content={ogImage ?? URLBASE + 'avatar.webp'} />
+    <meta property="og:image" content={ogImage ?? PUBLIC_URL + 'avatar.webp'} />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <title>{title}</title>
     <ChangePrefersColorScheme />

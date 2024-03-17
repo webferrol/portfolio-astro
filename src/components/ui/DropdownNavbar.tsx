@@ -22,7 +22,7 @@ export function DropdownNavbar () {
               <a href="/tags" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Categorías</a>
             </li>
             <li>
-              <a href="/entries" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Entradas en WebFerrol</a>
+              <a href="/entries" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Entradas</a>
             </li>
           </ul>
       </div>

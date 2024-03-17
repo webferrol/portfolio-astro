@@ -4,7 +4,7 @@ import TheMain from '@/components/sections/TheMain.astro'
 import { WORDPRESS_URL } from '@/constants.ts'
 import { type Post } from '@/wordpress-types.ts'
 import { unescapeHTML } from '@/helpers/unescapeHTML.ts'
-const res = await fetch(WORDPRESS_URL)
+const res = await fetch(WORDPRESS_URL + 'posts')
 const posts = await res.json()
 ---
 
