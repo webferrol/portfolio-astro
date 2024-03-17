@@ -1,5 +1,6 @@
-const URLBASE = 'https://webferrol.netlify.app/'
-const WORDPRESS_URL = 'https://www.webferrol.com/wp-json/wp/v2/posts'
+const WORDPRESS_URL = 'https://www.webferrol.com/wp-json/wp/v2/'
+
+const PUBLIC_URL = 'https://webferrol.netlify.app/'
 
 interface keysValueStr {
   [key: string]: string; 
@@ -17,7 +18,7 @@ const UNESCAPE_HTML_OBJECT: keysValueStr = {
 }
 
 export {
+  PUBLIC_URL,
   UNESCAPE_HTML_OBJECT,
-  URLBASE,
   WORDPRESS_URL
 }
