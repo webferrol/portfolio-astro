@@ -3,6 +3,7 @@ import Layout from '@/layouts/TheLayout.astro'
 import TheMain from '@/components/sections/TheMain.astro'
 import { WORDPRESS_URL } from '@/constants.ts'
 import { type Post } from '@/wordpress-types.ts'
+import { unescapeHTML } from '@/helpers/unescapeHTML.ts'
 const res = await fetch(WORDPRESS_URL)
 const posts = await res.json()
 ---
@@ -61,7 +62,7 @@ const posts = await res.json()
 
                 <header class='z-20 p-5'>
                   <h2 set:html class='font-semibold text-2xl text-balance'>
-                    {title.rendered}
+                    {unescapeHTML(title.rendered)}
                   </h2>
                 </header>
               </article>
