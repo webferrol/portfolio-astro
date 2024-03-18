@@ -9,19 +9,25 @@ url: '/javascript.webp'
 tags: ['javascript', 'typescript']
 ---
 
-# Dejar de escapar entidades HTML
+# Dejar de escapar (escape) entidades HTML
 
 A veces al inyectar código <abbr title="Hipertext Marckup Language">HTML</abbr> en nuestros *scripts* podemos tener problemas con las **entidades HTML**.
-Por tanto podemos sustituir en **JavaScript** o **TypeScript** esas *entidades* con sus correspondientes caracteres. Comparar ambas imágens:
+Por tanto podemos sustituir en **JavaScript** o **TypeScript** esas *entidades* con sus correspondientes caracteres. Comparar ambas imágenes:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .5rem">
-<img src="/blog/unescape-problem.webp" alt="Problemas con las HTML entities">
-<img src="/blog/unescape-problem-fixed.webp" alt="Solución final">
+<figure>
+  <img src="/blog/unescape-problem.webp" alt="Problemas con las HTML entities">
+  <figcaption>Problemas con las HTML entities</figcaption>
+</figure>
+<figure>
+  <img src="/blog/unescape-problem-fixed.webp" alt="Solución final">
+  <figcaption>Solución después de escaparlas</figcaption>
+</figure>
 </div>
 
 ## Descripción del código
 
-Podemos para agilizar nuestro trabajo crea un *diccionarios de datos*:
+Podemos para agilizar nuestro trabajo creando un *diccionario de datos*:
 
 ```ts
 interface keysValueStr {
@@ -40,7 +46,7 @@ const UNESCAPE_HTML_OBJECT: keysValueStr = {
 }
 ```
 
-Para automatizar todo el proceso extraje las propiedades del objeto en un array y lo transformé en un **string** con el caracter separador "|"
+Para automatizar todo el proceso extraje las propiedades del objeto en un array y lo transformé en un **string** con el carácter separador "|"
 
 ```ts
 const properties = Object.getOwnPropertyNames(UNESCAPE_HTML_OBJECT).join('|')
