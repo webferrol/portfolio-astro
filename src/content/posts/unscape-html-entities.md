@@ -1,5 +1,5 @@
 ---
-title: 'Dejar de escapar entidades HTML'
+title: 'Dejar de escapar (escape) entidades HTML'
 pubDate: 2024-03-18
 description: 'A veces al inyectar código HTML en nuestros scripts podemos tener problemas con las entidades HTML.'
 email: 'xurxo@webferrol.com'
@@ -27,7 +27,7 @@ Por tanto podemos sustituir en **JavaScript** o **TypeScript** esas *entidades* 
 
 ## Descripción del código
 
-Podemos para agilizar nuestro trabajo creando un *diccionario de datos*:
+Podemos para agilizar nuestro trabajo crear un *diccionario de datos*:
 
 ```ts
 interface keysValueStr {
