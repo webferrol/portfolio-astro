@@ -11,9 +11,9 @@ tags: ['javascript', 'typescript']
 
 # Dejar de escapar (escape) entidades HTML
 
-A veces al inyectar código <abbr title="Hipertext Marckup Language">HTML</abbr> en nuestros *scripts* podemos observar que las **entidades HTML** no son impresas en sus caracteres correspondientes.
+A veces al inyectar código <abbr title="Hipertext Marckup Language">HTML</abbr> con **secuencias de escape** en nuestros scripts, generalmente **entidades html**, podemos observar que dichas *entidades* no son impresas en sus caracteres correspondientes.
 
-Una solución es crear un _dicionario de datos_ para utilizar estas entidades como clave (propiedad) y obtener como valor su correspondiente caracter.
+Una solución es crear un **dicionario de datos** para utilizar estas entidades como clave (**property**) y obtener como valor su correspondiente carácter.
 
 El problema lo podemos observar en las siguientes capturas:
 
@@ -31,7 +31,7 @@ El problema lo podemos observar en las siguientes capturas:
 ## Descripción del código
 
 
-En primer lugar creamos el *diccionario de datos*. Un objeto con la *HTML entity* como *propiedad* y el caracter que deseemos representar como *valor*:
+En primer lugar creamos el **diccionario de datos**. Un *objeto* con las **HTML entities** como **propiedad** y el carácter que deseemos representar como **valor**:
 
 ```ts
 interface keysValueStr {
@@ -50,13 +50,15 @@ const UNESCAPE_HTML_OBJECT: keysValueStr = {
 }
 ```
 
-Como nos va a llegar un **string** con todas las **entidades HTML** y las queremos sustituir con la **property** del objeto, nuestro **dicionario de datos** podemos automatizar todo el proceso para obtener un **string** con el carácter separador "|"
+Cuando nos llegue el código HTML en formato *String* y éste contenga alguna o algunas **entidades HTML** podremos utilizar nuestro **diccionario de datos** (el objeto creado anteriormente) valiéndonos de sus claves (**property**)  para obtener el *valor* o carácter deseado.
+
+A continuación mostramos el código para generar un *String* de las claves encontradas  del objeto. Cada una de estas claves separadas por el carácter "|":
 
 ```ts
 const properties = Object.getOwnPropertyNames(UNESCAPE_HTML_OBJECT).join('|')
 ```
 
-Finalmente implementé la función que obtiene los caracteres a partir **html entities** que funcionaban como clave:
+Finalmente implementé la función que obtiene los caracteres finales a partir de las **html entities** que hacen de clave:
 
 ```ts
 const unescapeHTML = (str: string) =>
