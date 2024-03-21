@@ -3,11 +3,11 @@ import "@/styles/markdown.css";
 import MainLayout from "@/layouts/TheLayout.astro";
 
 const {
-  frontmatter: { author, description, email, ogImage, pubDate, title },
+  frontmatter: { canonical, author, description, email, ogImage, pubDate, title },
 } = Astro.props;
 ---
 
-<MainLayout title={title} description={description} ogImage={ogImage}>
+<MainLayout title={title} description={description} ogImage={ogImage} canonical={canonical}>
   <section class="p-10 mark-down">
     <aside
       class="flex justify-between items-center flex-wrap gap-2 mb-4 text-sm"

@@ -4,6 +4,7 @@ pubDate: 2024-03-18
 description: 'A veces al inyectar código HTML en nuestros scripts podemos tener problemas con las entidades HTML.'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
+canonical: 'https://webferrol.netlify.app/posts/unscape-html-entities/'
 author: 'Xurxo González Tenreiro'
 url: '/javascript.webp'
 tags: ['javascript', 'typescript']
@@ -11,7 +12,7 @@ tags: ['javascript', 'typescript']
 
 # Dejar de escapar (escape) entidades HTML
 
-A veces al inyectar código <abbr title="Hipertext Marckup Language">HTML</abbr> con **secuencias de escape** en nuestros scripts, generalmente **entidades html**, podemos observar que dichas *entidades* no son impresas en sus caracteres correspondientes.
+A veces al inyectar código <abbr title="Hipertext Marckup Language">HTML</abbr> con **secuencias de escape** en nuestros scripts, generalmente **entidades HTML**, podemos observar que dichas *entidades* no son impresas en sus caracteres correspondientes.
 
 Una solución es crear un **dicionario de datos** para utilizar estas entidades como clave (**property**) y obtener como valor su correspondiente carácter.
 
@@ -58,7 +59,7 @@ A continuación mostramos el código para generar un *String* de las claves enco
 const properties = Object.getOwnPropertyNames(UNESCAPE_HTML_OBJECT).join('|')
 ```
 
-Finalmente implementé la función que obtiene los caracteres finales a partir de las **html entities** que hacen de clave:
+Finalmente implementé la función que obtiene los caracteres finales a partir de las **HTML entities** que hacen de clave:
 
 ```ts
 const unescapeHTML = (str: string) =>
