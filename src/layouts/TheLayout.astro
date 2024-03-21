@@ -11,11 +11,12 @@ import '@/styles/custom.css'
 interface Props {
   title?: string | number
   description?: string
-  ogImage?: string
+  ogImage?: string,
+  canonical?: string,
 }
 
 
-const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa y divugador en el ámbito de la programación web sobre todo en el ámbito de HTML, CSS y JavaScript', ogImage } = Astro.props
+const { title, canonical, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa y divugador en el ámbito de la programación web sobre todo en el ámbito de HTML, CSS y JavaScript', ogImage } = Astro.props
 ---
 
 <!doctype html>
@@ -28,6 +29,7 @@ const { title, description = 'WebFerrol: Diseñador web, SEO, imagen corporativa
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={ogImage ?? PUBLIC_URL + 'avatar.webp'} />
+    <link rel="canonical" href={canonical ?? PUBLIC_URL}>
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <title>{title}</title>
     <ChangePrefersColorScheme />
