@@ -5,6 +5,7 @@ const docSchema = z.object({
 		email: z.string(),
 		pubDate: z.date(),
 		description: z.string(),
+		canonical: z.string().optional(),
 		author: z.string(),
     url: z.string(),
 		image: z.object({
