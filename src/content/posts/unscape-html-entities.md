@@ -20,11 +20,11 @@ El problema lo podemos observar en las siguientes capturas:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .5rem">
 <figure>
-  <img src="/blog/unescape-problem.webp" alt="En la captura se observa el texto 'CSS &amp;#8211; Sintaxis">
+  <img width="600" height="376" src="/blog/unescape-problem.webp" alt="En la captura se observa el texto 'CSS &amp;#8211; Sintaxis">
   <figcaption>Problemas con las HTML entities</figcaption>
 </figure>
 <figure>
-  <img src="/blog/unescape-problem-fixed.webp" alt="En la captura observamos la solución: CSS - Sintaxis">
+  <img width="600" height="376" src="/blog/unescape-problem-fixed.webp" alt="En la captura observamos la solución: CSS - Sintaxis">
   <figcaption>Lo que deseamos es esto</figcaption>
 </figure>
 </div>
