@@ -12,7 +12,7 @@ tags: ['javascript', 'typescript']
 
 # Dejar de escapar (escape) entidades HTML
 
-A veces al inyectar código <abbr title="Hipertext Marckup Language">HTML</abbr> con **secuencias de escape** en nuestros scripts, generalmente **entidades HTML**, podemos observar que dichas *entidades* no son impresas en sus caracteres correspondientes.
+A veces al inyectar código <abbr title="Hypertext Marckup Language">HTML</abbr> con **secuencias de escape** en nuestros scripts, generalmente **entidades HTML**, podemos observar que dichas *entidades* no son impresas en sus caracteres correspondientes.
 
 Una solución es crear un **dicionario de datos** para utilizar estas entidades como clave (**property**) y obtener como valor su correspondiente carácter.
 
