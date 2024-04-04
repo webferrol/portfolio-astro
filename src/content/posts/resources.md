@@ -1,6 +1,6 @@
 ---
 title: 'Recursos'
-pubDate: 2024-03-06
+pubDate: 2024-04-04
 description: 'Recursos de desarrollo para imágenes, vídeo ...'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
@@ -73,3 +73,4 @@ tags: ['recursos']
 - (Conversor de string a array)[https://arraythis.com/]
 - (Drag and drop for react, vue and js native)[https://drag-and-drop.formkit.com/]
 - (Epoch & Unix Timestamp Conversion Tools)[https://www.epochconverter.com/]
+- (Diagramar: Diagramas de flujo, Entidad-Relación, UML's...)[https://www.drawio.com/blog/move-diagrams-net]
