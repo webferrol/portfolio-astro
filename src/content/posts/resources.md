@@ -74,3 +74,9 @@ tags: ['recursos']
 - (Drag and drop for react, vue and js native)[https://drag-and-drop.formkit.com/]
 - (Epoch & Unix Timestamp Conversion Tools)[https://www.epochconverter.com/]
 - (Diagramar: Diagramas de flujo, Entidad-Relación, UML's...)[https://www.drawio.com/blog/move-diagrams-net]
+
+## Red
+
+- [Comprobar la red con el comando ping](https://www.ionos.es/digitalguide/servidores/herramientas/comando-ping/)
+
+![ping](https://gist.github.com/assets/35032717/07ad9f80-4825-4bbb-80ab-bd47f4bc9ae4)
