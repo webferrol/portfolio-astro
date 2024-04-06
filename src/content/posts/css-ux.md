@@ -121,6 +121,17 @@ html {
   }
 }
 ```
+### Imágenes responsive
+
+```css
+img {
+  --aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--aspect-ratio);
+}
+
+```
 
 ### Deshabilitar el sombreado al hacer clic en elementos en dispositivos móviles
 
