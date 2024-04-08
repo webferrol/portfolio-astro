@@ -11,7 +11,15 @@ tags: ['unity']
 
 # Los GameObject en Unity
 
->Los **GameObject** son  cualquier objeto que está en **scene**, desde una luz, un modelo, un *sprite*, personajes, etc.
+Antes de nada echar un vistazo a la [fuente oficial](https://docs.unity3d.com/es/530/Manual/GameObjects.html)
+
+>**Cada objeto en su juego es un GameObject**. No obstante, los GameObjects no hacen nada por sí mismos. Estos necesitan propiedades especiales antes de que puedan volverse un personaje, un ambiente, o un efecto especial. Pero cada uno de estos objetos hacen diferentes cosas.
+
+Si cada objeto fuera un GameObject, cómo hacemos nosotros para diferenciar un power-up interactivo de un cuarto estático? Qué hace que estos GameObjects sean diferentes del uno al otro?
+
+>La respuesta a esta pregunta es que **los GameObjects son contenedores**. Estos pueden guardar las diferentes piezas que son requeridas para hacer un personaje, una luz, un árbol, un sonido, o lo que sea que usted quisiera construir. Entonces para de verdad entender GameObjects, usted necesita entender estas piezas que son llamadas **Components**.
+
+Por tanto los **GameObject** son  cualquier objeto que está en **scene**, desde una luz, un modelo, un *sprite*, personajes, etc.
 
 Por ejemplo para generar un **GameOject** como un *sprite* puedes utilizar sobre el panel **Assets** el botón derecho del ratón y seleccionar <code>Create > Sprites > Square</code>
 
