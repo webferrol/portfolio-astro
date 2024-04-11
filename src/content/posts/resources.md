@@ -70,13 +70,16 @@ tags: ['recursos']
 
 ## Herramientas generales
 
-- (Conversor de string a array)[https://arraythis.com/]
-- (Drag and drop for react, vue and js native)[https://drag-and-drop.formkit.com/]
-- (Epoch & Unix Timestamp Conversion Tools)[https://www.epochconverter.com/]
-- (Diagramar: Diagramas de flujo, Entidad-Relación, UML's...)[https://www.drawio.com/blog/move-diagrams-net]
+- [Conversor de string a array](https://arraythis.com/)
+- [Drag and drop for react, vue and js native](https://drag-and-drop.formkit.com/)
+- [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
+- [Diagramar: Diagramas de flujo, Entidad-Relación, UML's...](https://www.drawio.com/blog/move-diagrams-net)
+- [Diagramar JSON](http://jsonviewer.tools/editor)
 
 ## Red
 
 - [Comprobar la red con el comando ping](https://www.ionos.es/digitalguide/servidores/herramientas/comando-ping/)
 
-![ping](https://gist.github.com/assets/35032717/07ad9f80-4825-4bbb-80ab-bd47f4bc9ae4)
+<img src="https://gist.github.com/assets/35032717/07ad9f80-4825-4bbb-80ab-bd47f4bc9ae4" width="500" alt="Resultado al utilizar el comando ping">
+
+- [Las mejores DNS 2024](https://www.genbeta.com/a-fondo/mejores-dns-rapidas-seguras)
