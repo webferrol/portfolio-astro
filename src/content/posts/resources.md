@@ -11,6 +11,8 @@ tags: ['recursos']
 
 # Recursos
 
+- [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
+
 ## Códigos de estado
 
 - [Código de estado HTTP](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP)
@@ -56,6 +58,7 @@ tags: ['recursos']
 - [Lite youtube embed](https://github.com/paulirish/lite-youtube-embed?tab=readme-ov-file)
 
 ## Deploy
+
 ### Para desplegar
 
 - [Netlify](https://www.netlify.com/)
