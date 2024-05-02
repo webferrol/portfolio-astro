@@ -16,6 +16,7 @@ tags: ['unity']
 - <kbd>W</kbd> Desplazar un objeto.
 - <kbd>R</kbd> Escalar un objeto.
 - <kbd>F</kbd> Acercar/alejar un objeto *seleccionado*.
+- <kbd>Ctrl</kbd> + <kbd>D</kbd> Puedes duplicar tantos *GameObjects* como desees.
 
 ## Enlaces
 - [Documentación en español](https://docs.unity3d.com/es/)
