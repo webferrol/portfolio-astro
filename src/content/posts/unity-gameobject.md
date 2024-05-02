@@ -32,6 +32,35 @@ Un **GameObject** por sí solo no hace mucho. Es necesario darle funcionalidad. 
 
 ![GameObject empty](/blog/gameobject-empty.webp)
 
+## GetComponent
+
+**GetComponent** es un método en Unity que se utiliza para **obtener un componente** adjunto a un GameObject **en tiempo de ejecución**. En Unity, los *GameObjects* pueden tener uno o más componentes adjuntos, como *transformaciones*, *renderizadores*, *colisionadores*, *scripts*, etc.
+
+La sintaxis básica de `GetComponent` es la siguiente:
+
+```csharp
+GetComponent<TipoDeComponente>();
+```
+
+Donde `TipoDeComponente` es el tipo de componente que deseas obtener. Por ejemplo, si tienes un script llamado `MiScript` adjunto a un GameObject y deseas obtener una referencia a ese script, puedes hacerlo de la siguiente manera:
+
+```csharp
+MiScript script = GetComponent<MiScript>();
+```
+
+Esto buscará y devolverá el primer componente `MiScript` adjunto al GameObject en el que se está ejecutando el script.
+
+También puedes usar `GetComponent` con tipos de componentes integrados en Unity, como `Transform`, `Rigidbody`, `Collider`, `Renderer`, etc.
+
+Por ejemplo, para obtener una referencia al componente `Transform` adjunto a un GameObject, puedes hacerlo así:
+
+```csharp
+Transform transform = GetComponent<Transform>();
+```
+
+`GetComponent` solo busca en el GameObject actual y en sus hijos directos para encontrar el componente especificado. Si el componente no está presente, devolverá `null`. Si hay múltiples componentes del mismo tipo adjuntos al GameObject, solo devolverá el primero que encuentre.
+
+
 ## Prefabs
 
 Los **prefabs** son literalmente *GameObject prefabricados*, es decir, creas un *GameObject*, le añades todo el comportamiento y componentes que quieras, lo dejas listo para usarse y lo conviertes en un **prefab**. Cuando lo conviertes en un *prefab*, se puede utilizar como una plantilla y puede utilizarse en todas las escenas de tu proyecto.
