@@ -9,9 +9,11 @@ author: 'Xurxo González Tenreiro'
 tags: ['recursos']
 ---
 
-# Recursos
+# Recursos didácticos
 
-- [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
+- [Online Compiler](https://pythontutor.com/)
+- [Zoomit](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit)
+- [Diagramar: Diagramas de flujo, Entidad-Relación, UML's...](https://www.drawio.com/blog/move-diagrams-net)
 
 ## Códigos de estado
 
@@ -76,8 +78,9 @@ tags: ['recursos']
 - [Conversor de string a array](https://arraythis.com/)
 - [Drag and drop for react, vue and js native](https://drag-and-drop.formkit.com/)
 - [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
-- [Diagramar: Diagramas de flujo, Entidad-Relación, UML's...](https://www.drawio.com/blog/move-diagrams-net)
 - [Diagramar JSON](http://jsonviewer.tools/editor)
+- [Index TIOBE](https://www.tiobe.com/tiobe-index/)
+- [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
 
 ## Red
 
