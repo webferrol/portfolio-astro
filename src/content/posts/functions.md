@@ -11,6 +11,24 @@ tags: ['funciones', 'arrow functions', 'function expresion', 'javascript']
 
 # Funciones
 
+<style>
+  #funciones pre {
+    font-size: 3pt !important;
+  }
+</style>
+
+<script>
+  
+const divertidisimo = document.querySelector('#funciones');
+
+(r=n=>setInterval(t=>{for(j=o="\n",y=5;y--;divertidisimo['inne'
++'rHTML']="<pre>&lt"+(S="script>\n")+o+"\n\n&lt/"+S)for(x=-001;
+x++<63;o+=`(r=${r})()`[j++].fontcolor(c?'#FF0':"#444"))c=x/2%4<
+3&&[31599,19812,14479,31207,23524,29411,29679,30866,31727,31719
+,1040][(D=Date()[16+(x/8|0)])<10?D:10]&1<<(x/2|0)%4+3*y},100))()
+
+</script>
+
 ## Sintaxis tradicional
 
 Tenemos la __sintaxis tradicional__:
