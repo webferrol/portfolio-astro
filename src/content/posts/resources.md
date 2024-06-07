@@ -1,6 +1,6 @@
 ---
 title: 'Recursos'
-pubDate: 2024-04-04
+pubDate: 2024-06-07
 description: 'Recursos de desarrollo para imágenes, vídeo ...'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
@@ -68,6 +68,7 @@ tags: ['recursos']
 - [fl0](https://www.fl0.com/)
 - [fly](https://fly.io/)
 - [koyeb](https://www.koyeb.com/)
+
 ### Otros recursos de deployments
 
 - [getdeploying: para comparar despliegues](https://getdeploying.com/)
@@ -81,6 +82,7 @@ tags: ['recursos']
 - [Diagramar JSON](http://jsonviewer.tools/editor)
 - [Index TIOBE](https://www.tiobe.com/tiobe-index/)
 - [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
+- [Patrones de diseño](https://refactoring.guru/es)
 
 ## Red
 
