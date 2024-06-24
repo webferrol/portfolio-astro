@@ -81,6 +81,7 @@ tags: ['recursos']
 - [Drag and drop for react, vue and js native](https://drag-and-drop.formkit.com/)
 - [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
 - [Diagramar JSON](http://jsonviewer.tools/editor)
+- [JSON formatter](https://jsonformatter.org/json-to-typescript)
 - [Index TIOBE](https://www.tiobe.com/tiobe-index/)
 - [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
 - [Patrones de diseño](https://refactoring.guru/es)
