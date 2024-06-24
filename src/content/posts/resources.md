@@ -32,6 +32,7 @@ tags: ['recursos']
 - [A beautiful library with SVG logos](https://svgl.vercel.app/)
 - [Over 4900 pixel-perfect icons for web design](https://tabler.io/icons)
 - [Heroicons](https://heroicons.com/outline)
+- [svgl](https://svgl.app/)
 
 ## Edición de imágenes
 
