@@ -1,5 +1,10 @@
 # Xurxo González Tenreiro - Portfolio
 
+## Vídeos
+
+- [Parte 1](https://www.twitch.tv/videos/2205249304)
+- [Parte 2](https://www.twitch.tv/videos/2206141108)
+
 ## Links
 
 - [DESARROLLO PORFOLIO desde CERO para programadores. Con SEO, optimizaciones y modo oscuro](https://www.twitch.tv/videos/2014313754)

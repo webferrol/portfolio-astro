@@ -8,6 +8,7 @@
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
+      "@sections/*": ["src/sections/*"],
       "@icons/*": ["src/icons/*"],
       "@data": ["src/mocks/data.json"]
     }

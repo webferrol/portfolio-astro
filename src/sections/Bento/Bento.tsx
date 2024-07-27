@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks"
-import { BentoItem } from "@components/sections/Bento/BentoItem.tsx"
-import { HTMLSearchElement } from "@components/sections/Bento/HTMLSearchElement"
+import { BentoItem } from "@sections/Bento/BentoItem.tsx"
+import { HTMLSearchElement } from "@sections/Bento/HTMLSearchElement"
 
 interface MyProps {
     title: string,
