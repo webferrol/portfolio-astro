@@ -1,6 +1,6 @@
 ---
 title: 'Recursos'
-pubDate: 2024-06-07
+pubDate: 2024-07-27
 description: 'Recursos de desarrollo para imágenes, vídeo ...'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
@@ -56,9 +56,10 @@ tags: ['recursos']
 - [What length CSS unit should you use?](https://whatunit.com/)
 - [clamp calculator](https://utopia.fyi/type/calculator/)
 
-## Embed youtube
+## Vídeos y recursos de los mismos
 
 - [Lite youtube embed](https://github.com/paulirish/lite-youtube-embed?tab=readme-ov-file)
+- [pexels](https://www.pexels.com/es-es/)
 
 ## Deploy
 
@@ -82,9 +83,13 @@ tags: ['recursos']
 - [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
 - [Diagramar JSON](http://jsonviewer.tools/editor)
 - [JSON formatter](https://jsonformatter.org/json-to-typescript)
-- [Index TIOBE](https://www.tiobe.com/tiobe-index/)
 - [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
 - [Patrones de diseño](https://refactoring.guru/es)
+
+## Tendencias
+
+- [Frameworks más descargados - npm](https://npmtrends.com/)
+- [Index TIOBE](https://www.tiobe.com/tiobe-index/)
 
 ## Red
 
