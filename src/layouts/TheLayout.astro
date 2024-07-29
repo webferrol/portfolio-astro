@@ -1,8 +1,9 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
 import Navbar from '@sections/Navbar.astro'
-import ChangePrefersColorScheme from '@components/utils/ChangePrefersColorScheme.astro'
 import TheFooter from '@sections/TheFooter.astro'
+import ChangePrefersColorScheme from '@components/utils/ChangePrefersColorScheme.astro'
+import WhoIMe from '@/components/WhoIMe.astro'
 import { PUBLIC_URL } from '@/constants.ts'
 // Supports weights 100-900
 import '@fontsource-variable/onest';
@@ -38,7 +39,8 @@ const { title, canonical, description = 'WebFerrol: Diseñador web, SEO, imagen 
     
   <body id="top" class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
     <Navbar />    
-    <slot />    
+    <WhoIMe />    
+    <slot />
     <TheFooter>
   </body>
 </html>
