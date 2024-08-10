@@ -1,6 +1,6 @@
 ---
 title: 'Recursos'
-pubDate: 2024-07-27
+pubDate: 2024-08-10
 description: 'Recursos de desarrollo para imágenes, vídeo ...'
 email: 'xurxo@webferrol.com'
 ogImage: 'https://webferrol.netlify.app/javascript.png'
@@ -33,6 +33,7 @@ tags: ['recursos']
 - [Over 4900 pixel-perfect icons for web design](https://tabler.io/icons)
 - [Heroicons](https://heroicons.com/outline)
 - [svgl](https://svgl.app/)
+- [Transform SVGs into React components](https://react-svgr.com/)
 
 ## Edición de imágenes
 
