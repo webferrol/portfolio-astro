@@ -40,7 +40,7 @@ const LINKS: Links[] = [
     href: "https://play.google.com/store/search?q=poboar&c=apps&hl=es"
   },
   {
-    text: "O misterio do monte viso (Android)",
+    text: "O misterio do Monte Viso (Android)",
     href: "https://play.google.com/store/apps/details?id=com.Cersia.OMisteriodoMonteViso&hl=es"
   },
 ]
