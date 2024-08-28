@@ -6,6 +6,11 @@ interface keysValueStr {
   [key: string]: string; 
 }
 
+interface Links {
+  text: string;
+  href: string;
+}
+
 const UNESCAPE_HTML_OBJECT: keysValueStr = {
   '&amp;': '&',
   '&lt;': '<',
@@ -17,7 +22,27 @@ const UNESCAPE_HTML_OBJECT: keysValueStr = {
   '&#8211;': '-',
 }
 
+const LINKS: Links[] = [
+  {
+    text: "Página de Pacto polo emprego de Santiago",
+    href: "https://pactoempregosantiago.org/"
+  },
+  {
+    text: "Tic tac toe React",
+    href: "https://github.com/webferrol/tic-tac-toe-react-ts"
+  },
+  {
+    text: "Senllap Android",
+    href: "https://play.google.com/store/apps/details?id=io.cordova.senlleira&hl=es"
+  },
+  {
+    text: "Poboar Android",
+    href: "https://play.google.com/store/search?q=poboar&c=apps&hl=es"
+  },
+]
+
 export {
+  LINKS,
   PUBLIC_URL,
   UNESCAPE_HTML_OBJECT,
   WORDPRESS_URL
