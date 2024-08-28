@@ -32,12 +32,16 @@ const LINKS: Links[] = [
     href: "https://github.com/webferrol/tic-tac-toe-react-ts"
   },
   {
-    text: "Senllap Android",
+    text: "Senllap (Android)",
     href: "https://play.google.com/store/apps/details?id=io.cordova.senlleira&hl=es"
   },
   {
-    text: "Poboar Android",
+    text: "Poboar (Android)",
     href: "https://play.google.com/store/search?q=poboar&c=apps&hl=es"
+  },
+  {
+    text: "O misterio do monte viso (Android)",
+    href: "https://play.google.com/store/apps/details?id=com.Cersia.OMisteriodoMonteViso&hl=es"
   },
 ]
 
