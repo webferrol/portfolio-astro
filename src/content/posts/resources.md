@@ -86,6 +86,7 @@ tags: ['recursos']
 - [JSON formatter](https://jsonformatter.org/json-to-typescript)
 - [✌𝓡𝓮𝓬𝓾𝓻𝓼𝓸𝓼 𝓗𝓣𝓜𝓛, 𝓒𝓢𝓢, 𝓙𝓢 🅸🅼🅿🆁🅴🆂🅸🅾🅽🅰🅽🆃🅴🆂✌](http://htmlcheatsheet.com)
 - [Patrones de diseño](https://refactoring.guru/es)
+- [Full Stack Open](https://fullstackopen.com/es/)
 
 ## Tendencias
 

@@ -33,7 +33,7 @@ const LINKS: Links[] = [
   },
   {
     text: "Senllap (Android)",
-    href: "https://play.google.com/store/apps/details?id=io.cordova.senlleira&hl=es"
+    href: "https://play.google.com/store/apps/details?id=com.xurxo.senlleirasapp&hl=es"
   },
   {
     text: "Poboar (Android)",
