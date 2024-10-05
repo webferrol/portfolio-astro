@@ -32,17 +32,9 @@ const LINKS: Links[] = [
     href: "https://github.com/webferrol/tic-tac-toe-react-ts"
   },
   {
-    text: "Senllap (Android)",
-    href: "https://play.google.com/store/apps/details?id=com.xurxo.senlleirasapp&hl=es"
-  },
-  {
-    text: "Poboar (Android)",
-    href: "https://play.google.com/store/search?q=poboar&c=apps&hl=es"
-  },
-  {
-    text: "O misterio do Monte Viso (Android)",
-    href: "https://play.google.com/store/apps/details?id=com.Cersia.OMisteriodoMonteViso&hl=es"
-  },
+    text: "Apps (Obradoiros de emprego de Santiago de Compostela)",
+    href: "https://play.google.com/store/apps/developer?id=CONCELLO+DE+SANTIAGO+DE+COMPOSTELA&hl=es_419"
+  }
 ]
 
 export {
