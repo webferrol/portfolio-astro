@@ -2,55 +2,62 @@
     "experiences": [
         {
             "id": 1,
+            "title": "Profesor de Bachiller",
+            "details": "Especialidad Lengua Griega",
+            "date": "2024 - 2025",
+            "place": "I.E.S. As Mariñas en Betanzos"
+        },
+        {
+            "id": 10,
             "title": "Docente en Cersia",
             "details": "Obradoiro AppVenturers",
             "date": "2024",
             "place": "Santiago de Compostela"
         },
         {
-            "id": 2,
+            "id": 20,
             "title": "Profesor de Programación",
             "details": "Obradoiro Sansus 3",
             "date": "2020",
             "place": "Santiago de Compostela"
         },
         {
-            "id": 3,
+            "id": 30,
             "title": "Docente",
             "details": "AFD (MF0491_3)",
             "date": "2019",
             "place": "Oviedo"
         },
         {
-            "id": 4,
+            "id": 40,
             "title": "Programador",
             "details": "Empresa Englishpanish",
             "date": "2019",
             "place": "Ferrol"
         },
         {
-            "id": 5,
+            "id": 50,
             "title": "Docente FP",
             "details": "Desarrollo de Aplicaciones Web (DAW)",
             "date": "2019",
             "place": "Oviedo"
         },
         {
-            "id": 6,
+            "id": 60,
             "title": "Formador WEB",
             "details": "AFD (MF0491_3), Computer 3",
             "date": "2018",
             "place": "Lugo"
         },
         {
-            "id": 7,
+            "id": 70,
             "title": "Profesor en WEB",
             "details": "AFD (MF0491_3), Academia Foremprego",
             "date": "2017",
             "place": "Lugo"
         },
         {
-            "id": 8,
+            "id": 80,
             "title": "Programador",
             "details": "Empresa Englishpanish - Mantenimiento de la página y responsable del soporte técnico",
             "date": "2016",
